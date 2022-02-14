@@ -39,7 +39,7 @@ class ViewerServiceTest {
 
         //then
         Viewer findViewer = viewerService.findOne(saveIdx).get();
-        assertThat(viewer.getvIdx()).isEqualTo(findViewer.getvIdx());
+        assertThat(viewer.getVIdx()).isEqualTo(findViewer.getVIdx());
 
     }
 

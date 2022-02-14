@@ -25,13 +25,13 @@ class MemoryViewerRepositoryTest {
     @Test
     public void save(){
         Viewer viewer = new Viewer();
-        viewer.setvId("admin");
-        viewer.setvPw("admin");
-        viewer.setvStatus(3);
+        viewer.setVId("admin");
+        viewer.setVPw("admin");
+        viewer.setVStatus(3);
 
         Viewer result = repository.save(viewer);
 
-        result = repository.findByVIdx(result.getvIdx()).get();
+        result = repository.findByVIdx(result.getVIdx()).get();
 
 //        Junit 라이브러리
 //        Assertions.assertEquals(viewer, result); // 맞으면 콘솔창에 초록불, 틀리면 빨간불

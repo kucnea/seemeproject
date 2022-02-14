@@ -10,12 +10,36 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+//	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'javax.servlet:jstl'
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	//Lombok
+	annotationProcessor("org.projectlombok:lombok")
+	compileOnly("org.projectlombok:lombok")
+	//TOMCAT
+	implementation 'org.apache.tomcat:tomcat-dbcp:7.0.14'
+	implementation 'org.apache.tomcat:tomcat-jdbc:7.0.19'
+	//JPA
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'com.querydsl:querydsl-jpa'
+	//OJDBC
+	implementation files('/src/main/resources/lib/ojdbc6.jar')
+
+	//WebSocket
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+	//STOMP
+	implementation 'org.webjars:stomp-websocket:2.3.3-1'
+
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

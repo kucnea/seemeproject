@@ -40,7 +40,7 @@ public class ViewerService {
         validateDuplcateViewer(viewer);
         viewerRepository.save(viewer);
         
-        return viewer.getvIdx();
+        return viewer.getVIdx();
     }
 
 
@@ -49,7 +49,7 @@ public class ViewerService {
         중복 회원 검증
      */
     private void validateDuplcateViewer(Viewer viewer) {
-        viewerRepository.findByVId(viewer.getvId())
+        viewerRepository.findByVId(viewer.getVId())
                 .ifPresent(viewer1 -> {
             throw new IllegalStateException("이미 존재하는 아이디 입니다.");
         });

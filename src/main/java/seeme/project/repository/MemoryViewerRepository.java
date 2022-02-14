@@ -17,8 +17,8 @@ public class MemoryViewerRepository implements ViewerRepository {
 
     @Override
     public Viewer save(Viewer viewer) {
-        viewer.setvIdx(sequence.incrementAndGet());
-        vList.put(viewer.getvIdx(), viewer);
+        viewer.setVIdx(sequence.incrementAndGet());
+        vList.put(viewer.getVIdx(), viewer);
         return viewer;
     }
 
@@ -32,7 +32,7 @@ public class MemoryViewerRepository implements ViewerRepository {
     public Optional<Viewer> findByVId(String vId) {
 
         return vList.values().stream()
-                .filter(viewer -> viewer.getvId().equals(vId))
+                .filter(viewer -> viewer.getVId().equals(vId))
                 .findAny();
     }
 
