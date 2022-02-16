@@ -6,16 +6,13 @@
     <title>ChatRoom List</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/bootstrap.css.map'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/chatRoomListStyleCss.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/commonCss.css'>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src='/js/board.js'></script>
 </head>
 <body>
-    <div id="wrap">
-        <div class="divNav">
-
-        </div>
         <div class="divTitle">
             <a> 채팅방 </a>
             <hr width="90%">
@@ -27,7 +24,7 @@
                     <th style="width: 15%;">
                         <img src="/img/basic_icon.png" width="100%" height="100%">
                     </th>
-                    <td class="chatMsg" style="width: 60%;">마지막 대화내용</td>
+                    <td class="chatMsg" style="width: 60%;"><a>마지막 대화내용</a></td>
                     <td class="chatDia"style="width: 10%;">12:34</td>
                 </tr>
                 <tr>
@@ -39,7 +36,14 @@
                 </tr>
             </table>
         </div>
-    </div>
+
+        <script>
+            $(window).scroll(function(){
+                if ($(window).scrollTop() == $(document).height() - $(window).height()){
+                    $("body").append('<div class="divChatList"> <table> <tr> <th style="width: 15%;"> <img src="/img/basic_icon.png" width="100%" height="100%"> </th> <td class="chatMsg" style="width: 60%;">마지막 대화내용</td> <td class="chatDia"style="width: 10%;">12:34</td> </tr> </table> </div>');
+                }
+            });
+        </script>
 
 <footer>
     <div class="divFooter">
