@@ -1,0 +1,26 @@
+html, body{
+    height: 100%;
+}
+body {
+    line-height: 1.5;    
+}
+#wrap{
+    min-height: 100%;
+    position: relative;
+}
+.divTitle{
+    text-align: center;
+    font-size: 3em;
+    padding: 0.3em;
+}
+.divFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+a:hover, a:visited, a:active, a:focus{
+    text-decoration: none;
+}
+.alink:hover{
+    text-decoration: underline;
+}
