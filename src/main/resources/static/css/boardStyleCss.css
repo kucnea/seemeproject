@@ -7,6 +7,9 @@
 .divPageNav{
     text-align: center;
     font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 .divFooter{
     position: absolute;
@@ -37,4 +40,7 @@ th{
     color: white;
 }
 
+.dibPageNavA{
+    font-size: 1.8em;
+}
 

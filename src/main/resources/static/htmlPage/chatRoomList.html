@@ -13,30 +13,91 @@
     <script src='/js/board.js'></script>
 </head>
 <body>
+<div id="wrap">
+    <section>
         <div class="divTitle">
-            <a> 채팅방 </a>
-            <hr width="90%">
+            <a style="float: left;">&lt;</a><a> 채팅방 </a><a style="float: right;">&gt;</a>
+            <hr width="100%">
         </div>
-        
-        <div class="divChatList">            
+
+        <div class="divChatList">
             <table>
                 <tr>
                     <th style="width: 15%;">
                         <img src="/img/basic_icon.png" width="100%" height="100%">
                     </th>
                     <td class="chatMsg" style="width: 60%;"><a>마지막 대화내용</a></td>
-                    <td class="chatDia"style="width: 10%;">12:34</td>
+                    <td class="chatDia" style="width: 10%;">12:34</td>
                 </tr>
                 <tr>
                     <th style="width: 15%;">
                         <img src="/img/basic_icon.png" width="100%" height="100%">
                     </th>
                     <td class="chatMsg" style="width: 60%;">마지막 대화내용</td>
-                    <td class="chatDia"style="width: 10%;">12:34</td>
+                    <td class="chatDia" style="width: 10%;">12:34</td>
                 </tr>
+
             </table>
         </div>
 
+        <div id="createModal" class="createModal-overlay">
+            <div class="createmodal-window">
+                <div class="title">
+                    <a style="font-size: 3em; font-weight: bold; float: center;">새 채팅방 만들기</a> &nbsp;&nbsp; <a style="font-size: 3em; font-weight: bold;" class="close-area">X</a>
+                </div>
+                <div class="content">
+                    <input type="text" style="font-size: 3em; width: 75%; color: black;" placeholder="상대방 ID"><input type="submit" style="font-size: 3em; color: black;" value="생성">
+                </div>
+            </div>
+        </div>
+
+        <div id="searchModal" class="searchModal-overlay">
+            <div class="searchmodal-window">
+                <div class="title">
+                    <a style="font-size: 3em; font-weight: bold; float: center;">유저 검색</a> &nbsp;&nbsp; <a style="font-size: 3em; font-weight: bold;" class="close-area">X</a>
+                </div>
+                <div class="content">
+                    <input type="text" style="font-size: 3em; width: 75%; color: black;" placeholder="상대방 ID"><input type="submit" style="font-size: 3em; color: black;" value="생성">
+                </div>
+            </div>
+        </div>
+
+        <!-- 모달창 -->
+        <script>
+            $(document).on("click","#newChatRoomCreate",function(){
+                $(".createModal-overlay").css("display","flex");
+            });
+
+            $(document).on("click",".close-area",function(){
+                $(".createModal-overlay").css("display","none");
+            });
+
+
+
+            $(document).on("click","#searchPerson",function(){
+                $(".searchModal-overlay").css("display","flex");
+            });
+
+            $(document).on("click",".close-area",function(){
+                $(".searchModal-overlay").css("display","none");
+            });
+
+
+
+            $(document).click(function(e){
+                if($(".createModal-overlay").css("display")=="flex" || $(".searchModal-overlay").css("display") == "flex"){
+                    if(!$(e.target).hasClass('createmodal-window') || $(e.target).hasId('newChatRoomCreate')){
+                        alert("createModal 창이 켜 있는데, 영역 밖을 클릭했습니다.");
+                        $(".createModal-overlay").css("display","none");
+                    }else if(!$(e.target).hasClass('searchmodal-window') && !$(e.target).hasId('searchPerson')){
+                        $(".searchModal-overlay").css("display","none");
+                    }
+
+                }
+            });
+        </script>
+
+        <!-- 페이지 스크롤링 -->
         <script>
             $(window).scroll(function(){
                 if ($(window).scrollTop() == $(document).height() - $(window).height()){
@@ -44,16 +105,23 @@
                 }
             });
         </script>
+    </section>
 
-<footer>
-    <div class="divFooter">
-        <hr width="100%">
-        <a>● 사고를 막기위해 Helper의 신원은 인증이 필요하며, 도움내용은 기록되며 필요시 수사기관에 협력합니다.</a><br>
-        <a>● 개인의 신원, 비밀번호와 같이 민감한 정보등은 공유하지 마시기 바랍니다.</a><br>
-        <a>● </a><a class="alink" href="https://open.kakao.com/o/sFvpqq0d">OpenKakaoTalk (Click)</a>
-    </div>
-</footer>
 
+    <footer>
+        <div class="divChatFooter">
+            <img id="newChatRoomCreate" src="/img/newChatRoom.png" width="30%">
+            <img id="searchPerson" src="/img/searchUserpng.png" width="30%">
+            <img src="/img/selftalk.png" width="30%">
+        </div>
+        <div class="divFooter">
+            <hr width="100%">
+            <a>● 사고를 막기위해 Helper의 신원은 인증이 필요하며, 도움내용은 기록되며 필요시 수사기관에 협력합니다.</a><br>
+            <a>● 개인의 신원, 비밀번호와 같이 민감한 정보등은 공유하지 마시기 바랍니다.</a><br>
+            <a>● </a><a class="alink" href="https://open.kakao.com/o/sFvpqq0d">OpenKakaoTalk (Click)</a>
+        </div>
+    </footer>
+</div>
 
 
 

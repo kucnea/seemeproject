@@ -12,80 +12,75 @@
     <script src='/js/board.js'></script>
 </head>
 <body>
-    <div id="wrap">
-        <div class="divNav">
-
-        </div>
-        <div class="divTitle">
-            <a> 도움게시판 </a>
-            <hr width="90%">
-        </div>
-        
-        <div class="divBoard">
-            <!-- 모바일에서는 제외 -->
-            <!--
-            <select onchange="submit()" style="float: right; margin-bottom: 0.4em; display: block;">
-                <option value="10">10개씩</option>
-                <option value="5">5개씩</option>
-            </select>
-            <br>
-            -->
-            
-            <table>
-                <tr>
-                    <th style="width: 10%;">No</th>
-                    <th style="width: 60%;"> 제 목 </th>
-                    <th class="lessImp" style="width: 15%;">글쓴이</th>
-                    <th class="lessImp" style="width: 15%;">조회수</th>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <td class="boardTitle">● 안녕하세요 반갑습니다. 행복하세요!</td>
-                    <th class="lessImp">글쓴이</th>
-                    <th class="lessImp">10</th>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td class="boardTitle">● 안녕하세요 반갑습니다. 행복하세요!</td>
-                    <th class="lessImp">글쓴이</th>
-                    <th class="lessImp">10</th>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>안녕하세요 반갑습니다. 행복하세요!</td>
-                    <th class="lessImp">글쓴이</th>
-                    <th class="lessImp">10</th>
-                </tr>
-                <tr>
-                    <th>4</th>
-                    <td>안녕하세요 반갑습니다. 행복하세요!</td>
-                    <th class="lessImp">글쓴이</th>
-                    <th class="lessImp">10</th>
-                </tr>
-                <tr>
-                    <th>5</th>
-                    <td>안녕하세요 반갑습니다. 행복하세요!</td>
-                    <th class="lessImp">글쓴이</th>
-                    <th class="lessImp">10</th>
-                </tr>
-                <tr>
-                    <th>6</th>
-                    <td>안녕하세요 반갑습니다. 행복하세요!</td>
-                    <th class="lessImp">글쓴이</th>
-                    <th class="lessImp">10</th>
-                </tr>
-            </table>
-        </div>
-        <br>
-        <div class="divPageNav">
-            <a>&lt;</a>&nbsp;
-            <a>1</a>&nbsp;
-            <a>&gt;</a><br>
-            <input type="search" style="color: black; font-size: 1.5em;">
-            <input type="button" value="검색" style="color: white; background-color: darkgray;">
-        </div>
+<div id="wrap">
+    <div class="divNav">
 
     </div>
+    <div class="divTitle">
+        <a style="float: left;">&lt;</a><a> 도움게시판 </a><a style="float: right;">&gt;</a>
+        <hr width="100%">
+    </div>
+
+    <div class="divBoard">
+        <!-- 모바일에서는 제외 -->
+        <!--
+        <select onchange="submit()" style="float: right; margin-bottom: 0.4em; display: block;">
+            <option value="10">10개씩</option>
+            <option value="5">5개씩</option>
+        </select>
+        <br>
+        -->
+
+        <table>
+            <tr>
+                <th style="width: 10%;">No</th>
+                <th style="width: 60%;"> 제 목 </th>
+                <th class="lessImp" style="width: 15%;">글쓴이</th>
+                <th class="lessImp" style="width: 15%;">조회수</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td class="boardTitle">● 안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="boardTitle">● 안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="divPageNav">
+        <a class="dibPageNavA">&lt;</a>&nbsp;
+        <a class="dibPageNavA">1</a>&nbsp;
+        <a class="dibPageNavA">&gt;</a><br>
+        <input type="button" value="글쓰기" style="color: white; background-color: darkgray; width: 100%;"><br><br>
+        <input type="search" style="color: black; font-size: 1.5em; height: 1.4em; width: 100%;" placeholder="검색할 키워드를 입력해주세요."><br>
+        <input type="button" value="검색" style="color: white; background-color: darkgray; width: 100%;">
+    </div>
+
+</div>
 
 <footer>
     <div class="divFooter">
