@@ -1,0 +1,10 @@
+.divJoinDetail{
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 2em;
+}
+
+.divJoinDetail th,.divJoinDetail td{
+    padding: 1%;
+}

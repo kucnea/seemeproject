@@ -1,0 +1,66 @@
+.divChatDetail{
+    width: 90%;
+}
+
+.divInsertChat{
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.balloon{
+    position: relative;
+    display: inline-block;
+}
+
+.balloon:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.balloon.chatMe:after, .balloon.chatYou:after {
+    border-width: 10px 15px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.balloon.chatYou{
+    float: left;
+    left: 15%;
+    clear: both;
+    margin: 2%;
+}
+.balloon.chatYou:after {
+    border-color: transparent white transparent transparent;
+    left: -25px;
+}
+
+.balloon.chatYou span {
+    display: inline-block;
+    font-size: 3em;
+    padding: 10px;
+    color: black;
+    background: white;
+    border-radius: 20px;
+}
+
+.balloon.chatMe{
+    float: right;
+    clear: both;
+    margin: 2%;
+}
+.balloon.chatMe:after {
+    border-color: transparent transparent transparent yellow;
+    right: -25px;
+}
+
+.balloon.chatMe span {
+    display: inline-block;
+    font-size: 3em;
+    padding: 10px;
+    color: black;
+    background: yellow;
+    border-radius: 20px;
+}

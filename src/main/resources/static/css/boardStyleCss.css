@@ -11,11 +11,7 @@
     margin-right: auto;
     width: 90%;
 }
-.divFooter{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
 table, td, th{
     border: 1px solid white;
     border-collapse: collapse;
