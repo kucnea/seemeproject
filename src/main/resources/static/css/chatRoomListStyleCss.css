@@ -15,6 +15,7 @@
     margin-right: auto;
     width: 90%;
     text-align: center;
+    clear: both;
 }
 .chatMsg{
     font-size: 2em;
@@ -25,10 +26,6 @@
 table{
     border-collapse: separate;
     border-spacing: 1em;
-}
-body{
-    margin: 0;
-    padding: 0;
 }
 
 #createModal.createModal-overlay{

@@ -5,9 +5,12 @@ html, body{
     height: 100%;
 }
 body {
+    margin: 0;
+    padding: 0;
     line-height: 1.5;
 }
 #wrap{
+    width: 100%;
     height: auto;
     min-height: 100%;
     padding-bottom: 10%;
@@ -26,7 +29,6 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
-
 a:hover, a:visited, a:active, a:focus{
     text-decoration: none;
 }

@@ -10,7 +10,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/css/chatRoomListStyleCss.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/commonCss.css'>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src='/js/board.js'></script>
 </head>
 <body>
 <div id="wrap">
@@ -81,9 +80,11 @@
             $(document).on("click",".close-area",function(){
                 $(".searchModal-overlay").css("display","none");
             });
+        </script>
 
-
-
+        <!-- 모달창 밖 클릭시 꺼지도록 -->
+        <!--
+        <script>
             $(document).click(function(e){
                 if($(".createModal-overlay").css("display")=="flex" || $(".searchModal-overlay").css("display") == "flex"){
                     if(!$(e.target).hasClass('createmodal-window') || $(e.target).hasId('newChatRoomCreate')){
@@ -96,8 +97,10 @@
                 }
             });
         </script>
+        -->
 
         <!-- 페이지 스크롤링 -->
+        <!--
         <script>
             $(window).scroll(function(){
                 if ($(window).scrollTop() == $(document).height() - $(window).height()){
@@ -105,17 +108,20 @@
                 }
             });
         </script>
+        -->
 
-        <div class="divChatFooter">
-            <img id="newChatRoomCreate" src="/img/newChatRoom.png" width="30%">
-            <img id="searchPerson" src="/img/searchUserpng.png" width="30%">
-            <img src="/img/selftalk.png" width="30%">
-        </div>
     </section>
+
 </div>
 
 
+
 <footer>
+    <div class="divChatFooter">
+        <img id="newChatRoomCreate" src="/img/newChatRoom.png" width="30%">
+        <img id="searchPerson" src="/img/searchUserpng.png" width="30%">
+        <img src="/img/selftalk.png" width="30%">
+    </div>
     <div class="divFooter">
         <hr width="100%">
         <a>● 사고를 막기위해 Helper의 신원은 인증이 필요하며, 도움내용은 기록되며 필요시 수사기관에 협력합니다.</a><br>
