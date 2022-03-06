@@ -7,8 +7,10 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import java.util.Date;
 
-@Setter
 @Getter
 @NoArgsConstructor
 @Entity
@@ -20,6 +22,8 @@ public class VFreeBoard {
     private String vFContent;
 
     private Long vFRCount = 0L;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date vFWDate = new Date();
 
 
     public VFreeBoard(String vFTitle, String vFContent) {

@@ -44,6 +44,13 @@ class ViewerServiceTest {
     }
 
     @Test
+    void testCreate(){
+
+
+
+    }
+
+    @Test
     void joinWithError(){
         //given
         Viewer viewer = new Viewer("admin", "admin",3);

@@ -11,10 +11,6 @@ import java.util.Set;
 
 @Entity
 @Table(name="CHATROOM")
-@SequenceGenerator(						// 오라클 사용시
-        name = "CHATROOM_SEQ_GENERATOR",
-        sequenceName = "CHATROOM_SEQ",
-        initialValue = 1, allocationSize = 50)
 @NoArgsConstructor
 @Getter
 @Setter
@@ -22,7 +18,6 @@ import java.util.Set;
 public class ChatRoom {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CHATROOM_SEQ_GENERATOR")
     private Long cRIdx;
     @Temporal(TemporalType.TIMESTAMP)
     private Date cRDate = new Date();
