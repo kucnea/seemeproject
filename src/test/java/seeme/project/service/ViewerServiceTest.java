@@ -6,28 +6,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import seeme.project.domain.Viewer;
+import seeme.project.repository.MemoryViewerRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;
 
 class ViewerServiceTest {
 
-//    ViewerService viewerService = new ViewerService();
-//    MemoryViewerRepository viewerRepository = new MemoryViewerRepository();
-    @Autowired ViewerService viewerService;
-//    MemoryViewerRepository viewerRepository;
-
-    // DI 과정
-//    @BeforeEach
-//    void beforeEach(){
-//        viewerRepository = new MemoryViewerRepository();
-//        viewerService = new ViewerService(viewerRepository);
-//    }
-
-//    @AfterEach
-//    void afterEach(){
-//        viewerRepository.clearVList();
-//    }
+    ViewerService viewerService = new ViewerService();
+    MemoryViewerRepository repository = new MemoryViewerRepository();
 
     @Test
     void join() {
@@ -35,38 +22,20 @@ class ViewerServiceTest {
         Viewer viewer = new Viewer("admin","admin",3);
 
         //when
-        long saveIdx = viewerService.join(viewer);
+        System.out.println(viewerService.join(viewer)==null);
+        viewer = viewerService.join(viewer);
 
         //then
-//        Viewer findViewer = viewerService.findOne(saveIdx).get();
-        Viewer findViewer = viewerService.findOne(saveIdx);
-        assertThat(viewer.getVIdx()).isEqualTo(findViewer.getVIdx());
-
+        System.out.println(viewer.toString());
     }
 
     @Test
     void joinWithError(){
         //given
-        Viewer viewer = new Viewer("admin", "admin",3);
-        Viewer viewer2 = new Viewer("admin", "admin",3);
 
         //when
-        viewerService.join(viewer);
-        IllegalStateException e = assertThrows(IllegalStateException.class, () -> viewerService.join(viewer2));
-
-//        try {
-//            viewerService.join(viewer2);
-//            fail();
-//        }catch (IllegalStateException e){
-//            assertThat(e.getMessage()).isEqualTo("이미 존재하는 아이디 입니다.");
-//        }
-
-        assertThat(e.getMessage()).isEqualTo("이미 존재하는 아이디 입니다.");
-
 
         //then
-
-
     }
 
     @Test

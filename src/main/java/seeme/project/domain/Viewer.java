@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.concurrent.atomic.AtomicLong;
 
 @Setter
 @Getter
@@ -15,7 +16,7 @@ import javax.persistence.Id;
 public class Viewer {
 
     @Id
-    private Long vIdx;
+    private AtomicLong vIdx;
     private String vId;
     private String vPw;
 
