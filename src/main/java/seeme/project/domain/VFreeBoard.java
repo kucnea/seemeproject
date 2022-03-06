@@ -5,18 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.*;
 import java.util.Date;
 
 @Getter
 @NoArgsConstructor
 @Entity
+@Table(name="VFREEBOARD")
 public class VFreeBoard {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long vFIdx;
     private String vFTitle;
     private String vFContent;
@@ -25,6 +24,9 @@ public class VFreeBoard {
     @Temporal(TemporalType.TIMESTAMP)
     private Date vFWDate = new Date();
 
+    @ManyToOne
+    @JoinColumn(name="vIdx", referencedColumnName = "vIdx")
+    private Viewer viewer;
 
     public VFreeBoard(String vFTitle, String vFContent) {
         this.vFTitle = vFTitle;

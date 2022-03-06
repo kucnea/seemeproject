@@ -10,7 +10,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @Slf4j
 public class MainPageController {
-
+    @GetMapping("/")
+    public String rootPage(Model model){
+        model.addAttribute("data","hello");
+        log.info("Loot Page OnLoad");
+        return "hello";
+    }
     @GetMapping("hello")
     public String hello(Model model){
         model.addAttribute("data","hello");
@@ -26,17 +31,13 @@ public class MainPageController {
 
     }
 
-    @GetMapping("api-style-page")
-    @ResponseBody
-    public String apiStylePage(@RequestParam("name") String name){
-        return "hello"+name; // 페이지에 그냥 데이터가 그대로 전송됨
-    }
 
-    @GetMapping("hello-api")
+    //JSON Test
+    @GetMapping("helloapi")
     @ResponseBody
     public Hello helloApi(@RequestParam("name") String name){
-        Hello hello = new Hello();
-        hello.setName(name);
+            Hello hello = new Hello();
+            hello.setName(name);
 
         return hello; // JSON 방식으로 페이지에 데이터가 전송됨
     }

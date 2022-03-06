@@ -2,6 +2,7 @@ package seeme.project.repository;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import seeme.project.domain.Viewer;
 
 import java.util.List;
@@ -10,16 +11,13 @@ import static org.assertj.core.api.Assertions.*;
 
 class MemoryViewerRepositoryTest {
 
-    MemoryViewerRepository repository = new MemoryViewerRepository();
-
+    @Autowired ViewerRepository ViewerRepository;
 
 // 테스트 메소드의 실행 순서는 보장되지 않기때문에, 유의할 것.
 
     //각 메소드가 끝난 후
     @AfterEach
-    public void afterEach(){
-        repository.clearVList();
-    }
+    public void afterEach(){    }
 
 
     @Test
@@ -29,10 +27,10 @@ class MemoryViewerRepositoryTest {
         viewer.setVPw("admin");
         viewer.setVStatus(3);
 
-        Viewer result = repository.save(viewer);
+        Viewer result = ViewerRepository.save(viewer);
 
-        result = repository.findByVIdx(result.getVIdx()).get();
-
+//        result = ViewerRepository.findByVIdx(result.getVIdx()).get();
+        result = ViewerRepository.findByVIdx(result.getVIdx());
 //        Junit 라이브러리
 //        Assertions.assertEquals(viewer, result); // 맞으면 콘솔창에 초록불, 틀리면 빨간불
 //        Assertions.assertEquals(viewer, null);
@@ -49,12 +47,13 @@ class MemoryViewerRepositoryTest {
     public void findByVIdx(){
 
         Viewer viewer = new Viewer("admin", "admin", 3);
-        repository.save(viewer);
+        ViewerRepository.save(viewer);
 
         Viewer viewer1 = new Viewer("admin2", "admin2", 3);
-        repository.save(viewer1);
+        ViewerRepository.save(viewer1);
 
-        Viewer result = repository.findByVId("admin2").get();
+//        Viewer result = ViewerRepository.findByVId("admin2").get();
+        Viewer result = ViewerRepository.findByVId("admin");
         assertThat(result).isEqualTo(viewer1);
 
     }
@@ -63,12 +62,12 @@ class MemoryViewerRepositoryTest {
     public void findAll(){
 
         Viewer viewer = new Viewer("admin", "admin", 3);
-        repository.save(viewer);
+        ViewerRepository.save(viewer);
 
         Viewer viewer1 = new Viewer("admin2", "admin2", 3);
-        repository.save(viewer1);
+        ViewerRepository.save(viewer1);
 
-        List<Viewer> result = repository.findAll();
+        List<Viewer> result = ViewerRepository.findAll();
 
         assertThat(result.size()).isEqualTo(2);
 

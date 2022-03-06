@@ -3,10 +3,9 @@ package seeme.project.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import seeme.project.domain.Viewer;
-import seeme.project.repository.MemoryViewerRepository;
 import seeme.project.repository.ViewerRepository;
 
-import javax.swing.text.html.Option;
+import javax.swing.text.View;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,13 +15,13 @@ public class ViewerService {
     // 이 경우 테스트에서 쓰는 Repository와 다른 객체가 만들어져서 두 개가 사용됨.
     // vList가 static이기 때문에 같은 DB를 사용할 수 있지만, 좋지않음.
 //    private final ViewerRepository viewerRepository = new MemoryViewerRepository();
-    private final ViewerRepository viewerRepository;
+    @Autowired private ViewerRepository viewerRepository;
 
-    @Autowired
-    public ViewerService(ViewerRepository viewerRepository){
-
-        this.viewerRepository = viewerRepository;
-    }
+//    @Autowired
+//    public ViewerService(ViewerRepository viewerRepository){
+//
+//        this.viewerRepository = viewerRepository;
+//    }
 
     /*
         회원가입
@@ -49,10 +48,10 @@ public class ViewerService {
         중복 회원 검증
      */
     private void validateDuplcateViewer(Viewer viewer) {
-        viewerRepository.findByVId(viewer.getVId())
-                .ifPresent(viewer1 -> {
-            throw new IllegalStateException("이미 존재하는 아이디 입니다.");
-        });
+//        viewerRepository.findByVId(viewer.getVId())
+//                .ifPresent(viewer1 -> {
+//            throw new IllegalStateException("이미 존재하는 아이디 입니다.");
+//        });
     }
 
 
@@ -63,7 +62,11 @@ public class ViewerService {
         return viewerRepository.findAll();
     }
 
-    public Optional<Viewer> findOne(Long vIdx){
+//    public Optional<Viewer> findOne(Long vIdx){
+//        return viewerRepository.findByVIdx(vIdx);
+//    }
+
+    public Viewer findOne(Long vIdx){
         return viewerRepository.findByVIdx(vIdx);
     }
 

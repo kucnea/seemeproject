@@ -7,11 +7,15 @@ import seeme.project.domain.Viewer;
 import java.util.List;
 import java.util.Optional;
 
-public interface ViewerRepository {
+@Repository
+public interface ViewerRepository extends JpaRepository<Viewer, Long>{
 
     Viewer save(Viewer viewer);
-    Optional<Viewer> findByVIdx(Long vIdx);
-    Optional<Viewer> findByVId(String vId);
+    Viewer findByVIdx(Long vidx);
+    Viewer findByVId(String vId);
+//    Optional<Viewer> findByVIdx(Long vIdx);
+//    Optional<Viewer> findByVId(String vId);
     List<Viewer> findAll();
+
 
 }

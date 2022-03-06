@@ -1,17 +1,20 @@
 package seeme.project.repository;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 import seeme.project.domain.VFreeBoard;
-import seeme.project.domain.Viewer;
 
-import java.util.List;
 import java.util.Optional;
 
-public interface VFreeBoardRepository {
+@Repository
+public interface VFreeBoardRepository extends JpaRepository<VFreeBoard, Long> {
 
     VFreeBoard save(VFreeBoard vFreeBoard);
-    Optional<VFreeBoard> findByVFIdx(Long vFIdx);
-    Optional<VFreeBoard> findByVFTitle(String vFTitle);
-    Optional<VFreeBoard> findByVFContent(String vFContent);
-    List<VFreeBoard> findAll();
+    Page<VFreeBoard> findAll(Pageable pageable);
 
+//    @Query(value = "SELECT v FROM vFreeBoard v WHERE v.vFTitle LIKE %:searchTarget% OR v.FContent LIKE %:searchTarget% OR v.viewer.vid LIKE %:searchTarget%")
+//    Page<VFreeBoard> findAllSearch(String searchTarget, Pageable pageable);
 }

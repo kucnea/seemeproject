@@ -1,10 +1,6 @@
 package seeme.project.config;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import seeme.project.repository.MemoryVFreeBoardRepository;
-import seeme.project.repository.VFreeBoardRepository;
-import seeme.project.service.VFreeBoardService;
 
 @Configuration
 public class SpringConfig {

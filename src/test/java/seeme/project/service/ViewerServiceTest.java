@@ -4,8 +4,8 @@ package seeme.project.service;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import seeme.project.domain.Viewer;
-import seeme.project.repository.MemoryViewerRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;
@@ -14,20 +14,20 @@ class ViewerServiceTest {
 
 //    ViewerService viewerService = new ViewerService();
 //    MemoryViewerRepository viewerRepository = new MemoryViewerRepository();
-    ViewerService viewerService;
-    MemoryViewerRepository viewerRepository;
+    @Autowired ViewerService viewerService;
+//    MemoryViewerRepository viewerRepository;
 
     // DI 과정
-    @BeforeEach
-    void beforeEach(){
-        viewerRepository = new MemoryViewerRepository();
-        viewerService = new ViewerService(viewerRepository);
-    }
+//    @BeforeEach
+//    void beforeEach(){
+//        viewerRepository = new MemoryViewerRepository();
+//        viewerService = new ViewerService(viewerRepository);
+//    }
 
-    @AfterEach
-    void afterEach(){
-        viewerRepository.clearVList();
-    }
+//    @AfterEach
+//    void afterEach(){
+//        viewerRepository.clearVList();
+//    }
 
     @Test
     void join() {
@@ -38,7 +38,8 @@ class ViewerServiceTest {
         long saveIdx = viewerService.join(viewer);
 
         //then
-        Viewer findViewer = viewerService.findOne(saveIdx).get();
+//        Viewer findViewer = viewerService.findOne(saveIdx).get();
+        Viewer findViewer = viewerService.findOne(saveIdx);
         assertThat(viewer.getVIdx()).isEqualTo(findViewer.getVIdx());
 
     }
