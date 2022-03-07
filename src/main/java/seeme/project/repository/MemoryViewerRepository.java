@@ -23,7 +23,8 @@ public class MemoryViewerRepository implements ViewerRepository {
     }
 
     @Override
-    public Optional<Viewer> findByVIdx(Long vIdx) {
+    public Optional<Viewer> findByVIdx(AtomicLong vIdx) {
+
         return Optional.ofNullable(vStore.get(vIdx));
     }
 

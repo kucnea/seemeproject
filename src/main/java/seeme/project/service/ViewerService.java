@@ -9,6 +9,7 @@ import seeme.project.repository.ViewerRepository;
 import javax.swing.text.View;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicLong;
 
 @Service
 public class ViewerService {
@@ -24,21 +25,23 @@ public class ViewerService {
      */
     public Viewer join(Viewer viewer){
 
-        if(validateDuplcateViewer(viewer)) viewer = viewerRepository.save(viewer);
-        else{
-            return null;
-        }
+        // 중복 회원 검증 ( IllegalStateException 발생 )
+        validateDuplcateViewer(viewer);
+
+        viewer = viewerRepository.save(viewer);
+
         return viewer;
     }
 
 
-
     /*
         중복 회원 검증
-     */
-    private boolean validateDuplcateViewer(Viewer viewer) {
-
-        return (viewer==null);
+    */
+    private void validateDuplcateViewer(Viewer viewer) {
+        viewerRepository.findByVId(viewer.getVId())
+                .ifPresent(v -> {
+                    throw new IllegalStateException("이미 존재하는 회원입니다.");
+                });
     }
 
 
@@ -46,10 +49,23 @@ public class ViewerService {
         전체 회원 조회
      */
     public List<Viewer> findViewers(){
+
         return viewerRepository.findAll();
     }
 
+    /*
+        idx로 회원 한명 조회
+    */
+    public Optional<Viewer> findOneByVIdx(AtomicLong vIdx){
+        return viewerRepository.findByVIdx(vIdx);
+    }
 
+    /*
+        id로 회원 한명 조회
+    */
+    public Optional<Viewer> findOneByVId(String vId){
+        return viewerRepository.findByVId(vId);
+    }
 
 
 

@@ -1,39 +1,61 @@
 package seeme.project.service;
 
-
-import org.junit.jupiter.api.AfterEach;
+import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import seeme.project.domain.Viewer;
-import seeme.project.repository.MemoryViewerRepository;
+
+import java.util.concurrent.atomic.AtomicLong;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.assertj.core.api.Assertions.*;
+
 
 class ViewerServiceTest {
+    // ctrl + shift + t 누르면 테스트 바로 만들 수 있음.
 
     ViewerService viewerService = new ViewerService();
-    MemoryViewerRepository repository = new MemoryViewerRepository();
+
+    @BeforeEach
+    void beforeEach(){
+
+    }
 
     @Test
     void join() {
         //given
         Viewer viewer = new Viewer("admin","admin",3);
 
+
         //when
-        System.out.println(viewerService.join(viewer)==null);
-        viewer = viewerService.join(viewer);
+        Viewer result = viewerService.join(viewer);
+        Viewer result2 = viewerService.findOneByVIdx(result.getVIdx()).get();
 
         //then
-        System.out.println(viewer.toString());
+        assertThat(viewer.getVIdx()).isEqualTo(result.getVIdx());
+        assertThat(result.getVIdx()).isEqualTo(result2.getVIdx());
     }
 
     @Test
-    void joinWithError(){
+    void exceptionJoin(){
         //given
+        Viewer viewer1 = new Viewer("admin","admin",3);
+        Viewer viewer2 = new Viewer("admin","admin",3);
 
         //when
+        viewerService.join(viewer1);
+        assertThrows(IllegalStateException.class, () -> viewerService.join(viewer2));
+
+        //위의 방식으로만 예외가 검출되는지 확인해도 되지만,
+//        IllegalStateException e = assertThrows(IllegalStateException.class, () -> viewerService.join(viewer2));
+//        이렇게 받아서도 메세지를 까볼 수도 있음.
+
+        // 번거롭지만 try catch사용한 구식 방법
+//        try {
+//            viewerService.join(viewer2);
+//            fail();
+//        }catch (IllegalStateException e){
+//            assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
+//        }
 
         //then
     }
@@ -45,16 +67,23 @@ class ViewerServiceTest {
         //when
 
         //then
-
     }
 
     @Test
-    void findOne() {
+    void findOneByVIdx() {
         //given
 
         //when
 
         //then
+    }
 
+    @Test
+    void findOneByVId() {
+        //given
+
+        //when
+
+        //then
     }
 }
