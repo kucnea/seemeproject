@@ -17,5 +17,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .addPathPatterns("/*");
 //                .excludePathPatterns("/noneInterceptor"); // 해당경로는 인터셉터가 가로채지 않음.
     }
-
+    
+    //마스터 변화 테스트
 }
