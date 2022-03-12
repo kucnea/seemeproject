@@ -24,7 +24,7 @@ class ViewerServiceIntegrationTest {
     @Autowired ViewerRepository viewerRepository;
 
     @Test
-//    @Commit ( 테스트지만 DB에 반영됨 )
+//    @Commit //( 테스트지만 DB에 반영됨 )
     void join() {
         //given
         Viewer viewer = new Viewer("admin","admin",3);
