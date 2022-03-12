@@ -18,4 +18,5 @@ public class WebMvcConfig implements WebMvcConfigurer {
 //                .excludePathPatterns("/noneInterceptor"); // 해당경로는 인터셉터가 가로채지 않음.
     }
 
+    // 브랜치 생성
 }
