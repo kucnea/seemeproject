@@ -15,7 +15,11 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
-
+//    private final ViewerRepository viewerRepository;
+//
+//    public SpringConfig(ViewerRepository viewerRepository){
+//        this.viewerRepository = viewerRepository;
+//    }
 
 //    private DataSource dataSource;
 //
@@ -32,11 +36,7 @@ public class SpringConfig {
 //    public SpringConfig(EntityManager em){
 //        this.em = em;
 //    }
-    private final ViewerRepository viewerRepository;
 
-    public SpringConfig(ViewerRepository viewerRepository){
-        this.viewerRepository = viewerRepository;
-    }
 
 //    @Bean
 //    public ViewerService viewerService(){ return new ViewerService((viewerRepository()));}
