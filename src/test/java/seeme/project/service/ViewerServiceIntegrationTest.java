@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Commit;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 import seeme.project.domain.Viewer;
@@ -23,6 +24,7 @@ class ViewerServiceIntegrationTest {
     @Autowired ViewerRepository viewerRepository;
 
     @Test
+//    @Commit ( 테스트지만 DB에 반영됨 )
     void join() {
         //given
         Viewer viewer = new Viewer("admin","admin",3);
@@ -52,19 +54,28 @@ class ViewerServiceIntegrationTest {
     @Test
     void findViewers() {
         //given
+        Viewer viewer = new Viewer("admin","admin",3);
 
         //when
+        viewer = viewerService.join(viewer);
+        Viewer result = viewerService.findOneByVId("admin").get();
 
         //then
+        assertThat(result).isEqualTo(viewer);
     }
 
     @Test
     void findOneByVIdx() {
         //given
+        Viewer viewer = new Viewer("admin", "admin",3);
 
         //when
+        viewer = viewerService.join(viewer);
+        long target = viewer.getVIdx();
+        Viewer result = viewerService.findOneByVIdx(target).get();
 
         //then
+        assertThat(viewer).isEqualTo(result);
     }
 
     @Test
