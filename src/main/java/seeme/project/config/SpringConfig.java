@@ -1,24 +1,42 @@
 package seeme.project.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import seeme.project.repository.JpaViewerRepository;
+import seeme.project.repository.MemoryViewerRepository;
 import seeme.project.repository.ViewerRepository;
+import seeme.project.service.ViewerService;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.sql.DataSource;
 
 @Configuration
 public class SpringConfig {
 
-    @Autowired private ViewerRepository viewerRepository;
-
-    //VFreeBoard Service, Repository 빈 등록을 자바 코드로. 평소에는 어노테이션으로 해둘것임.
-//    @Bean
-//    public VFreeBoardService vFreeBoardService() {
-//        return new VFreeBoardService(vFreeBoardRepository());
+//    private DataSource dataSource;
+//
+//    @Autowired
+//    public SpringConfig(DataSource dataSource){
+//        this.dataSource = dataSource;
 //    }
+    @PersistenceContext
+    private EntityManager em;
+
+    @Autowired
+    public SpringConfig(EntityManager em){
+        this.em = em;
+    }
+
+//    @Bean
+//    public ViewerService viewerService(){ return new ViewerService((viewerRepository()));}
 //
 //    @Bean
-//    public VFreeBoardRepository vFreeBoardRepository(){
-//        return new MemoryVFreeBoardRepository();
+//    public ViewerRepository viewerRepository(){
+//        return new JpaViewerRepository(em);
 //    }
+
 
 
 }

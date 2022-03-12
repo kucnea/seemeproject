@@ -32,7 +32,8 @@ dependencies {
 	implementation 'com.querydsl:querydsl-jpa'
 	//OJDBC
 	implementation files('/src/main/resources/lib/ojdbc6.jar')
-
+	//MariaDB
+	implementation 'org.mariadb.jdbc:mariadb-java-client'
 	//WebSocket
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 

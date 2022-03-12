@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public interface ViewerRepository {
 
     Viewer save(Viewer viewer);
-    Optional<Viewer> findByVIdx(AtomicLong vIdx);
+    Optional<Viewer> findByVIdx(Long vIdx);
     Optional<Viewer> findByVId(String vId);
     List<Viewer> findAll();
 

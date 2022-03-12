@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -16,7 +18,8 @@ import java.util.concurrent.atomic.AtomicLong;
 public class Viewer {
 
     @Id
-    private AtomicLong vIdx;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long vIdx;
     private String vId;
     private String vPw;
 

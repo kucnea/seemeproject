@@ -10,22 +10,23 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Repository
+
 public class MemoryViewerRepository implements ViewerRepository {
     
     //동시성 위해 ConcurrentHashMap, AtomicLong 사용
-    private static Map<AtomicLong, Viewer> vStore = new ConcurrentHashMap<>();
-    private static AtomicLong sequence = new AtomicLong(0);
+    //DB대신 내부 배열에 저장
+    private static Map<Long, Viewer> vStore = new ConcurrentHashMap<>();
+    private static Long sequence = 0L;
 
     @Override
     public Viewer save(Viewer viewer) {
-        viewer.setVIdx(new AtomicLong(sequence.incrementAndGet()));
+        viewer.setVIdx(viewer.getVIdx()+1);
         vStore.put(viewer.getVIdx(), viewer);
         return viewer;
     }
 
     @Override
-    public Optional<Viewer> findByVIdx(AtomicLong vIdx) {
+    public Optional<Viewer> findByVIdx(Long vIdx) {
 
         return Optional.ofNullable(vStore.get(vIdx));
     }
