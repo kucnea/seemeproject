@@ -21,13 +21,13 @@ public class ViewerService {
 //    private final MemoryViewerRepository viewerRepository = new MemoryViewerRepository();
 //    @Autowired private ViewerRepository viewerRepository;
 
+    @Autowired
     private final ViewerRepository viewerRepository;
 
     @Autowired
     public ViewerService(ViewerRepository viewerRepository){
         this.viewerRepository = viewerRepository;
     }
-
 
     /*
         회원가입

@@ -81,9 +81,14 @@ class ViewerServiceIntegrationTest {
     @Test
     void findOneByVId() {
         //given
+        Viewer viewer = new Viewer("admin", "admin",3);
 
         //when
+        viewer = viewerService.join(viewer);
+        String target = viewer.getVId();
+        Viewer result = viewerService.findOneByVId(target).get();
 
         //then
+        assertThat(viewer).isEqualTo(result);
     }
 }

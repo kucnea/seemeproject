@@ -15,18 +15,27 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
+
+
 //    private DataSource dataSource;
 //
 //    @Autowired
 //    public SpringConfig(DataSource dataSource){
 //        this.dataSource = dataSource;
 //    }
-    @PersistenceContext
-    private EntityManager em;
 
-    @Autowired
-    public SpringConfig(EntityManager em){
-        this.em = em;
+    //JpaRepository extend 한 interface가 있다면 필요 없음
+//    @PersistenceContext
+//    private EntityManager em;
+//
+//    @Autowired
+//    public SpringConfig(EntityManager em){
+//        this.em = em;
+//    }
+    private final ViewerRepository viewerRepository;
+
+    public SpringConfig(ViewerRepository viewerRepository){
+        this.viewerRepository = viewerRepository;
     }
 
 //    @Bean
