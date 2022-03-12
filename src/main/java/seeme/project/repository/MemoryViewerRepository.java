@@ -1,5 +1,6 @@
 package seeme.project.repository;
 
+import org.springframework.stereotype.Repository;
 import seeme.project.domain.Viewer;
 
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Repository
 public class MemoryViewerRepository implements ViewerRepository {
     
     //동시성 위해 ConcurrentHashMap, AtomicLong 사용

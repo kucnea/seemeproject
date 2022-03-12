@@ -16,8 +16,15 @@ public class ViewerService {
 
     // 이 경우 테스트에서 쓰는 Repository와 다른 객체가 만들어져서 두 개가 사용됨.
     // vList가 static이기 때문에 같은 DB를 사용할 수 있지만, 좋지않음.
-    private final MemoryViewerRepository viewerRepository = new MemoryViewerRepository();
+//    private final MemoryViewerRepository viewerRepository = new MemoryViewerRepository();
 //    @Autowired private ViewerRepository viewerRepository;
+
+    private final ViewerRepository viewerRepository;
+
+    @Autowired
+    public ViewerService(ViewerRepository viewerRepository){
+        this.viewerRepository = viewerRepository;
+    }
 
 
     /*
