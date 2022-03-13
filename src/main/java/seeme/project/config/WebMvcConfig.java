@@ -19,6 +19,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/hello"); // 해당경로는 인터셉터가 가로채지 않음.
     }
 
+
 //    @Override
 //    public void configureViewResolvers(ViewResolverRegistry registry){
 //        MustacheViewResolver resolver = new MustacheViewResolver();
