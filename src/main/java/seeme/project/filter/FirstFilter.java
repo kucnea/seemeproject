@@ -20,6 +20,7 @@ public class FirstFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         log.info("필터, URL : {}",((HttpServletRequest)request).getRequestURI());
+        // chain으로 필터에서 컨트톨러로 연결
         chain.doFilter(request,response);
     }
 
