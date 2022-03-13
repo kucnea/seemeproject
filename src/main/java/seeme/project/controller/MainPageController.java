@@ -1,6 +1,7 @@
 package seeme.project.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +22,7 @@ public class MainPageController {
     }
 
     @GetMapping("next-page")
-    public String nextPage(@RequestParam("name") String name, Model model){
+    public String nextPage(@RequestParam("name") String name, Model model) {
 
         model.addAttribute("name", name);
         return "next-page";
@@ -32,7 +33,7 @@ public class MainPageController {
     //JSON Test
     @GetMapping("helloapi")
     @ResponseBody
-    public Hello helloApi(@RequestParam("name") String name){
+    public Hello helloApi(@RequestParam("name") @Nullable String name){
             Hello hello = new Hello();
             hello.setName(name);
 

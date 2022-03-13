@@ -3,10 +3,14 @@ package seeme.project.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import seeme.project.service.ViewerService;
 
 @Controller
 @Slf4j
+@RequestMapping("/viewer/")
 public class ViewerController {
     // 컨트롤러가 서비를 통해서 무언가를 할 수 잇음 의존관계 서비스를 의존함
     // 여러 컨트롤러에서 서비스를 가져가 쓸 수 있게 되지만 하나 만들어서 공용으로 쓰는 것이 좋음.
@@ -34,4 +38,25 @@ public class ViewerController {
 //    }
 
 
+
+
+    @GetMapping("join")
+    @ResponseBody
+    public String join(){
+        return "join";
+    }
+
+    @GetMapping("login")
+    @ResponseBody
+    public String login(){
+
+        return "login";
+    }
+
+    @GetMapping("detail")
+    @ResponseBody
+    public String detail(){
+
+        return "detail";
+    }
 }
