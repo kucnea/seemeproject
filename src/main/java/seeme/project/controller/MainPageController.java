@@ -4,22 +4,19 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller // View를 리턴하겠다
 @Slf4j
+@RequestMapping("/")
 public class MainPageController {
-    @GetMapping("/")
-    public String rootPage(Model model){
+
+    @GetMapping({"","/"})
+    public String index(Model model){
         model.addAttribute("data","hello");
-        log.info("Loot Page OnLoad");
-        return "hello";
-    }
-    @GetMapping("hello")
-    public String hello(Model model){
-        model.addAttribute("data","hello");
-        log.info("Main Page OnLoad");
+        log.info("INDEX Page OnLoad");
         return "hello";
     }
 
