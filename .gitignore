@@ -19,7 +19,7 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-application.properties
+/Users/bbing/Desktop/seeme/project/project/src/main/resources/application.properties
 .idea
 *.iws
 *.iml
