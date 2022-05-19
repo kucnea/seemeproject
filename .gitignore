@@ -20,6 +20,7 @@ bin/
 
 ### IntelliJ IDEA ###
 /Users/bbing/Desktop/seeme/project/project/src/main/resources/application.properties
+application.properties
 .idea
 *.iws
 *.iml
