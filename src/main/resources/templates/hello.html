@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymleaf.org">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url : "/hello.do",
+                dataType : "json"
+            }) <!--ajax-->
+        }) <!--ready-->
+
+    </script>
 </head>
 <body>
 

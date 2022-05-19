@@ -36,9 +36,11 @@ dependencies {
 	implementation 'org.mariadb.jdbc:mariadb-java-client'
 	//WebSocket
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
-
 	//STOMP
 	implementation 'org.webjars:stomp-websocket:2.3.3-1'
+	//JSON
+	implementation 'org.json:json:20190722'
+	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

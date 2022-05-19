@@ -1,6 +1,7 @@
 package seeme.project.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.json.JSONObject;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +18,15 @@ public class MainPageController {
     @GetMapping("/")
     public Object index(){
         Viewer viewer = new Viewer("id","pw",1);
+
+        return viewer;
+    }
+
+    @GetMapping("hello.do")
+    public Object hello(){
+        Viewer viewer = new Viewer("id","pw",1);
+        JSONObject jo = new JSONObject(viewer);
+
         return viewer;
     }
 //    @GetMapping({"","/"})
