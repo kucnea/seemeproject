@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import seeme.project.domain.Viewer;
 
-//@Controller // View를 리턴하겠다
-@RestController // json 형식을 이용하기위한 컨트롤러 어노테이션
+@Controller // View를 리턴하겠다
+//@RestController // json 형식을 이용하기위한 컨트롤러 어노테이션
 @Slf4j
 @RequestMapping("/")
 public class MainPageController {
@@ -22,12 +22,21 @@ public class MainPageController {
         return viewer;
     }
 
-    @GetMapping("hello.do")
-    public Object hello(){
+    @GetMapping("/hello")
+    public String hello(Model model){
         Viewer viewer = new Viewer("id","pw",1);
         JSONObject jo = new JSONObject(viewer);
+        model.addAttribute(jo);
+        return "hello";
+    }
 
-        return viewer;
+
+
+    @GetMapping("/getviewer.do")
+    public @ResponseBody Object getViewer(){
+        Viewer viewer = new Viewer("id","pw",1);
+        JSONObject jo = new JSONObject(viewer);
+        return jo.toString();
     }
 //    @GetMapping({"","/"})
 //    public String index(Model model){

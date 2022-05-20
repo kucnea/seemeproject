@@ -4,20 +4,29 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Title</title>
-    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $.ajax({
-                url : "/hello.do",
-                dataType : "json"
-            }) <!--ajax-->
-        }) <!--ready-->
+        $.ajax({
+            url : "getviewer.do",
+            type : 'get',
+            data : {
 
+            },
+            success : function(data) {
+                alert(data);
+            },
+            error : function() {
+                alert("error");
+            }
+        });
     </script>
 </head>
 <body>
 
-<p th:text="'안녕하세요.'+${data}">안녕하세요. 손님</p>
+<p th:text="'안녕하세요.'">안녕하세요. 손님</p>
 <a onclick="location.href='next-page?name=강아지'"> 다음 페이지로 </a>
+<div name="div1">
+
+</div>
 </body>
 </html>
