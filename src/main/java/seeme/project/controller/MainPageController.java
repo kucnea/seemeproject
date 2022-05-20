@@ -16,28 +16,21 @@ public class MainPageController {
 
 
     @GetMapping("/")
-    public Object index(){
-        Viewer viewer = new Viewer("id","pw",1);
+    public String index(){
 
-        return viewer;
+
+        return "index";
     }
 
     @GetMapping("/hello")
-    public String hello(Model model){
-        Viewer viewer = new Viewer("id","pw",1);
-        JSONObject jo = new JSONObject(viewer);
-        model.addAttribute(jo);
+    public String hello(){
+
         return "hello";
     }
 
 
 
-    @GetMapping("/getviewer.do")
-    public @ResponseBody Object getViewer(){
-        Viewer viewer = new Viewer("id","pw",1);
-        JSONObject jo = new JSONObject(viewer);
-        return jo.toString();
-    }
+
 //    @GetMapping({"","/"})
 //    public String index(Model model){
 //        model.addAttribute("data","hello");

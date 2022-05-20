@@ -7101,3 +7101,115 @@ INFO  2022-05-20 21:41:39[http-nio-8060-exec-9] [LoggerInterceptor.java - postHa
 INFO  2022-05-20 21:41:39[http-nio-8060-exec-9] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-05-20 21:41:39[http-nio-8060-exec-9] [FrameworkServlet.java - logResult] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
 INFO  2022-05-20 21:41:50[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+INFO  2022-05-20 22:11:50[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+INFO  2022-05-20 22:41:50[MessageBroker-2] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+DEBUG 2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopping...
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@71668a67]]
+DEBUG 2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@71668a67]
+DEBUG 2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@71668a67]
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopped.
+DEBUG 2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-05-20 22:52:46[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.filter.FirstFilter.destroy())
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [FirstFilter.java - destroy] [FirstFilter:29] - 필터 인스턴스 종료
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.filter.FirstFilter.destroy()) 0ms
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [AbstractEntityManagerFactoryBean.java - destroy] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  2022-05-20 22:52:46[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  2022-05-20 22:52:53[main] [StartupInfoLogger.java - logStarting] [ProjectApplication:55] - Starting ProjectApplication using Java 1.8.0_281 on DESKTOP-C8UO0I7 with PID 10164 (C:\Users\bbing\Desktop\seeme\project\project\out\production\classes started by bbing in C:\Users\bbing\Desktop\seeme\project\project)
+INFO  2022-05-20 22:52:53[main] [SpringApplication.java - logStartupProfileInfo] [ProjectApplication:637] - No active profile set, falling back to default profiles: default
+INFO  2022-05-20 22:52:54[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  2022-05-20 22:52:54[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+INFO  2022-05-20 22:52:56[main] [TomcatWebServer.java - initialize] [TomcatWebServer:108] - Tomcat initialized with port(s): 8060 (http)
+INFO  2022-05-20 22:52:56[main] [DirectJDKLog.java - log] [StandardService:173] - Starting service [Tomcat]
+INFO  2022-05-20 22:52:56[main] [DirectJDKLog.java - log] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+INFO  2022-05-20 22:52:56[main] [DirectJDKLog.java - log] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  2022-05-20 22:52:56[main] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  2022-05-20 22:52:56[main] [ServletWebServerApplicationContext.java - prepareWebApplicationContext] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 3121 ms
+INFO  2022-05-20 22:52:57[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.filter.FirstFilter.init(FilterConfig))
+INFO  2022-05-20 22:52:57[main] [FirstFilter.java - init] [FirstFilter:16] - 필터 인스턴스 초기화
+INFO  2022-05-20 22:52:57[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.filter.FirstFilter.init(FilterConfig)) 20ms
+INFO  2022-05-20 22:52:57[main] [LogHelper.java - logPersistenceUnitInformation] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  2022-05-20 22:52:57[main] [Version.java - logVersion] [Version:44] - HHH000412: Hibernate ORM core version 5.6.4.Final
+INFO  2022-05-20 22:52:57[main] [JavaReflectionManager.java - <clinit>] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  2022-05-20 22:52:58[main] [HikariDataSource.java - getConnection] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  2022-05-20 22:52:58[main] [HikariDataSource.java - getConnection] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  2022-05-20 22:52:58[main] [Dialect.java - <init>] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+INFO  2022-05-20 22:52:58[main] [JtaPlatformInitiator.java - initiateService] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  2022-05-20 22:52:58[main] [AbstractEntityManagerFactoryBean.java - buildNativeEntityManagerFactory] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  2022-05-20 22:52:58[main] [JpaBaseConfiguration.java - openEntityManagerInViewInterceptor] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  2022-05-20 22:52:59[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder())
+INFO  2022-05-20 22:52:59[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder()) 8ms
+INFO  2022-05-20 22:52:59[main] [UserDetailsServiceAutoConfiguration.java - getOrDeducePassword] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 87c3f21c-80a4-44b4-b2d8-258eeca02e08
+
+INFO  2022-05-20 22:52:59[main] [DefaultSecurityFilterChain.java - <init>] [DefaultSecurityFilterChain:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11abd6c, org.springframework.security.web.context.SecurityContextPersistenceFilter@66f2ec1c, org.springframework.security.web.header.HeaderWriterFilter@4b07cad0, org.springframework.security.web.authentication.logout.LogoutFilter@8b670c0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46b6701e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12e5d3e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@668a32a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29b5533, org.springframework.security.web.session.SessionManagementFilter@4e94669c, org.springframework.security.web.access.ExceptionTranslationFilter@19bf47fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@738a815c]
+INFO  2022-05-20 22:52:59[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry))
+INFO  2022-05-20 22:52:59[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry)) 17ms
+DEBUG 2022-05-20 22:52:59[main] [SimpleUrlHandlerMapping.java - logMappings] [WebSocketHandlerMapping:188] - Patterns [/stomp/chat/**] in 'stompWebSocketHandlerMapping'
+INFO  2022-05-20 22:52:59[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry))
+INFO  2022-05-20 22:52:59[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry)) 2ms
+DEBUG 2022-05-20 22:52:59[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	s.p.c.MainPageController:
+	
+DEBUG 2022-05-20 22:52:59[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	s.p.c.MainPageRestController:
+	
+DEBUG 2022-05-20 22:52:59[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	s.p.c.ViewerController:
+	
+DEBUG 2022-05-20 22:52:59[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+DEBUG 2022-05-20 22:53:00[main] [RequestMappingHandlerAdapter.java - initControllerAdviceCache] [RequestMappingHandlerAdapter:625] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+INFO  2022-05-20 22:53:00[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry))
+INFO  2022-05-20 22:53:00[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry)) 4ms
+DEBUG 2022-05-20 22:53:00[main] [AbstractHandlerMethodMapping.java - handlerMethodsInitialized] [RequestMappingHandlerMapping:367] - 8 mappings in 'requestMappingHandlerMapping'
+INFO  2022-05-20 22:53:00[main] [WelcomePageHandlerMapping.java - <init>] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+DEBUG 2022-05-20 22:53:00[main] [SimpleUrlHandlerMapping.java - logMappings] [SimpleUrlHandlerMapping:188] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+DEBUG 2022-05-20 22:53:00[main] [ExceptionHandlerExceptionResolver.java - initExceptionHandlerAdviceCache] [ExceptionHandlerExceptionResolver:307] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  2022-05-20 22:53:01[main] [TomcatWebServer.java - start] [TomcatWebServer:220] - Tomcat started on port(s): 8060 (http) with context path ''
+DEBUG 2022-05-20 22:53:01[main] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-05-20 22:53:01[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-05-20 22:53:01[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Starting...
+DEBUG 2022-05-20 22:53:01[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@62794582]
+DEBUG 2022-05-20 22:53:01[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@62794582]
+INFO  2022-05-20 22:53:01[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@62794582]]
+INFO  2022-05-20 22:53:01[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Started.
+DEBUG 2022-05-20 22:53:01[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-05-20 22:53:01[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-05-20 22:53:01[main] [StartupInfoLogger.java - logStarted] [ProjectApplication:61] - Started ProjectApplication in 8.133 seconds (JVM running for 8.728)
+INFO  2022-05-20 22:53:08[http-nio-8060-exec-1] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  2022-05-20 22:53:08[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [DispatcherServlet.java - initMultipartResolver] [DispatcherServlet:520] - Detected StandardServletMultipartResolver
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [DispatcherServlet.java - initLocaleResolver] [DispatcherServlet:544] - Detected AcceptHeaderLocaleResolver
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [DispatcherServlet.java - initThemeResolver] [DispatcherServlet:569] - Detected FixedThemeResolver
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [DispatcherServlet.java - initRequestToViewNameTranslator] [DispatcherServlet:719] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@51141f64
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [DispatcherServlet.java - initFlashMapManager] [DispatcherServlet:783] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@646cb2e
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:542] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  2022-05-20 22:53:08[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:547] - Completed initialization in 5 ms
+INFO  2022-05-20 22:53:08[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.filter.FirstFilter.doFilter(ServletRequest,ServletResponse,FilterChain))
+INFO  2022-05-20 22:53:08[http-nio-8060-exec-1] [FirstFilter.java - doFilter] [FirstFilter:22] - 필터, URL : /hello
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - GET "/hello", parameters={}
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.MainPageController#hello()
+INFO  2022-05-20 22:53:08[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(String seeme.project.controller.MainPageController.hello())
+INFO  2022-05-20 22:53:08[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(String seeme.project.controller.MainPageController.hello()) 3ms
+DEBUG 2022-05-20 22:53:08[http-nio-8060-exec-1] [ContentNegotiatingViewResolver.java - getBestView] [ContentNegotiatingViewResolver:349] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+DEBUG 2022-05-20 22:53:09[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.filter.FirstFilter.doFilter(ServletRequest,ServletResponse,FilterChain)) 373ms
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.filter.FirstFilter.doFilter(ServletRequest,ServletResponse,FilterChain))
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-2] [FirstFilter.java - doFilter] [FirstFilter:22] - 필터, URL : /getviewer.do
+DEBUG 2022-05-20 22:53:09[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - GET "/getviewer.do", parameters={}
+DEBUG 2022-05-20 22:53:09[http-nio-8060-exec-2] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.MainPageRestController#getViewer()
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-2] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object seeme.project.controller.MainPageRestController.getViewer())
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object seeme.project.controller.MainPageRestController.getViewer()) 33ms
+DEBUG 2022-05-20 22:53:09[http-nio-8060-exec-2] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-05-20 22:53:09[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing ["{"VId":"id","VStatus":1,"VPw":"pw"}"]
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-2] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-2] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-05-20 22:53:09[http-nio-8060-exec-2] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+INFO  2022-05-20 22:53:09[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.filter.FirstFilter.doFilter(ServletRequest,ServletResponse,FilterChain)) 73ms

@@ -43,6 +43,9 @@ public class ViewerController {
     @GetMapping("join")
     @ResponseBody
     public String join(){
+
+
+
         return "join";
     }
 
