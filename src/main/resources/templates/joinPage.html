@@ -27,7 +27,7 @@
                     contentType : "application/json",
                     data : JSON.stringify($("#viewerForm").serializeObject()),
                     success : function(data){
-                            alert(data);
+                            console.log(data);
                         },
                     error : function(data){
                             alert("가입에 실패했습니다."+data);
