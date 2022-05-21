@@ -15,26 +15,14 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController // Json 형식을 리턴하는 Controller
 @Slf4j
-@RequestMapping("/viewer")
 public class ViewerRestController {
 
-    @PostMapping("/viewerjoin.do")
+    @PostMapping("/viewer/viewerjoin.do")
     public Object viewerJoin(
-            @RequestBody String filterJson,
+            @RequestBody Viewer viewer,
             HttpServletResponse response,
             ModelMap model ) throws Exception {
         log.debug("● ● ● Into viewerJoin.do");
-
-        JSONObject resMap = new JSONObject();
-        Viewer viewer = null;
-
-        try{
-            ObjectMapper mapper = new ObjectMapper();
-            viewer = (Viewer) mapper.readValue(filterJson, new TypeReference<Viewer>() { });
-
-        }catch (Exception e){
-            log.debug("viewerJoin error : "+e.getMessage());
-        }
 
         return viewer;
     }

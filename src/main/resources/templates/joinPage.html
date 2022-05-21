@@ -11,26 +11,27 @@
 
 
         $(document).ready(function(){
-            var formData = JSON.stringify($("#viewerForm").serializeObject());
+            <!-- 실행 시점에 유의 -->
+            <!-- var formData = JSON.stringify($("#viewerForm").serializeObject()); -->
+
 
             $('#validCheckBtn').click(function(){
                 alert("중복체크 버튼을 눌렀습니다.");
-                alert(formData);
+                alert(JSON.stringify($("#viewerForm").serializeObject()));
             });
 
             $('#submitBtn').click(function(){
                 $.ajax({
-                    type : "POST",
                     url : "/viewer/viewerjoin.do",
-                    data : formData,
+                    type : "POST",
+                    contentType : "application/json",
+                    data : JSON.stringify($("#viewerForm").serializeObject()),
                     success : function(data){
                             alert(data);
                         },
                     error : function(data){
                             alert("가입에 실패했습니다."+data);
-                        },
-                    dataType : "json",
-                    contentType : "application/json;charset=UTF-8"
+                        }
                 }); // ajax
             }); // click
 
