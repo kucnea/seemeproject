@@ -16,15 +16,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/viewer/login").permitAll()
-                .antMatchers("/viewer/join").permitAll()
+                .antMatchers("/viewer/loginpage").permitAll()
+                .antMatchers("/viewer/joinpage").permitAll()
                 .antMatchers("/viewer/**").authenticated()
                 .antMatchers("/manager/**").access("hasRole('RoleADMIN') or hasRole('RoleMANAGER')")
                 .antMatchers("/admin/**").access("hasRole('RoleADMIN')")
                 .anyRequest().permitAll()
                 .and()
                 .formLogin()
-                .loginPage("/viewer/login");
+                .loginPage("/viewer/loginpage");
 
     }
 

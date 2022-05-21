@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Join Member</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/bootstrap.css.map'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/chatJoinDetailStyleCss.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/commonCss.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <section>
+        <div class="divTitle">
+            <a style="float: left;">&lt;</a>&nbsp;<a> 회원가입 </a><a style="float: right;">　</a>
+            <hr width="100%">
+        </div>
+
+        <div class="divJoinDetail">
+            <table style="width: 100%;">
+                <tr>
+                    <th style="width: 40%;">
+                        ID
+                    </th>
+                    <td style="width: 60%;">
+                        <input type="text" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="button" value="중복확인" style="width: 100%; color: black;"></th>
+                </tr>
+                <tr>
+                    <th>
+                        PW
+                    </th>
+                    <td>
+                        <input type="password" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        이름
+                    </th>
+                    <td>
+                        <input type="text" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        성별
+                    </th>
+                    <td>
+                        <label><input type="radio" name="gender" value="m">남자</label><br>
+                        <label><input type="radio" name="gender" value="f">여자</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        회원유형
+                    </th>
+                    <td>
+                        <label><input type="radio" name="type" value="v">뷰어(Viewer)</label><br>
+                        <label><input type="radio" name="type" value="h">헬퍼(helper)</label>
+                    </td>
+                </tr>
+                <!-- 제이쿼리로 헬퍼 선택시 본인인증 필수 -->
+                <tr>
+                    <th colspan="2"><input type="submit" value="가입하기" style="width: 100%; color: black;"></th>
+                </tr>
+                <tr>
+                    <th colspan="2" style="font-size: 0.6em;">
+                        <a>● 잘못된 정보나 장난으로 사람이 다칠 수 있습니다. <br>
+                            &nbsp;&nbsp;&nbsp;사건 발생시 법적대응에 최선을 다하겠습니다.</a><br>
+                        <br>
+                        <a>● 이 사이트는 본업과 무관하게 1인 운영중입니다. <br>
+                            &nbsp;&nbsp;&nbsp;건의하시는 내용은 최대한 반영을 하려하나, <br>
+                            &nbsp;&nbsp;&nbsp;시간이 소요될 수 있습니다.</a><br>
+                        <br>
+                        <a>● 광고 수익과 후원은 운영에 큰 힘이 됩니다.</a>
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+</div>
+
+
+<footer>
+    <div class="divFooter">
+        <hr width="100%">
+        <a>● 사고를 막기위해 Helper의 신원은 인증이 필요하며, 도움내용은 기록되며 필요시 수사기관에 협력합니다.</a><br>
+        <a>● 개인의 신원, 비밀번호와 같이 민감한 정보등은 공유하지 마시기 바랍니다.</a><br>
+        <a>● </a><a class="alink" href="https://open.kakao.com/o/sFvpqq0d">OpenKakaoTalk (Click)</a>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>

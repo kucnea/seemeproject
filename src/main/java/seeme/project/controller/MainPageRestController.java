@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import seeme.project.domain.Viewer;
 
-@RestController // View를 리턴하겠다
+@RestController // Json 형식을 리턴하는 Controller
 @Slf4j
 @RequestMapping("/")
 public class MainPageRestController {

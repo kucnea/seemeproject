@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import seeme.project.domain.Viewer;
 
 @Controller // View를 리턴하겠다
-//@RestController // json 형식을 이용하기위한 컨트롤러 어노테이션
 @Slf4j
 @RequestMapping("/")
 public class MainPageController {

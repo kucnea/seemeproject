@@ -40,27 +40,21 @@ public class ViewerController {
 
 
 
-    @GetMapping("join")
-    @ResponseBody
-    public String join(){
-
-
-
-        return "join";
+    @GetMapping("joinpage")
+    public String joinPage(){
+        return "joinPage";
     }
 
-    @GetMapping("login")
-    @ResponseBody
-    public String login(){
+    @GetMapping("loginpage")
+    public String loginPage(){
 
-        return "login";
+        return "loginPage";
     }
 
-    @GetMapping("detail")
-    @ResponseBody
-    public String detail(){
+    @GetMapping("detailpage")
+    public String detailPage(){
 
-        return "detail";
+        return "detailPage";
     }
     //
 }
