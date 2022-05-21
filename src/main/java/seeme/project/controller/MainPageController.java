@@ -16,7 +16,7 @@ public class MainPageController {
 
     @GetMapping("/")
     public String index(){
-
+        log.debug("Into INDEX.");
 
         return "index";
     }

@@ -42,6 +42,7 @@ public class ViewerController {
 
     @GetMapping("joinpage")
     public String joinPage(){
+        log.debug("Into JoinPage.");
         return "joinPage";
     }
 
