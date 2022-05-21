@@ -4,28 +4,37 @@
     <title>Join Member</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/bootstrap.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/bootstrap.css.map'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/chatJoinDetailStyleCss.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/commonCss.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-         var formData = JSON.stringify($("#viewerForm").serializeArray());
 
-        $("#submitBtn").click(function(){
-            $.ajax({
-                type : "POST",
-                url : "viewerJoin.do",
-                data : formData,
-                success : function(data){
-                        alert(data);
-                    },
-                error : function(){
-                        alert("가입에 실패했습니다.");
-                    },
-                dataType : "json",
-                contentType : "application/json"
-            }); // ajax
-        }); // click
+
+        $(document).ready(function(){
+            var formData = JSON.stringify($("#viewerForm").serializeArray());
+
+            $('#validCheckBtn').click(function(){
+                alert("중복체크 버튼을 눌렀습니다.");
+            });
+
+            $('#submitBtn').click(function(){
+                $.ajax({
+                    type : "POST",
+                    url : "/viewer/viewerjoin.do",
+                    data : formData,
+                    success : function(data){
+                            alert(data);
+                        },
+                    error : function(data){
+                            alert("가입에 실패했습니다."+data);
+                        },
+                    dataType : "json",
+                    contentType : "application/json;charset=UTF-8"
+                }); // ajax
+            }); // click
+
+        });
+
 
     </script>
 </head>
@@ -38,7 +47,7 @@
         </div>
 
         <div class="divJoinDetail">
-            <form name="viewerForm" method="post">
+            <form id="viewerForm" method="post">
                 <table style="width: 100%;">
                     <tr>
                         <th style="width: 40%;">
@@ -49,7 +58,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th colspan="2"><input type="button" value="중복확인" style="width: 100%; color: black;"></th>
+                        <th colspan="2"><input id="validCheckBtn" type="button" value="중복확인" style="width: 100%; color: black;"></th>
                     </tr>
                     <tr>
                         <th>
@@ -87,7 +96,7 @@
                     </tr>
                     <!-- 제이쿼리로 헬퍼 선택시 본인인증 필수 -->
                     <tr>
-                        <th colspan="2"><input id="submitBtn" name="submitBtn" type="button" value="가입하기" style="width: 100%; color: black;"></th>
+                        <th colspan="2"><input id="submitBtn" type="button" value="가입하기" style="width: 100%; color: black;"></th>
                     </tr>
                     <tr>
                         <th colspan="2" style="font-size: 0.6em;">
