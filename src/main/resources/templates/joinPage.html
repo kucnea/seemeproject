@@ -28,6 +28,9 @@
                     data : JSON.stringify($("#viewerForm").serializeObject()),
                     success : function(data){
                             console.log(data);
+                            alert("가입을 환영합니다! 좋은 활동 부탁드리겠습니다.");
+                            let url = "/viewer/loginpage";
+                            location.replace(url);
                         },
                     error : function(data){
                             alert("가입에 실패했습니다."+data);
