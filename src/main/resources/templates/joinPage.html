@@ -17,7 +17,7 @@
 
             $('#validCheckBtn').click(function(){
                 alert("중복체크 버튼을 눌렀습니다.");
-                alert(JSON.stringify($("#viewerForm").serializeObject()));
+                console.log(JSON.stringify($("#viewerForm").serializeObject()));
             });
 
             $('#submitBtn').click(function(){
@@ -74,7 +74,7 @@
                             ID
                         </th>
                         <td style="width: 60%;">
-                            <input name="vId" type="text" style="width: 100%;">
+                            <input name="vid" type="text" style="width: 100%;">
                         </td>
                     </tr>
                     <tr>
@@ -85,7 +85,7 @@
                             PW
                         </th>
                         <td>
-                            <input name="vPw" type="password" style="width: 100%;">
+                            <input name="vpw" type="password" style="width: 100%;">
                         </td>
                     </tr>
                     <tr>
@@ -93,7 +93,7 @@
                             이름
                         </th>
                         <td>
-                            <input name="vName" type="text" style="width: 100%;">
+                            <input name="vname" type="text" style="width: 100%;">
                         </td>
                     </tr>
                     <tr>
@@ -101,8 +101,8 @@
                             성별
                         </th>
                         <td>
-                            <label><input name="vGender" type="radio" value="0">남자</label><br>
-                            <label><input name="vGender" type="radio" value="1">여자</label>
+                            <label><input name="vgender" type="radio" value="0">남자</label><br>
+                            <label><input name="vgender" type="radio" value="1">여자</label>
                         </td>
                     </tr>
                     <tr>
@@ -110,8 +110,8 @@
                             회원유형
                         </th>
                         <td>
-                            <label><input name="vType" type="radio" value="0">뷰어(Viewer)</label><br>
-                            <label><input name="vType" type="radio" value="1">헬퍼(helper)</label>
+                            <label><input name="vtype" type="radio" value="0">뷰어(Viewer)</label><br>
+                            <label><input name="vtype" type="radio" value="1">헬퍼(helper)</label>
                         </td>
                     </tr>
                     <!-- 제이쿼리로 헬퍼 선택시 본인인증 필수 -->

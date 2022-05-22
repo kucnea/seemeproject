@@ -42,7 +42,7 @@ public class ViewerController {
 
     @GetMapping("joinpage")
     public String joinPage(){
-        log.info("Into JoinPage.");
+        log.info("● ● ● Into JoinPage.");
         return "joinPage";
     }
 
