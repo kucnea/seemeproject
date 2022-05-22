@@ -14,8 +14,8 @@ public class ViewerRestController {
 
     @PostMapping("/viewerjoin.do")
     public Object viewerJoin(@RequestBody Viewer viewer) {
-        log.debug("● ● ● Into viewerJoin.do");
-        log.debug(viewer.getVId()+" : "+viewer.getVPw());
+        log.info("● ● ● Into viewerJoin.do");
+        log.info(viewer.getVId()+" : "+viewer.getVPw());
 
         return viewer;
     }

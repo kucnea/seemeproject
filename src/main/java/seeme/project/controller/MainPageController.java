@@ -16,14 +16,13 @@ public class MainPageController {
 
     @GetMapping("/")
     public String index(){
-        log.debug("Into INDEX.");
-
+        log.info("Into INDEX");
         return "index";
     }
 
     @GetMapping("/hello")
     public String hello(){
-
+        log.info("Into hello.");
         return "hello";
     }
 
