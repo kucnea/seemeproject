@@ -3,45 +3,97 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CHat Room</title>
+    <title>Tip Board</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/bootstrap.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/bootstrap.css.map'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/chatRoomDetailStyleCss.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/boardStyleCss.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/commonCss.css'>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='/js/board.js'></script>
 </head>
 <body>
 <div id="wrap">
+    <div class="divNav">
 
+    </div>
     <div class="divTitle">
-        <a style="float: left;">&lt;</a>&nbsp;<a> 홍길동 </a><a style="float: right;">　</a>
+        <a style="float: left;">&lt;</a><a> 팁 페이지 </a><a style="float: right;">&gt;</a>
         <hr width="100%">
     </div>
 
-    <div class="divChatDetail">
-        <div class="balloon chatMe">
-            <span>안녕하세요?<br>헿</span>
-        </div>
+    <div class="divBoard">
+        <!-- 모바일에서는 제외 -->
+        <!--
+        <select onchange="submit()" style="float: right; margin-bottom: 0.4em; display: block;">
+            <option value="10">10개씩</option>
+            <option value="5">5개씩</option>
+        </select>
+        <br>
+        -->
 
-        <div class="balloon chatYou">
-            <span>반갑습니다!<br>헿</span>
-        </div>
-
-    </div>
-
-
-    <div class="divInsertChat">
-        <table width="100%">
+        <table>
             <tr>
-                <th width="80%"><textarea style="font-size: 3em; color: black; resize: none; width: 100%; height: 100%;"></textarea></th>
-                <th width="20%"><input type="button" value="전송" style="font-size: 3em; background-color: darkgray; color: white; width: 20%; width: 100%; height: 3.2em;"></th>
+                <th style="width: 10%;">No</th>
+                <th style="width: 60%;"> 제 목 </th>
+                <th class="lessImp" style="width: 15%;">글쓴이</th>
+                <th class="lessImp" style="width: 15%;">조회수</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td class="boardTitle">● 안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="boardTitle">● 안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>안녕하세요 반갑습니다. 행복하세요!</td>
+                <th class="lessImp">글쓴이</th>
+                <th class="lessImp">10</th>
             </tr>
         </table>
     </div>
-
+    <br>
+    <div class="divPageNav">
+        <a class="dibPageNavA">&lt;</a>&nbsp;
+        <a class="dibPageNavA">1</a>&nbsp;
+        <a class="dibPageNavA">&gt;</a><br>
+        <input type="button" value="글쓰기" style="color: white; background-color: darkgray; width: 100%;"><br><br>
+        <input type="search" style="color: black; font-size: 1.5em; height: 1.4em; width: 100%;" placeholder="검색할 키워드를 입력해주세요."><br>
+        <input type="button" value="검색" style="color: white; background-color: darkgray; width: 100%;">
+    </div>
 
 </div>
+
 
 
 <footer>
@@ -55,4 +107,6 @@
 
 
 </body>
+
+
 </html>

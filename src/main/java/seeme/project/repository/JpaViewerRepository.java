@@ -1,7 +1,7 @@
 package seeme.project.repository;
 
 import org.springframework.stereotype.Repository;
-import seeme.project.domain.Viewer;
+import seeme.project.domain.viewer.Viewer;
 
 import javax.persistence.EntityManager;
 import java.util.List;

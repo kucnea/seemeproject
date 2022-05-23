@@ -2,9 +2,8 @@ package seeme.project.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.lang.Nullable;
 import org.springframework.web.bind.annotation.*;
-import seeme.project.domain.Viewer;
+import seeme.project.domain.viewer.Viewer;
 import seeme.project.service.ViewerService;
 
 @RestController // Json 형식을 리턴하는 Controller

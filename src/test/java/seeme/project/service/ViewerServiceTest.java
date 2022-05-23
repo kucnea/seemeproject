@@ -5,11 +5,8 @@ import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import seeme.project.domain.Viewer;
+import seeme.project.domain.viewer.Viewer;
 import seeme.project.repository.MemoryViewerRepository;
-import seeme.project.repository.ViewerRepository;
-
-import java.util.concurrent.atomic.AtomicLong;
 
 import static org.junit.jupiter.api.Assertions.*;
 

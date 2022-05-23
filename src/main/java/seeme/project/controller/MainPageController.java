@@ -1,12 +1,8 @@
 package seeme.project.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.json.JSONObject;
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import seeme.project.domain.Viewer;
 
 @Controller // View를 리턴하겠다
 @Slf4j

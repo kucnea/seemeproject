@@ -1,15 +1,10 @@
 package seeme.project.service;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Commit;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
-import seeme.project.domain.Viewer;
-import seeme.project.repository.MemoryViewerRepository;
+import seeme.project.domain.viewer.Viewer;
 import seeme.project.repository.ViewerRepository;
 
 import static org.assertj.core.api.Assertions.assertThat;

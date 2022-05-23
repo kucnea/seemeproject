@@ -3,14 +3,11 @@ package seeme.project.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import seeme.project.domain.Viewer;
-import seeme.project.repository.MemoryViewerRepository;
+import seeme.project.domain.viewer.Viewer;
 import seeme.project.repository.ViewerRepository;
 
-import javax.swing.text.View;
 import java.util.List;
 import java.util.Optional;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Service
 @Transactional

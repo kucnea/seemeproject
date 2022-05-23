@@ -25,7 +25,10 @@
                     contentType : "application/json;charset:UTF-8",
                     data : $("form[name=viewerForm]").serialize(),
                     success : function(data){
+                            alert(data.vid+"님 환영합니다!");
                             console.log(data);
+                            let url = "/board/list";
+                            location.replace(url);
                         },
                     error : function(data){
                             alert("로그인에 실패했습니다.");

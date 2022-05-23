@@ -1,14 +1,12 @@
 package seeme.project.repository;
 
-import org.springframework.stereotype.Repository;
-import seeme.project.domain.Viewer;
+import seeme.project.domain.viewer.Viewer;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicLong;
 
 
 public class MemoryViewerRepository implements ViewerRepository {

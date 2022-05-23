@@ -3,7 +3,7 @@ package seeme.project.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
-import seeme.project.domain.Viewer;
+import seeme.project.domain.viewer.Viewer;
 
 @RestController // Json 형식을 리턴하는 Controller
 @Slf4j
