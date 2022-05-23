@@ -48,7 +48,7 @@ public class ViewerController {
 
     @GetMapping("loginpage")
     public String loginPage(){
-
+        log.info("● ● ● Into LoginPage.");
         return "loginPage";
     }
 

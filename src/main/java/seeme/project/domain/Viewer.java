@@ -28,6 +28,12 @@ public class Viewer {
 
     private int vStatus = 0; // 0 : 일반회원, 1 : 인증회원, 2 : 관리자, 3 : 최고관리자
 
+    //로그인용 생성자
+    public Viewer(String vId, String vPw) {
+        this.vId = vId;
+        this.vPw = vPw;
+    }
+
     //테스트용 생성자
     public Viewer(String vId, String vPw, int vStatus) {
         this.vId = vId;

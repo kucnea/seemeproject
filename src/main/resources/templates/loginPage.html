@@ -23,7 +23,7 @@
                     url : "/viewer/viewerlogin.do",
                     type : "GET",
                     contentType : "application/json;charset:UTF-8",
-                    data : JSON.stringify($("#viewerForm").serializeObject()),
+                    data : $("form[name=viewerForm]").serialize(),
                     success : function(data){
                             console.log(data);
                         },
@@ -66,7 +66,7 @@
         </div>
 
         <div class="divJoinDetail">
-            <form id="viewerForm" method="GET">
+            <form id="viewerForm" name="viewerForm" method="GET">
                 <table style="width: 100%;">
                     <tr>
                         <th style="width: 20%;">
@@ -90,7 +90,7 @@
                     <tr>
                         <th colspan="2"><input type="button" value="회원가입" onclick="location.href='/viewer/joinpage';" style="width: 100%; color: black;"></th>
                     </tr>
-                    
+
                     <tr>
                         <th colspan="2"><input type="button" id="checkBtn" value="체크" style="width: 100%; color: black;"></th>
                     </tr>

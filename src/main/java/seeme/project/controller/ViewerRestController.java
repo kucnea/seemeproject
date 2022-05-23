@@ -2,6 +2,7 @@ package seeme.project.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.Nullable;
 import org.springframework.web.bind.annotation.*;
 import seeme.project.domain.Viewer;
 import seeme.project.service.ViewerService;
@@ -31,8 +32,11 @@ public class ViewerRestController {
     }
 
     @GetMapping("/viewerlogin.do")
-    public Object viewerLogin(@RequestBody Viewer viewer){
+    public Object viewerLogin(
+            @RequestParam String vid
+            , @RequestParam String vpw){
         log.info("● ● ● Into viewerLogin.do");
+        Viewer viewer = new Viewer(vid, vpw);
         log.info(viewer.getVId()+" : "+viewer.getVPw());
 
         viewer = viewerService.findOneByVId(viewer.getVId()).get();
