@@ -42,4 +42,17 @@ public class ViewerRestController {
 
         return viewer;
     }
+
+    @GetMapping("/viewerdetail.do")
+    public Object viewerDetail(
+            @RequestBody Viewer viewer){
+
+        String vid = "d";
+        viewer = viewerService.findOneByVId(vid).get();
+
+        return viewer;
+    }
+
+
+
 }

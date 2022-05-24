@@ -13,11 +13,6 @@
         $(document).ready(function(){
 
 
-            $('#checkBtn').click(function(){
-                console.log(JSON.stringify($("#viewerForm").serializeObject()));
-            });
-
-
             $('#submitBtn').click(function(){
                 $.ajax({
                     url : "/viewer/viewerlogin.do",
@@ -27,7 +22,7 @@
                     success : function(data){
                             alert(data.vid+"님 환영합니다!");
                             console.log(data);
-                            let url = "/board/list";
+                            let url = "/viewer/viewerdetail";
                             location.replace(url);
                         },
                     error : function(data){
@@ -37,27 +32,9 @@
                 }); // ajax
             }); // click
 
+
         });
 
-        $.fn.serializeObject = function()
-
-        {
-           var o = {};
-           var a = this.serializeArray();
-
-           $.each(a, function() {
-               if (o[this.name]) {
-                   if (!o[this.name].push) {
-                       o[this.name] = [o[this.name]];
-                   }
-                   o[this.name].push(this.value || '');
-               } else {
-                   o[this.name] = this.value || '';
-               }
-           });
-
-           return o;
-        };
     </script>
 </head>
 <body>
