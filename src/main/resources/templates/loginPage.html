@@ -22,7 +22,7 @@
                     success : function(data){
                             alert(data.vid+"님 환영합니다!");
                             console.log(data);
-                            let url = "/viewer/viewerdetail";
+                            let url = "/viewer/detailpage";
                             location.replace(url);
                         },
                     error : function(data){
@@ -31,6 +31,7 @@
                         }
                 }); // ajax
             }); // click
+
 
 
         });

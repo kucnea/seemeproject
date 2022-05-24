@@ -35,6 +35,7 @@ public class ViewerRestController {
             @RequestParam String vid
             , @RequestParam String vpw){
         log.info("● ● ● Into viewerLogin.do");
+
         Viewer viewer = new Viewer(vid, vpw);
         log.info(viewer.getVId()+" : "+viewer.getVPw());
 
