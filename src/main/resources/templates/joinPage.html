@@ -14,7 +14,6 @@
                 url : "/viewer/viewercheck.do",
                 type : "GET",
                 contentType : "application/json;charset:UTF-8",
-                <!-- data : $("form[name=viewerForm]").serialize(), -->
                 data : $("input[name=vid]").serialize(),
                 success : function(data){
                         alert(data.vid+"는 사용가능한 아이디 입니다.");
