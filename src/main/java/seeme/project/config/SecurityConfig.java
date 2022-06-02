@@ -35,6 +35,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/viewer/joinpage").permitAll()
                 .antMatchers("/viewer/viewerjoin.do").permitAll()
                 .antMatchers("/viewer/viewerlogin.do").permitAll()
+                .antMatchers("/viewer/viewercheck.do").permitAll()
                 .antMatchers("/viewer/**").authenticated()
                 .antMatchers("/board/list").permitAll()
                 .antMatchers("/manager/**").access("hasRole('RoleADMIN') or hasRole('RoleMANAGER')")

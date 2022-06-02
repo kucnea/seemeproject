@@ -47,13 +47,12 @@ public class ViewerService implements UserDetailsService {
     /*
         중복 회원 검증
     */
-    private void validateDuplcateViewer(Viewer viewer) {
+    public void validateDuplcateViewer(Viewer viewer) {
         viewerRepository.findByVId(viewer.getVId())
                 .ifPresent(v -> {
                     throw new IllegalStateException("이미 존재하는 회원입니다.");
                 });
     }
-
 
     /*
         전체 회원 조회

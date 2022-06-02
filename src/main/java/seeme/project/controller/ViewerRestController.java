@@ -30,13 +30,26 @@ public class ViewerRestController {
         return viewer;
     }
 
-    @GetMapping("/viewerlogin.do")
-    public Object viewerLogin(
-            @RequestParam String vid
-            , @RequestParam String vpw){
-        log.info("● ● ● Into viewerLogin.do");
+    @GetMapping("/viewercheck.do")
+    public Object viewerCheck(
+            @RequestParam String vid){
+        log.info("● ● ● Into viewerCheck.do");
+        log.info("● ● ● viewerCheckStage vid : "+vid);
+        Viewer viewer = new Viewer(vid);
+        try{
+            viewerService.validateDuplcateViewer(viewer);
+            return viewer;
+        }catch (IllegalStateException e){
+            log.info("IllegalStateException Throws vid : "+vid);
+            return new Exception("중복 회원 가입 시도.");
+        }
 
-        Viewer viewer = new Viewer(vid, vpw);
+    }
+
+    @PostMapping("/viewerlogin.do")
+    public Object viewerLogin(
+            @RequestBody Viewer viewer){
+        log.info("● ● ● Into viewerLogin.do");
         log.info(viewer.getVId()+" : "+viewer.getVPw());
 
         viewer = viewerService.findOneByVId(viewer.getVId()).get();

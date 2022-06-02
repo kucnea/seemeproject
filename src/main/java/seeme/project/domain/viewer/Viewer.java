@@ -35,6 +35,11 @@ public class Viewer {
         this.vPw = vPw;
     }
 
+    //중복확인용 생성자
+    public Viewer(String vId){
+        this.vId = vId;
+    }
+
     //테스트용 생성자
     public Viewer(String vId, String vPw, int vStatus) {
         this.vId = vId;

@@ -8,57 +8,31 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/css/commonCss.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-
+        function validCheck(){
+            alert("중복확인");
+            $.ajax({
+                url : "/viewer/viewercheck.do",
+                type : "GET",
+                contentType : "application/json;charset:UTF-8",
+                <!-- data : $("form[name=viewerForm]").serialize(), -->
+                data : $("input[name=vid]").serialize(),
+                success : function(data){
+                        alert(data.vid+"는 사용가능한 아이디 입니다.");
+                        console.log(data);
+                    },
+                error : function(data){
+                        alert("사용 불가한 아이디 입니다.");
+                        console.log(data);
+                    }
+            }); // ajax
+        }
 
         $(document).ready(function(){
             <!-- 실행 시점에 유의 -->
             <!-- var formData = JSON.stringify($("#viewerForm").serializeObject()); -->
 
-
-            $('#validCheckBtn').click(function(){
-                alert("중복체크 버튼을 눌렀습니다.");
-                console.log(JSON.stringify($("#viewerForm").serializeObject()));
-            });
-
-            $('#submitBtn').click(function(){
-                $.ajax({
-                    url : "/viewer/viewerjoin.do",
-                    type : "POST",
-                    contentType : "application/json",
-                    data : JSON.stringify($("#viewerForm").serializeObject()),
-                    success : function(data){
-                            console.log(data);
-                            alert("가입을 환영합니다! 좋은 활동 부탁드리겠습니다.");
-                            let url = "/viewer/loginpage";
-                            location.replace(url);
-                        },
-                    error : function(data){
-                            alert("가입에 실패했습니다."+data);
-                        }
-                }); // ajax
-            }); // click
-
         });
 
-        $.fn.serializeObject = function()
-
-        {
-           var o = {};
-           var a = this.serializeArray();
-
-           $.each(a, function() {
-               if (o[this.name]) {
-                   if (!o[this.name].push) {
-                       o[this.name] = [o[this.name]];
-                   }
-                   o[this.name].push(this.value || '');
-               } else {
-                   o[this.name] = this.value || '';
-               }
-           });
-
-           return o;
-        };
     </script>
 </head>
 <body>
@@ -81,7 +55,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th colspan="2"><input id="validCheckBtn" type="button" value="중복확인" style="width: 100%; color: black;"></th>
+                        <th colspan="2"><input id="validCheckBtn" type="button" value="중복확인" style="width: 100%; color: black;" onclick="validCheck()"></th>
                     </tr>
                     <tr>
                         <th>
