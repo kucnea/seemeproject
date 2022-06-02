@@ -9,15 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function validCheck(){
-            alert("중복확인");
             $.ajax({
                 url : "/viewer/viewercheck.do",
                 type : "GET",
                 contentType : "application/json;charset:UTF-8",
                 data : $("input[name=vid]").serialize(),
                 success : function(data){
-                        alert(data.vid+"는 사용가능한 아이디 입니다.");
                         console.log(data);
+                        if(data.vid != "중복") alert(data.vid+"는 사용가능한 아이디 입니다.");
+                        else alert("사용 불가능한 아이디 입니다.");
                     },
                 error : function(data){
                         alert("사용 불가한 아이디 입니다.");
@@ -43,14 +43,14 @@
         </div>
 
         <div class="divJoinDetail">
-            <form id="viewerForm" method="post">
+            <form id="viewerForm" method="post" action="/viewer/viewerjoin.do">
                 <table style="width: 100%;">
                     <tr>
                         <th style="width: 40%;">
                             ID
                         </th>
                         <td style="width: 60%;">
-                            <input name="vid" type="text" style="width: 100%;">
+                            <input id="vid" name="vid" type="text" style="width: 100%;">
                         </td>
                     </tr>
                     <tr>
@@ -92,7 +92,7 @@
                     </tr>
                     <!-- 제이쿼리로 헬퍼 선택시 본인인증 필수 -->
                     <tr>
-                        <th colspan="2"><input id="submitBtn" type="button" value="가입하기" style="width: 100%; color: black;"></th>
+                        <th colspan="2"><input id="submitBtn" type="submit" value="가입하기" style="width: 100%; color: black;"></th>
                     </tr>
                     <tr>
                         <th colspan="2" style="font-size: 0.6em;">

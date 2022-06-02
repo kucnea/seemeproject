@@ -32,7 +32,7 @@ public class ViewerRestController {
 
     @GetMapping("/viewercheck.do")
     public Object viewerCheck(
-            @RequestParam String vid) throws Exception {
+            @RequestParam String vid) {
         log.info("● ● ● Into viewerCheck.do");
         log.info("● ● ● viewerCheckStage vid : "+vid);
         Viewer viewer = new Viewer(vid);
@@ -41,8 +41,8 @@ public class ViewerRestController {
             return viewer;
         }catch (IllegalStateException e){
             log.info("IllegalStateException Throws vid : "+vid);
-            if(true) throw new Exception("중복 회원 가입 시도");
-            return new Exception("중복 회원 가입 시도");
+            viewer = new Viewer("중복");
+            return viewer;
         }
 
     }
