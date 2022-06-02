@@ -41,8 +41,7 @@ public class ViewerRestController {
             return viewer;
         }catch (IllegalStateException e){
             log.info("IllegalStateException Throws vid : "+vid);
-            vid = null;
-            if(vid==null) throw new Exception("중복 회원 가입 시도");
+            if(true) throw new Exception("중복 회원 가입 시도");
             return new Exception("중복 회원 가입 시도");
         }
 
