@@ -33,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/js/**").permitAll()
                 .antMatchers("/hello").permitAll()
                 .antMatchers("/viewer/joinpage").permitAll()
-                .antMatchers("/viewer/viewerjoin.do").permitAll()
+                .antMatchers("/viewer/viewerjoin").permitAll()
                 .antMatchers("/viewer/viewerlogin.do").permitAll()
                 .antMatchers("/viewer/viewercheck.do").permitAll()
                 .antMatchers("/viewer/**").authenticated()

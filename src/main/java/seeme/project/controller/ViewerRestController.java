@@ -20,6 +20,7 @@ public class ViewerRestController {
         this.viewerService = viewerService;               // ViewerService에 @Service 추가
     }
 
+    /*
     @PostMapping("/viewerjoin.do")
     public Object viewerJoin(@RequestBody Viewer viewer) {
         log.info("● ● ● Into viewerJoin.do");
@@ -29,6 +30,7 @@ public class ViewerRestController {
 
         return viewer;
     }
+    */
 
     @GetMapping("/viewercheck.do")
     public Object viewerCheck(

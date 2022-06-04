@@ -2,11 +2,11 @@ package seeme.project.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.view.MustacheViewResolver;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import seeme.project.interceptor.LoggerInterceptor;
 
 @Configuration
