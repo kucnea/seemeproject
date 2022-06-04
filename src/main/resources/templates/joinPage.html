@@ -40,12 +40,23 @@
 
             $("#submitBtn").click(function(){
 
+                alert($("#vid").val());
+                alert($("input[name=vGender]").val());
+
                 if($("#validable").val() != "true"){
                     alert("중복확인 후 진행해주세요.");
                     return;
                 }
                 if($("#validId").val() != $("#vid").val()){
                     alert("중복확인한 아이디와 같은 아이디로 가입해주세요.");
+                    return;
+                }
+                if($("#vpw").length < 8){
+                    alert("비밀번호는 8자리 이상으로 가입해주세요.");
+                    return;
+                }
+                if($("#vname").length < 1){
+                    alert("이름을 입력해주세요.");
                     return;
                 }
 
@@ -86,7 +97,7 @@
                             PW
                         </th>
                         <td>
-                            <input name="vPw" type="password" style="width: 100%;">
+                            <input id="vpw" name="vPw" type="password" style="width: 100%;">
                         </td>
                     </tr>
                     <tr>
@@ -94,7 +105,7 @@
                             이름
                         </th>
                         <td>
-                            <input name="vname" type="text" style="width: 100%;">
+                            <input id="vname" name="vName" type="text" style="width: 100%;">
                         </td>
                     </tr>
                     <tr>
@@ -102,8 +113,8 @@
                             성별
                         </th>
                         <td>
-                            <label><input name="vgender" type="radio" value="0">남자</label><br>
-                            <label><input name="vgender" type="radio" value="1">여자</label>
+                            <label><input name="vGender" type="radio" value="0">남자</label><br>
+                            <label><input name="vGender" type="radio" value="1">여자</label>
                         </td>
                     </tr>
                     <tr>
@@ -111,13 +122,13 @@
                             회원유형
                         </th>
                         <td>
-                            <label><input name="vtype" type="radio" value="0">뷰어(Viewer)</label><br>
-                            <label><input name="vtype" type="radio" value="1">헬퍼(helper)</label>
+                            <label><input name="vType" type="radio" value="0">뷰어(Viewer)</label><br>
+                            <label><input name="vType" type="radio" value="1">헬퍼(helper)</label>
                         </td>
                     </tr>
                     <!-- 제이쿼리로 헬퍼 선택시 본인인증 필수 -->
                     <tr>
-                        <th colspan="2"><input id="submitBtn" type="button" value="가입하기" style="width: 100%; color: black;" onclick="submitBtn()"></th>
+                        <th colspan="2"><input id="submitBtn" type="button" value="가입하기" style="width: 100%; color: black;"></th>
                     </tr>
                     <tr>
                         <th colspan="2" style="font-size: 0.6em;">
