@@ -8,6 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/css/commonCss.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+
         function validCheck(){
             $.ajax({
                 url : "/viewer/viewercheck.do",
@@ -16,8 +17,15 @@
                 data : $("input[name=vId]").serialize(),
                 success : function(data){
                         console.log(data);
-                        if(data.vid != "중복") alert(data.vid+"는 사용가능한 아이디 입니다.");
-                        else alert("사용 불가능한 아이디 입니다.");
+                        if(data.vid != "중복") {
+                            alert(data.vid+"는 사용가능한 아이디 입니다.");
+                            $("#validable").val('true');
+                            $("#validId").val(data.vid);
+                        }
+                        else {
+                            alert("사용 불가능한 아이디 입니다.");
+                            $("#validable").val('false');
+                        }
                     },
                 error : function(data){
                         alert("중복확인에 실패했습니다.");
@@ -29,6 +37,21 @@
         $(document).ready(function(){
             <!-- 실행 시점에 유의 -->
             <!-- var formData = JSON.stringify($("#viewerForm").serializeObject()); -->
+
+            $("#submitBtn").click(function(){
+
+                if($("#validable").val() != "true"){
+                    alert("중복확인 후 진행해주세요.");
+                    return;
+                }
+                if($("#validId").val() != $("#vid").val()){
+                    alert("중복확인한 아이디와 같은 아이디로 가입해주세요.");
+                    return;
+                }
+
+                $("#viewerForm").submit();
+            });
+
 
         });
 
@@ -51,6 +74,8 @@
                         </th>
                         <td style="width: 60%;">
                             <input id="vid" name="vId" type="text" style="width: 100%;">
+                            <input type="hidden" id="validable" value="">
+                            <input type="hidden" id="validId" value="">
                         </td>
                     </tr>
                     <tr>
@@ -92,7 +117,7 @@
                     </tr>
                     <!-- 제이쿼리로 헬퍼 선택시 본인인증 필수 -->
                     <tr>
-                        <th colspan="2"><input id="submitBtn" type="submit" value="가입하기" style="width: 100%; color: black;"></th>
+                        <th colspan="2"><input id="submitBtn" type="button" value="가입하기" style="width: 100%; color: black;" onclick="submitBtn()"></th>
                     </tr>
                     <tr>
                         <th colspan="2" style="font-size: 0.6em;">
