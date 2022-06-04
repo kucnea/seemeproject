@@ -48,7 +48,10 @@ public class ViewerController {
     @PostMapping("viewerjoin")
     public String viewerjoin(@ModelAttribute("viewer")Viewer viewer){
         log.info("● ● ● Into viewerJoin");
-        log.info("● ● ● vid : "+viewer.getVId());
+        log.info("● ● ● vId : "+viewer.getVId());
+        log.info("● ● ● vPw : "+viewer.getVPw());
+
+        viewerService.join(viewer);
 
         return "loginPage";
     }

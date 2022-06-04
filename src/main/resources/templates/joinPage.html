@@ -13,14 +13,14 @@
                 url : "/viewer/viewercheck.do",
                 type : "GET",
                 contentType : "application/json;charset:UTF-8",
-                data : $("input[name=vid]").serialize(),
+                data : $("input[name=vId]").serialize(),
                 success : function(data){
                         console.log(data);
                         if(data.vid != "중복") alert(data.vid+"는 사용가능한 아이디 입니다.");
                         else alert("사용 불가능한 아이디 입니다.");
                     },
                 error : function(data){
-                        alert("사용 불가한 아이디 입니다.");
+                        alert("중복확인에 실패했습니다.");
                         console.log(data);
                     }
             }); // ajax
@@ -50,7 +50,7 @@
                             ID
                         </th>
                         <td style="width: 60%;">
-                            <input id="vid" name="vid" type="text" style="width: 100%;" th:value="${vid}">
+                            <input id="vid" name="vId" type="text" style="width: 100%;">
                         </td>
                     </tr>
                     <tr>
@@ -61,7 +61,7 @@
                             PW
                         </th>
                         <td>
-                            <input name="vpw" type="password" style="width: 100%;">
+                            <input name="vPw" type="password" style="width: 100%;">
                         </td>
                     </tr>
                     <tr>

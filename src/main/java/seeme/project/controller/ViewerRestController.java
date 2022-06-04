@@ -34,15 +34,15 @@ public class ViewerRestController {
 
     @GetMapping("/viewercheck.do")
     public Object viewerCheck(
-            @RequestParam String vid) {
+            @RequestParam String vId) {
         log.info("● ● ● Into viewerCheck.do");
-        log.info("● ● ● viewerCheckStage vid : "+vid);
-        Viewer viewer = new Viewer(vid);
+        log.info("● ● ● viewerCheckStage vId : "+vId);
+        Viewer viewer = new Viewer(vId);
         try{
             viewerService.validateDuplcateViewer(viewer);
             return viewer;
         }catch (IllegalStateException e){
-            log.info("IllegalStateException Throws vid : "+vid);
+            log.info("IllegalStateException Throws vId : "+vId);
             viewer = new Viewer("중복");
             return viewer;
         }
