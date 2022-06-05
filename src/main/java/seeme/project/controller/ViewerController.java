@@ -2,6 +2,7 @@ package seeme.project.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import seeme.project.domain.viewer.Viewer;
@@ -36,7 +37,7 @@ public class ViewerController {
 //        this.viewerService=viewerService;
 //    }
 
-
+    @Autowired private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 
     @GetMapping("joinpage")
@@ -50,7 +51,7 @@ public class ViewerController {
         log.info("● ● ● Into viewerJoin");
         log.info("● ● ● vId : "+viewer.getVId());
         log.info("● ● ● vPw : "+viewer.getVPw());
-
+        viewer.setVPw(bCryptPasswordEncoder.encode(viewer.getVPw()));
         viewerService.join(viewer);
 
         return "loginPage";

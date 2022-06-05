@@ -10,6 +10,12 @@
     <script>
 
         function validCheck(){
+
+            if($("#vid").val().length < 4){
+                alert("아이디는 4글자 이상으로 가입해주세요.");
+                return;
+            }
+
             $.ajax({
                 url : "/viewer/viewercheck.do",
                 type : "GET",
@@ -23,12 +29,12 @@
                             $("#validId").val(data.vid);
                         }
                         else {
-                            alert("사용 불가능한 아이디 입니다.");
+                            alert("사용 불가능한 아이디 입니다. 4글자 이상의 다른 아이디를 골라주세요.");
                             $("#validable").val('false');
                         }
                     },
                 error : function(data){
-                        alert("중복확인에 실패했습니다.");
+                        alert("중복확인에 실패했습니다. 영문, 숫자로 구성된 4글자 이상의 아이디를 골라주세요.");
                         console.log(data);
                     }
             }); // ajax
@@ -37,11 +43,9 @@
         $(document).ready(function(){
             <!-- 실행 시점에 유의 -->
             <!-- var formData = JSON.stringify($("#viewerForm").serializeObject()); -->
+            <!-- alert($(":radio[name=vGender]:checked").val()); -->
 
             $("#submitBtn").click(function(){
-
-                alert($("#vid").val());
-                alert($("input[name=vGender]").val());
 
                 if($("#validable").val() != "true"){
                     alert("중복확인 후 진행해주세요.");
@@ -51,11 +55,11 @@
                     alert("중복확인한 아이디와 같은 아이디로 가입해주세요.");
                     return;
                 }
-                if($("#vpw").length < 8){
+                if($("#vpw").val().length < 8){
                     alert("비밀번호는 8자리 이상으로 가입해주세요.");
                     return;
                 }
-                if($("#vname").length < 1){
+                if($("#vname").val().length < 1){
                     alert("이름을 입력해주세요.");
                     return;
                 }
@@ -113,7 +117,7 @@
                             성별
                         </th>
                         <td>
-                            <label><input name="vGender" type="radio" value="0">남자</label><br>
+                            <label><input name="vGender" type="radio" value="0" checked>남자</label><br>
                             <label><input name="vGender" type="radio" value="1">여자</label>
                         </td>
                     </tr>
@@ -122,7 +126,7 @@
                             회원유형
                         </th>
                         <td>
-                            <label><input name="vType" type="radio" value="0">뷰어(Viewer)</label><br>
+                            <label><input name="vType" type="radio" value="0" checked>뷰어(Viewer)</label><br>
                             <label><input name="vType" type="radio" value="1">헬퍼(helper)</label>
                         </td>
                     </tr>
@@ -140,6 +144,7 @@
                                 &nbsp;&nbsp;&nbsp;시간이 소요될 수 있습니다.</a><br>
                             <br>
                             <a>● 광고 수익과 후원은 운영에 큰 힘이 됩니다.</a>
+                            <br>
                         </th>
                     </tr>
                 </table>

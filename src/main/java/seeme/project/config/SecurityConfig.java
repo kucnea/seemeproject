@@ -44,9 +44,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .formLogin()
                     .loginPage("/viewer/loginpage").permitAll()
-                    .loginProcessingUrl("/viewer/viewerlogin.do")
                     .usernameParameter("vid")
                     .passwordParameter("vpw")
+                    .loginProcessingUrl("/viewer/viewerlogin.do")
                     .defaultSuccessUrl("/viewer/detailpage")
                     .permitAll()
                 .and()
@@ -66,8 +66,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(viewerService);
     }
 
-
-    @Bean
+    @Bean // 해당 메서드의 리턴되는 오브젝트를 IoC로 등록
     public BCryptPasswordEncoder bCryptPasswordEncoder(){
         return new BCryptPasswordEncoder();
     }

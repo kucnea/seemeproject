@@ -2,6 +2,7 @@ package seeme.project.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import seeme.project.domain.viewer.Viewer;
 import seeme.project.service.ViewerService;
@@ -20,6 +21,9 @@ public class ViewerRestController {
         this.viewerService = viewerService;               // ViewerService에 @Service 추가
     }
 
+//    @Autowired private BCryptPasswordEncoder bCryptPasswordEncoder;
+
+
     /*
     @PostMapping("/viewerjoin.do")
     public Object viewerJoin(@RequestBody Viewer viewer) {
@@ -37,6 +41,9 @@ public class ViewerRestController {
             @RequestParam String vId) {
         log.info("● ● ● Into viewerCheck.do");
         log.info("● ● ● viewerCheckStage vId : "+vId);
+
+        if(vId.length() < 4) return new Viewer("중복");
+
         Viewer viewer = new Viewer(vId);
         try{
             viewerService.validateDuplcateViewer(viewer);
