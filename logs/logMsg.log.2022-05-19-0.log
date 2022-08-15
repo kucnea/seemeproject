@@ -318,7 +318,7 @@ INFO  2022-05-19 22:00:20[http-nio-8060-exec-1] [LoggerInterceptor.java - preHan
 INFO  2022-05-19 22:00:20[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object seeme.project.controller.MainPageController.index())
 INFO  2022-05-19 22:00:20[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object seeme.project.controller.MainPageController.index()) 4ms
 DEBUG 2022-05-19 22:00:20[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-05-19 22:00:20[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.domain.viewer.Viewer@62133533]
+DEBUG 2022-05-19 22:00:20[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.entity.viewer.ViewerEntityViewer@62133533]
 INFO  2022-05-19 22:00:20[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-05-19 22:00:20[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-05-19 22:00:20[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -417,7 +417,7 @@ INFO  2022-05-19 22:06:57[http-nio-8060-exec-1] [LoggerInterceptor.java - preHan
 INFO  2022-05-19 22:06:57[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object seeme.project.controller.MainPageController.index())
 INFO  2022-05-19 22:06:57[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object seeme.project.controller.MainPageController.index()) 10ms
 DEBUG 2022-05-19 22:06:57[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-05-19 22:06:57[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.domain.viewer.Viewer@18ec7904]
+DEBUG 2022-05-19 22:06:57[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.entity.viewer.ViewerEntityViewer@18ec7904]
 INFO  2022-05-19 22:06:57[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-05-19 22:06:57[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-05-19 22:06:57[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -517,7 +517,7 @@ INFO  2022-05-19 22:39:14[http-nio-8060-exec-1] [LoggerInterceptor.java - preHan
 INFO  2022-05-19 22:39:14[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object seeme.project.controller.MainPageController.index())
 INFO  2022-05-19 22:39:14[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object seeme.project.controller.MainPageController.index()) 3ms
 DEBUG 2022-05-19 22:39:14[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-05-19 22:39:14[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.domain.viewer.Viewer@6ee286d1]
+DEBUG 2022-05-19 22:39:14[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.entity.viewer.ViewerEntityViewer@6ee286d1]
 INFO  2022-05-19 22:39:14[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-05-19 22:39:14[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-05-19 22:39:14[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -616,7 +616,7 @@ INFO  2022-05-19 23:28:12[http-nio-8060-exec-1] [LoggerInterceptor.java - preHan
 INFO  2022-05-19 23:28:12[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object seeme.project.controller.MainPageController.index())
 INFO  2022-05-19 23:28:12[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object seeme.project.controller.MainPageController.index()) 4ms
 DEBUG 2022-05-19 23:28:12[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-05-19 23:28:12[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.domain.viewer.Viewer@1e5c870e]
+DEBUG 2022-05-19 23:28:12[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.entity.viewer.ViewerEntityViewer@1e5c870e]
 INFO  2022-05-19 23:28:12[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-05-19 23:28:12[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-05-19 23:28:12[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -715,7 +715,7 @@ INFO  2022-05-19 23:39:42[http-nio-8060-exec-1] [LoggerInterceptor.java - preHan
 INFO  2022-05-19 23:39:42[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object seeme.project.controller.MainPageController.index())
 INFO  2022-05-19 23:39:42[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object seeme.project.controller.MainPageController.index()) 4ms
 DEBUG 2022-05-19 23:39:42[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-05-19 23:39:42[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.domain.viewer.Viewer@1b866ce9]
+DEBUG 2022-05-19 23:39:42[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.entity.viewer.ViewerEntityViewer@1b866ce9]
 INFO  2022-05-19 23:39:42[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-05-19 23:39:42[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-05-19 23:39:42[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -742,7 +742,7 @@ INFO  2022-05-19 23:39:54[http-nio-8060-exec-3] [LoggerInterceptor.java - preHan
 INFO  2022-05-19 23:39:54[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object seeme.project.controller.MainPageController.index())
 INFO  2022-05-19 23:39:54[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object seeme.project.controller.MainPageController.index()) 1ms
 DEBUG 2022-05-19 23:39:54[http-nio-8060-exec-3] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-05-19 23:39:54[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.domain.viewer.Viewer@30507e66]
+DEBUG 2022-05-19 23:39:54[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.entity.viewer.ViewerEntityViewer@30507e66]
 INFO  2022-05-19 23:39:54[http-nio-8060-exec-3] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-05-19 23:39:54[http-nio-8060-exec-3] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-05-19 23:39:54[http-nio-8060-exec-3] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK

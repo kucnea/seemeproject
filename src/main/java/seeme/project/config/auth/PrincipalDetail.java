@@ -8,12 +8,10 @@ package seeme.project.config.auth;
 
 // Security Session -> Authentication -> userDetails(PrincipalDetail)
 
-import javafx.scene.input.DataFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import seeme.project.domain.viewer.Viewer;
+import seeme.project.entity.viewer.ViewerEntity;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
@@ -21,9 +19,9 @@ import java.util.Date;
 
 public class PrincipalDetail implements UserDetails {
 
-    private Viewer viewer; //콤포지션
+    private ViewerEntity viewerEntity; //콤포지션
 
-    public PrincipalDetail(Viewer viewer){ this.viewer = viewer; }
+    public PrincipalDetail(ViewerEntity viewerEntity){ this.viewerEntity = viewerEntity; }
 
     // 해당 유저의 권한을 리턴하는 곳.
     @Override
@@ -32,7 +30,7 @@ public class PrincipalDetail implements UserDetails {
         collection.add(new GrantedAuthority() {
             @Override
             public String getAuthority() {
-                return viewer.getVStatus();
+                return viewerEntity.getVStatus();
             }
         });
         return collection;
@@ -40,12 +38,12 @@ public class PrincipalDetail implements UserDetails {
 
     @Override
     public String getPassword() {
-        return viewer.getVPw();
+        return viewerEntity.getVPw();
     }
 
     @Override
     public String getUsername() {
-        return viewer.getVId();
+        return viewerEntity.getVId();
     }
 
     // 계정이 만료되지 않았는지 리턴. ( true 리턴시 만료되지 않음을 의미 )
@@ -72,12 +70,13 @@ public class PrincipalDetail implements UserDetails {
     @Override
     public boolean isEnabled() {
         Calendar cal1 = Calendar.getInstance();
-        cal1.setTime(viewer.getVLoginDate());
+        cal1.setTime(viewerEntity.getVLoginDate());
         Calendar cal2 = Calendar.getInstance();
         cal2.setTime(new Date());
 
-        SimpleDateFormat format = new SimpleDateFormat("yyyy");
-
+        // 미구현
+        // 테스트 좀 해보고.
+        // 현재시간 - 로그인시간 > 1년 이면 return false;
         return true;
     }
 }

@@ -27,19 +27,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
                 .authorizeRequests()
                 //antMatchers 해당 경로들은 ,,, permitAll() 접근허용 ,,, authenticated() 인증이 되어야함
-                .antMatchers("/").permitAll()
+                .antMatchers("/*").permitAll()
                 .antMatchers("/css/**").permitAll()
                 .antMatchers("/img/**").permitAll()
                 .antMatchers("/js/**").permitAll()
                 .antMatchers("/hello").permitAll()
-                .antMatchers("/viewer/joinpage").permitAll()
-                .antMatchers("/viewer/viewerjoin").permitAll()
-                .antMatchers("/viewer/viewerlogin.do").permitAll()
-                .antMatchers("/viewer/viewercheck.do").permitAll()
-                .antMatchers("/viewer/**").authenticated()
-                .antMatchers("/board/list").permitAll()
-                .antMatchers("/manager/**").access("hasRole('RoleADMIN') or hasRole('RoleMANAGER')")
-                .antMatchers("/admin/**").access("hasRole('RoleADMIN')")
+//                .antMatchers("/viewer/joinpage").permitAll()
+//                .antMatchers("/viewer/viewerjoin").permitAll()
+//                .antMatchers("/viewer/viewerlogin.do").permitAll()
+//                .antMatchers("/viewer/viewercheck.do").permitAll()
+//                .antMatchers("/viewer/**").authenticated()
+//                .antMatchers("/board/list").permitAll()
+//                .antMatchers("/manager/**").access("hasRole('RoleADMIN') or hasRole('RoleMANAGER')")
+//                .antMatchers("/admin/**").access("hasRole('RoleADMIN')")
                 .anyRequest().authenticated()
                 .and()
                     .formLogin()
@@ -63,7 +63,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(viewerService);
+//        auth.userDetailsService(viewerService);
     }
 
     @Bean // 해당 메서드의 리턴되는 오브젝트를 IoC로 등록

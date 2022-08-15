@@ -16,7 +16,7 @@
 
             $('#submitBtn').click(function(){
                 $.ajax({
-                    url : "/viewer/viewerdetail.do",
+                    url : "/viewerEntity/viewerdetail.do",
                     type : "GET",
                     contentType : "application/json;charset:UTF-8",
                     data : {'vid' : vid, 'vname' : vname, 'vgender' : vgender, 'vtype' : vtype},

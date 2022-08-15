@@ -1,19 +1,6 @@
 package seeme.project.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import seeme.project.aop.TimeTraceAop;
-import seeme.project.interceptor.LoggerInterceptor;
-import seeme.project.repository.JpaViewerRepository;
-import seeme.project.repository.MemoryViewerRepository;
-import seeme.project.repository.ViewerRepository;
-import seeme.project.service.ViewerService;
-
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.sql.DataSource;
 
 @Configuration
 public class SpringConfig {

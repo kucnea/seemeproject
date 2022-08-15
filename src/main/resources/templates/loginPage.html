@@ -13,14 +13,14 @@
         $(document).ready(function(){
             $('#submitBtn').click(function(){
                 $.ajax({
-                    url : "/viewer/viewerlogin.do",
+                    url : "/viewerEntity/viewerlogin.do",
                     type : "POST",
                     contentType : "application/json",
                     data : JSON.stringify($("#viewerForm").serializeObject()),
                     success : function(data){
                             console.log(data);
                             alert(data.vid+"님 환영합니다!");
-                            let url = "/viewer/detailpage";
+                            let url = "/viewerEntity/detailpage";
                             location.replace(url);
                         },
                     error : function(data){
@@ -84,7 +84,7 @@
                         <th colspan="2"><input type="button" id="submitBtn" value="로그인" style="width: 100%; color: black;"></th>
                     </tr>
                     <tr>
-                        <th colspan="2"><input type="button" value="회원가입" onclick="location.href='/viewer/joinpage';" style="width: 100%; color: black;"></th>
+                        <th colspan="2"><input type="button" value="회원가입" onclick="location.href='/viewerEntity/joinpage';" style="width: 100%; color: black;"></th>
                     </tr>
 
                     <tr>

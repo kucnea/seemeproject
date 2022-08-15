@@ -1,28 +1,18 @@
 package seeme.project.service;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import seeme.project.domain.viewer.Viewer;
+import seeme.project.entity.viewer.ViewerEntity;
+import seeme.project.model.viewer.Viewer;
 import seeme.project.repository.ViewerRepository;
 
-import javax.swing.text.View;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
-@Transactional
-public class ViewerService implements UserDetailsService {
+public class ViewerService {
 
-    // 이 경우 테스트에서 쓰는 Repository와 다른 객체가 만들어져서 두 개가 사용됨.
-    // vList가 static이기 때문에 같은 DB를 사용할 수 있지만, 좋지않음.
-//    private final MemoryViewerRepository viewerRepository = new MemoryViewerRepository();
-//    @Autowired private ViewerRepository viewerRepository;
-
-    @Autowired
     private final ViewerRepository viewerRepository;
 
     @Autowired
@@ -30,68 +20,79 @@ public class ViewerService implements UserDetailsService {
         this.viewerRepository = viewerRepository;
     }
 
-    /*
-        회원가입
-     */
-    public Viewer join(Viewer viewer){
+    // 모든 회원 조회
+    public List<Viewer> getExistsViewers(){
 
-        // 중복 회원 검증 ( IllegalStateException 발생 )
-        validateDuplcateViewer(viewer);
+        try{
 
-        viewer = viewerRepository.save(viewer);
+            List<ViewerEntity> viewers = viewerRepository.findAll();
+            List<Viewer> customViwers = new ArrayList<>();
 
-        return viewer;
+            viewers.stream().forEach(e -> {
+                Viewer viewer = new Viewer();
+                BeanUtils.copyProperties(e, viewer);
+                customViwers.add(viewer);
+            });
+
+            return customViwers;
+        }catch (Exception e){
+            throw e;
+        }
+
     }
 
+    // 회원 주가
+    public String addViewer(ViewerEntity viewer){
 
-    /*
-        중복 회원 검증
-    */
-    public void validateDuplcateViewer(Viewer viewer) {
-        viewerRepository.findByVId(viewer.getVId())
-                .ifPresent(v -> {
-                    throw new IllegalStateException("이미 존재하는 회원입니다.");
-                });
+        try{
+
+            if(!viewerRepository.existsByvId(viewer.getVId())){
+                viewerRepository.save(viewer);
+                return "회원 가입에 성공했습니다.";
+            }else{
+                return "이미 존재하는 회원 아이디 입니다.";
+            }
+
+        }catch (Exception e){
+            throw e;
+        }
+
     }
 
-    /*
-        전체 회원 조회
-     */
-    public List<Viewer> findViewers(){
+    // 회원 삭제
+    public String removeViewer(ViewerEntity viewer){
 
-        return viewerRepository.findAll();
+        try{
+
+            if(viewerRepository.existsByvIdx(viewer.getVIdx())){
+                viewerRepository.delete(viewer);
+                return "회원 탈퇴에 성공했습니다.";
+            }else{
+                return "존재하지 않는 회원입니다.";
+            }
+
+        }catch (Exception e){
+            throw e;
+        }
+
     }
 
-    /*
-        idx로 회원 한명 조회
-    */
-    public Optional<Viewer> findOneByVIdx(Long vIdx){
-        return viewerRepository.findByVIdx(vIdx);
+    // 회원 수정
+    public String updateViewer(ViewerEntity viewer){
+
+        try{
+
+            if(viewerRepository.existsByvIdx(viewer.getVIdx())){
+                viewerRepository.save(viewer);
+                return "회원 정보 수정에 성공했습니다.";
+            }else{
+                return "존재하지 않는 회원입니다.";
+            }
+
+        }catch (Exception e){
+            throw e;
+        }
+
     }
 
-    /*
-        로그인
-     */
-    public Viewer login(String vId, String vPw){
-        Viewer viewer = viewerRepository.findByVId(vId).get();
-        if(vPw.equals(viewer.getVPw())) return viewer;
-        else return null;
-    }
-
-    /*
-        id로 회원 한명 조회
-    */
-    public Optional<Viewer> findOneByVId(String vId){ return viewerRepository.findByVId(vId); }
-
-
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Viewer viewer = viewerRepository.findByVId(username).get();
-
-        if(viewer == null) throw new UsernameNotFoundException(username + "is not found.");
-
-
-
-        return null;
-    }
 }

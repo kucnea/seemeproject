@@ -1,12 +1,9 @@
-package seeme.project.domain.viewer;
+package seeme.project.entity.viewer;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
-import seeme.project.domain.helpBoard.HelpBoard;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -16,7 +13,7 @@ import java.util.Set;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Viewer {
+public class ViewerEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,23 +30,23 @@ public class Viewer {
 
     private String vStatus; // user : 일반회원, grantUser : 인증회원, manager : 관리자, admin : 최고관리자
 
-    @OneToMany(mappedBy = "viewer", fetch = FetchType.EAGER)
-    private Set<HelpBoard> helpBoard;
+//    @OneToMany(mappedBy = "viewer", fetch = FetchType.EAGER)
+//    private Set<HelpBoard> helpBoard;
 
 
     //로그인용 생성자
-    public Viewer(String vId, String vPw) {
+    public ViewerEntity(String vId, String vPw) {
         this.vId = vId;
         this.vPw = vPw;
     }
 
     //중복확인용 생성자
-    public Viewer(String vId){
+    public ViewerEntity(String vId){
         this.vId = vId;
     }
 
     //테스트용 생성자
-    public Viewer(String vId, String vPw, String vStatus) {
+    public ViewerEntity(String vId, String vPw, String vStatus) {
         this.vId = vId;
         this.vPw = vPw;
         this.vStatus = vStatus;

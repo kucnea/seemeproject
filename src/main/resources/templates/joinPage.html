@@ -17,7 +17,7 @@
             }
 
             $.ajax({
-                url : "/viewer/viewercheck.do",
+                url : "/viewerEntity/viewercheck.do",
                 type : "GET",
                 contentType : "application/json;charset:UTF-8",
                 data : $("input[name=vId]").serialize(),
@@ -81,7 +81,7 @@
         </div>
 
         <div class="divJoinDetail">
-            <form id="viewerForm" method="post" action="/viewer/viewerjoin" th:object="${viewer}">
+            <form id="viewerForm" method="post" action="/viewerEntity/viewerjoin" th:object="${viewerEntity}">
                 <table style="width: 100%;">
                     <tr>
                         <th style="width: 40%;">

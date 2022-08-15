@@ -1,15 +1,16 @@
 package seeme.project.repository;
 
-import seeme.project.domain.viewer.Viewer;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import seeme.project.entity.viewer.ViewerEntity;
 
-import java.util.List;
 import java.util.Optional;
 
-public interface ViewerRepository {
+@Repository
+public interface ViewerRepository extends JpaRepository<ViewerEntity, Long> {
 
-    Viewer save(Viewer viewer);
-    Optional<Viewer> findByVIdx(Long vIdx);
-    Optional<Viewer> findByVId(String vId);
-    List<Viewer> findAll();
+    boolean existsByvIdx(Long vIdx);
+    boolean existsByvId(String vId);
+    Optional<ViewerEntity> findByvId(String vId);
 
 }
