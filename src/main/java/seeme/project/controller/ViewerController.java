@@ -23,11 +23,11 @@ public class ViewerController {
         return viewerService.getExistsViewers();
     }
 
-    @RequestMapping(value = "/addviewer", method = RequestMethod.POST)
-    public String addViewer(@RequestBody ViewerEntity viewer){
+    @RequestMapping(value = "/loginviewer", method = RequestMethod.POST)
+    public Viewer loginViewer(@RequestBody ViewerEntity viewerEntity){ return  viewerService.loginViewer(viewerEntity); }
 
-        return viewerService.addViewer(viewer);
-    }
+    @RequestMapping(value = "/addviewer", method = RequestMethod.POST)
+    public String addViewer(@RequestBody ViewerEntity viewer){ return viewerService.addViewer(viewer); }
 
     @RequestMapping(value = "/updateviewer", method = RequestMethod.PUT)
     public String updateViewer(@RequestBody ViewerEntity viewer){

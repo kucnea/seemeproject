@@ -1,5 +1,6 @@
 package seeme.project.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Slf4j
 public class ViewerService {
 
     private final ViewerRepository viewerRepository;
@@ -41,12 +43,30 @@ public class ViewerService {
 
     }
 
+    // 로그인
+    public Viewer loginViewer(ViewerEntity viewer){
+
+        try{
+            log.info("loginViewer Stage");
+            log.info(viewer.getVId());
+            ViewerEntity viewerEntity = viewerRepository.findByVIdAndVPw(viewer.getVId(),viewer.getVPw()).get();
+            log.info("viewerEntity : "+viewerEntity.getVId());
+            Viewer customViewer = Viewer.from(viewerEntity);
+            return customViewer;
+        }catch (Exception e){
+            log.info("throw Exception : "+e.getMessage());
+            Viewer customViewer = new Viewer();
+            return customViewer;
+        }
+
+    }
+
     // 회원 주가
     public String addViewer(ViewerEntity viewer){
 
         try{
 
-            if(!viewerRepository.existsByvId(viewer.getVId())){
+            if(!viewerRepository.existsByVId(viewer.getVId())){
                 viewerRepository.save(viewer);
                 return "회원 가입에 성공했습니다.";
             }else{
@@ -64,7 +84,7 @@ public class ViewerService {
 
         try{
 
-            if(viewerRepository.existsByvIdx(viewer.getVIdx())){
+            if(viewerRepository.existsByVIdx(viewer.getVIdx())){
                 viewerRepository.delete(viewer);
                 return "회원 탈퇴에 성공했습니다.";
             }else{
@@ -82,7 +102,7 @@ public class ViewerService {
 
         try{
 
-            if(viewerRepository.existsByvIdx(viewer.getVIdx())){
+            if(viewerRepository.existsByVIdx(viewer.getVIdx())){
                 viewerRepository.save(viewer);
                 return "회원 정보 수정에 성공했습니다.";
             }else{

@@ -21,7 +21,7 @@ public class PrincipalDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String vid) throws UsernameNotFoundException {
         System.out.println("vid : "+vid);
-        ViewerEntity viewerEntity = viewerRepository.findByvId(vid).get();
+        ViewerEntity viewerEntity = viewerRepository.findByVId(vid).get();
         if(viewerEntity !=null) return new PrincipalDetail(viewerEntity);
         else return null;
     }

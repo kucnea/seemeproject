@@ -9,8 +9,8 @@ import java.util.Optional;
 @Repository
 public interface ViewerRepository extends JpaRepository<ViewerEntity, Long> {
 
-    boolean existsByvIdx(Long vIdx);
-    boolean existsByvId(String vId);
-    Optional<ViewerEntity> findByvId(String vId);
-
+    boolean existsByVIdx(Long vIdx);
+    boolean existsByVId(String vId);
+    Optional<ViewerEntity> findByVId(String vId);
+    Optional<ViewerEntity> findByVIdAndVPw(String vId, String vPw);
 }
