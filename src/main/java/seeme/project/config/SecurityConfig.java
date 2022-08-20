@@ -19,12 +19,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final ViewerService viewerService;
 
     @Autowired
+    private CorsConfig corsConfig;
+
+    @Autowired
     public SecurityConfig(ViewerService viewerService) { this.viewerService = viewerService; }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.csrf().disable()
+        http    .addFilter(corsConfig.corsFilter())
+                .csrf().disable()
                 .authorizeRequests()
                 //antMatchers 해당 경로들은 ,,, permitAll() 접근허용 ,,, authenticated() 인증이 되어야함
                 .antMatchers("/*").permitAll()
