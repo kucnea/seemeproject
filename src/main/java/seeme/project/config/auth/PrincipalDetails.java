@@ -17,11 +17,11 @@ import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
 
-public class PrincipalDetail implements UserDetails {
+public class PrincipalDetails implements UserDetails {
 
     private ViewerEntity viewerEntity; //콤포지션
 
-    public PrincipalDetail(ViewerEntity viewerEntity){ this.viewerEntity = viewerEntity; }
+    public PrincipalDetails(ViewerEntity viewerEntity){ this.viewerEntity = viewerEntity; }
 
     // 해당 유저의 권한을 리턴하는 곳.
     @Override

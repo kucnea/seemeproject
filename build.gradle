@@ -41,6 +41,8 @@ dependencies {
 	//JSON
 	implementation 'org.json:json:20190722'
 	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+	//JWT
+	implementation 'com.auth0:java-jwt:3.10.3'
 
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

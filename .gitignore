@@ -21,6 +21,8 @@ bin/
 ### IntelliJ IDEA ###
 /Users/bbing/Desktop/seeme/project/project/src/main/resources/application.properties
 application.properties
+/Users/bbing/Desktop/seeme/project/project/src/main/java/seeme/project/config/JwtProperties.java
+JwtProperties.java
 .idea
 *.iws
 *.iml
