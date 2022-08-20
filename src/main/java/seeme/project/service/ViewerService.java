@@ -4,8 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import seeme.project.dto.viewer.ViewerLoginDto;
 import seeme.project.entity.viewer.ViewerEntity;
-import seeme.project.model.viewer.Viewer;
 import seeme.project.repository.ViewerRepository;
 
 import java.util.ArrayList;
@@ -23,15 +23,15 @@ public class ViewerService {
     }
 
     // 모든 회원 조회
-    public List<Viewer> getExistsViewers(){
+    public List<ViewerLoginDto> getExistsViewers(){
 
         try{
 
             List<ViewerEntity> viewers = viewerRepository.findAll();
-            List<Viewer> customViwers = new ArrayList<>();
+            List<ViewerLoginDto> customViwers = new ArrayList<>();
 
             viewers.stream().forEach(e -> {
-                Viewer viewer = new Viewer();
+                ViewerLoginDto viewer = new ViewerLoginDto();
                 BeanUtils.copyProperties(e, viewer);
                 customViwers.add(viewer);
             });
@@ -44,18 +44,18 @@ public class ViewerService {
     }
 
     // 로그인
-    public Viewer loginViewer(ViewerEntity viewer){
+    public ViewerLoginDto loginViewer(ViewerEntity viewer){
 
         try{
             log.info("loginViewer Stage");
             log.info(viewer.getVId());
             ViewerEntity viewerEntity = viewerRepository.findByVIdAndVPw(viewer.getVId(),viewer.getVPw()).get();
             log.info("viewerEntity : "+viewerEntity.getVId());
-            Viewer customViewer = Viewer.from(viewerEntity);
+            ViewerLoginDto customViewer = ViewerLoginDto.from(viewerEntity);
             return customViewer;
         }catch (Exception e){
             log.info("throw Exception : "+e.getMessage());
-            Viewer customViewer = new Viewer();
+            ViewerLoginDto customViewer = new ViewerLoginDto();
             return customViewer;
         }
 

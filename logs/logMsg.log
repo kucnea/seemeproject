@@ -229,7 +229,7 @@ DEBUG 2022-08-19 00:14:56[http-nio-8060-exec-4] [SqlStatementLogger.java - logSt
 INFO  2022-08-19 00:14:56[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(List seeme.project.service.ViewerService.getExistsViewers()) 51ms
 INFO  2022-08-19 00:14:56[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(List seeme.project.controller.ViewerController.getAllViewers()) 52ms
 DEBUG 2022-08-19 00:14:56[http-nio-8060-exec-4] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:14:56[http-nio-8060-exec-4] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [[seeme.project.model.viewer.Viewer@3a201802, seeme.project.model.viewer.Viewer@51c1b6d2, seeme.proje (truncated)...]
+DEBUG 2022-08-19 00:14:56[http-nio-8060-exec-4] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [[seeme.project.dto.viewer.ViewerLoginDto@3a201802, seeme.project.dto.viewer.ViewerLoginDto@51c1b6d2, seeme.proje (truncated)...]
 INFO  2022-08-19 00:14:56[http-nio-8060-exec-4] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:14:56[http-nio-8060-exec-4] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:14:56[http-nio-8060-exec-4] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -558,7 +558,7 @@ INFO  2022-08-19 00:25:18[http-nio-8060-exec-1] [LoggerInterceptor.java - afterC
 DEBUG 2022-08-19 00:25:18[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1101] - Failed to complete request: java.lang.NullPointerException
 ERROR 2022-08-19 00:25:18[http-nio-8060-exec-1] [DirectJDKLog.java - log] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at seeme.project.model.viewer.Viewer.from(Viewer.java:33)
+	at seeme.project.dto.viewer.ViewerLoginDto.from(Viewer.java:33)
 	at seeme.project.service.ViewerService.loginViewer(ViewerService.java:58)
 	at seeme.project.service.ViewerService$$FastClassBySpringCGLIB$$6cf12a12.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
@@ -790,7 +790,7 @@ INFO  2022-08-19 00:35:59[http-nio-8060-exec-1] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:35:59[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 239ms
 INFO  2022-08-19 00:35:59[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 245ms
 DEBUG 2022-08-19 00:35:59[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:35:59[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@4dd4e881]
+DEBUG 2022-08-19 00:35:59[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@4dd4e881]
 INFO  2022-08-19 00:35:59[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:35:59[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:35:59[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -882,7 +882,7 @@ INFO  2022-08-19 00:37:44[http-nio-8060-exec-1] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:37:44[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 482ms
 INFO  2022-08-19 00:37:44[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 532ms
 DEBUG 2022-08-19 00:37:44[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:37:44[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@2c21cd15]
+DEBUG 2022-08-19 00:37:44[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@2c21cd15]
 INFO  2022-08-19 00:37:44[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:37:44[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:37:44[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -901,7 +901,7 @@ INFO  2022-08-19 00:40:01[http-nio-8060-exec-3] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:40:01[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 9ms
 INFO  2022-08-19 00:40:01[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 9ms
 DEBUG 2022-08-19 00:40:01[http-nio-8060-exec-3] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:40:01[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@5765a0ed]
+DEBUG 2022-08-19 00:40:01[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@5765a0ed]
 INFO  2022-08-19 00:40:01[http-nio-8060-exec-3] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:40:01[http-nio-8060-exec-3] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:40:01[http-nio-8060-exec-3] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -920,7 +920,7 @@ INFO  2022-08-19 00:40:37[http-nio-8060-exec-5] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:40:37[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 00:40:37[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 00:40:37[http-nio-8060-exec-5] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:40:37[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@31d25c14]
+DEBUG 2022-08-19 00:40:37[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@31d25c14]
 INFO  2022-08-19 00:40:37[http-nio-8060-exec-5] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:40:37[http-nio-8060-exec-5] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:40:37[http-nio-8060-exec-5] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -939,7 +939,7 @@ INFO  2022-08-19 00:46:03[http-nio-8060-exec-7] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:46:03[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 00:46:03[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 6ms
 DEBUG 2022-08-19 00:46:03[http-nio-8060-exec-7] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:46:03[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@12023a65]
+DEBUG 2022-08-19 00:46:03[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@12023a65]
 INFO  2022-08-19 00:46:03[http-nio-8060-exec-7] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:46:03[http-nio-8060-exec-7] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:46:03[http-nio-8060-exec-7] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -958,7 +958,7 @@ INFO  2022-08-19 00:48:25[http-nio-8060-exec-9] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:48:25[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
 INFO  2022-08-19 00:48:25[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 00:48:25[http-nio-8060-exec-9] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:48:25[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@5edabec3]
+DEBUG 2022-08-19 00:48:25[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@5edabec3]
 INFO  2022-08-19 00:48:25[http-nio-8060-exec-9] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:48:25[http-nio-8060-exec-9] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:48:25[http-nio-8060-exec-9] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -977,7 +977,7 @@ INFO  2022-08-19 00:49:48[http-nio-8060-exec-1] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:49:48[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 00:49:48[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 00:49:48[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:49:48[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@646b8b40]
+DEBUG 2022-08-19 00:49:48[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@646b8b40]
 INFO  2022-08-19 00:49:48[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:49:48[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:49:48[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -996,7 +996,7 @@ INFO  2022-08-19 00:50:22[http-nio-8060-exec-3] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:50:22[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
 INFO  2022-08-19 00:50:22[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 5ms
 DEBUG 2022-08-19 00:50:22[http-nio-8060-exec-3] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:50:22[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@c3fc058]
+DEBUG 2022-08-19 00:50:22[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@c3fc058]
 INFO  2022-08-19 00:50:22[http-nio-8060-exec-3] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:50:22[http-nio-8060-exec-3] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:50:22[http-nio-8060-exec-3] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1015,7 +1015,7 @@ INFO  2022-08-19 00:52:10[http-nio-8060-exec-5] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:52:10[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 00:52:10[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 5ms
 DEBUG 2022-08-19 00:52:10[http-nio-8060-exec-5] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:52:10[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@322d2b96]
+DEBUG 2022-08-19 00:52:10[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@322d2b96]
 INFO  2022-08-19 00:52:10[http-nio-8060-exec-5] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:52:10[http-nio-8060-exec-5] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:52:10[http-nio-8060-exec-5] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1034,7 +1034,7 @@ INFO  2022-08-19 00:53:09[http-nio-8060-exec-7] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:53:09[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 00:53:09[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 00:53:09[http-nio-8060-exec-7] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:53:09[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@5f819c8a]
+DEBUG 2022-08-19 00:53:09[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@5f819c8a]
 INFO  2022-08-19 00:53:09[http-nio-8060-exec-7] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:53:09[http-nio-8060-exec-7] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:53:09[http-nio-8060-exec-7] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1053,7 +1053,7 @@ INFO  2022-08-19 00:53:51[http-nio-8060-exec-9] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:53:51[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 00:53:51[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 00:53:51[http-nio-8060-exec-9] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:53:51[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@77cbbc47]
+DEBUG 2022-08-19 00:53:51[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@77cbbc47]
 INFO  2022-08-19 00:53:51[http-nio-8060-exec-9] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:53:51[http-nio-8060-exec-9] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:53:51[http-nio-8060-exec-9] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1072,7 +1072,7 @@ INFO  2022-08-19 00:53:57[http-nio-8060-exec-1] [ViewerService.java - loginViewe
 INFO  2022-08-19 00:53:57[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 17ms
 INFO  2022-08-19 00:53:57[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 18ms
 DEBUG 2022-08-19 00:53:57[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 00:53:57[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@697951c6]
+DEBUG 2022-08-19 00:53:57[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@697951c6]
 INFO  2022-08-19 00:53:57[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 00:53:57[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 00:53:57[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1085,7 +1085,7 @@ DEBUG 2022-08-19 01:05:38[http-nio-8060-exec-4] [SqlStatementLogger.java - logSt
 INFO  2022-08-19 01:05:38[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(List seeme.project.service.ViewerService.getExistsViewers()) 44ms
 INFO  2022-08-19 01:05:38[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(List seeme.project.controller.ViewerController.getAllViewers()) 46ms
 DEBUG 2022-08-19 01:05:38[http-nio-8060-exec-4] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:05:38[http-nio-8060-exec-4] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [[seeme.project.model.viewer.Viewer@6980bf9e, seeme.project.model.viewer.Viewer@521a0398, seeme.proje (truncated)...]
+DEBUG 2022-08-19 01:05:38[http-nio-8060-exec-4] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [[seeme.project.dto.viewer.ViewerLoginDto@6980bf9e, seeme.project.dto.viewer.ViewerLoginDto@521a0398, seeme.proje (truncated)...]
 INFO  2022-08-19 01:05:38[http-nio-8060-exec-4] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:05:38[http-nio-8060-exec-4] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:05:38[http-nio-8060-exec-4] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1123,7 +1123,7 @@ INFO  2022-08-19 01:06:15[http-nio-8060-exec-7] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:06:15[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 01:06:15[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 01:06:15[http-nio-8060-exec-7] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:06:15[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@16fdf8b7]
+DEBUG 2022-08-19 01:06:15[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@16fdf8b7]
 INFO  2022-08-19 01:06:15[http-nio-8060-exec-7] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:06:15[http-nio-8060-exec-7] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:06:15[http-nio-8060-exec-7] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1142,7 +1142,7 @@ INFO  2022-08-19 01:06:28[http-nio-8060-exec-9] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:06:28[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 01:06:28[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 01:06:28[http-nio-8060-exec-9] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:06:28[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@5784e374]
+DEBUG 2022-08-19 01:06:28[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@5784e374]
 INFO  2022-08-19 01:06:28[http-nio-8060-exec-9] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:06:28[http-nio-8060-exec-9] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:06:28[http-nio-8060-exec-9] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1155,7 +1155,7 @@ DEBUG 2022-08-19 01:06:43[http-nio-8060-exec-3] [SqlStatementLogger.java - logSt
 INFO  2022-08-19 01:06:43[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(List seeme.project.service.ViewerService.getExistsViewers()) 2ms
 INFO  2022-08-19 01:06:43[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(List seeme.project.controller.ViewerController.getAllViewers()) 4ms
 DEBUG 2022-08-19 01:06:43[http-nio-8060-exec-3] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:06:43[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [[seeme.project.model.viewer.Viewer@64d99647, seeme.project.model.viewer.Viewer@746a885d, seeme.proje (truncated)...]
+DEBUG 2022-08-19 01:06:43[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [[seeme.project.dto.viewer.ViewerLoginDto@64d99647, seeme.project.dto.viewer.ViewerLoginDto@746a885d, seeme.proje (truncated)...]
 INFO  2022-08-19 01:06:43[http-nio-8060-exec-3] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:06:43[http-nio-8060-exec-3] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:06:43[http-nio-8060-exec-3] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1194,7 +1194,7 @@ INFO  2022-08-19 01:14:58[http-nio-8060-exec-7] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:14:58[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
 INFO  2022-08-19 01:14:58[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 01:14:58[http-nio-8060-exec-7] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:14:58[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@11054fb4]
+DEBUG 2022-08-19 01:14:58[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@11054fb4]
 INFO  2022-08-19 01:14:58[http-nio-8060-exec-7] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:14:58[http-nio-8060-exec-7] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:14:58[http-nio-8060-exec-7] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1213,7 +1213,7 @@ INFO  2022-08-19 01:15:17[http-nio-8060-exec-9] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:15:17[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
 INFO  2022-08-19 01:15:17[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 3ms
 DEBUG 2022-08-19 01:15:17[http-nio-8060-exec-9] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:15:17[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@33cca026]
+DEBUG 2022-08-19 01:15:17[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@33cca026]
 INFO  2022-08-19 01:15:17[http-nio-8060-exec-9] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:15:17[http-nio-8060-exec-9] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:15:17[http-nio-8060-exec-9] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1232,7 +1232,7 @@ INFO  2022-08-19 01:16:22[http-nio-8060-exec-1] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:16:22[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
 INFO  2022-08-19 01:16:22[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 01:16:22[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:16:22[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@7aa9aa58]
+DEBUG 2022-08-19 01:16:22[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@7aa9aa58]
 INFO  2022-08-19 01:16:22[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:16:22[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:16:22[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1251,7 +1251,7 @@ INFO  2022-08-19 01:20:41[http-nio-8060-exec-3] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:20:41[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 10ms
 INFO  2022-08-19 01:20:41[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 12ms
 DEBUG 2022-08-19 01:20:41[http-nio-8060-exec-3] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:20:41[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@5e82f2b5]
+DEBUG 2022-08-19 01:20:41[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@5e82f2b5]
 INFO  2022-08-19 01:20:41[http-nio-8060-exec-3] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:20:41[http-nio-8060-exec-3] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:20:41[http-nio-8060-exec-3] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1270,7 +1270,7 @@ INFO  2022-08-19 01:20:49[http-nio-8060-exec-5] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:20:49[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
 INFO  2022-08-19 01:20:49[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 3ms
 DEBUG 2022-08-19 01:20:49[http-nio-8060-exec-5] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:20:49[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@61b1b25e]
+DEBUG 2022-08-19 01:20:49[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@61b1b25e]
 INFO  2022-08-19 01:20:49[http-nio-8060-exec-5] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:20:49[http-nio-8060-exec-5] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:20:49[http-nio-8060-exec-5] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1289,7 +1289,7 @@ INFO  2022-08-19 01:22:46[http-nio-8060-exec-7] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:22:46[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
 INFO  2022-08-19 01:22:46[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
 DEBUG 2022-08-19 01:22:46[http-nio-8060-exec-7] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:22:46[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@1b972915]
+DEBUG 2022-08-19 01:22:46[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@1b972915]
 INFO  2022-08-19 01:22:46[http-nio-8060-exec-7] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:22:46[http-nio-8060-exec-7] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:22:46[http-nio-8060-exec-7] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
@@ -1308,7 +1308,222 @@ INFO  2022-08-19 01:22:53[http-nio-8060-exec-9] [ViewerService.java - loginViewe
 INFO  2022-08-19 01:22:53[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
 INFO  2022-08-19 01:22:53[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 5ms
 DEBUG 2022-08-19 01:22:53[http-nio-8060-exec-9] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 2022-08-19 01:22:53[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.model.viewer.Viewer@2c723d74]
+DEBUG 2022-08-19 01:22:53[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@2c723d74]
 INFO  2022-08-19 01:22:53[http-nio-8060-exec-9] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
 INFO  2022-08-19 01:22:53[http-nio-8060-exec-9] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
 DEBUG 2022-08-19 01:22:53[http-nio-8060-exec-9] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopping...
+INFO  2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@e993715]]
+DEBUG 2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@e993715]
+DEBUG 2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@e993715]
+INFO  2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopped.
+DEBUG 2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-08-19 01:29:52[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-08-19 01:29:52[SpringApplicationShutdownHook] [AbstractEntityManagerFactoryBean.java - destroy] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  2022-08-19 01:29:52[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  2022-08-19 01:29:52[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  2022-08-20 14:26:53[main] [StartupInfoLogger.java - logStarting] [ProjectApplication:55] - Starting ProjectApplication using Java 1.8.0_281 on DESKTOP-C8UO0I7 with PID 10272 (C:\Users\bbing\Desktop\seeme\project\project\out\production\classes started by bbing in C:\Users\bbing\Desktop\seeme\project\project)
+INFO  2022-08-20 14:26:53[main] [SpringApplication.java - logStartupProfileInfo] [ProjectApplication:637] - No active profile set, falling back to default profiles: default
+INFO  2022-08-20 14:26:54[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  2022-08-20 14:26:55[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interfaces.
+INFO  2022-08-20 14:26:57[main] [TomcatWebServer.java - initialize] [TomcatWebServer:108] - Tomcat initialized with port(s): 8060 (http)
+INFO  2022-08-20 14:26:57[main] [DirectJDKLog.java - log] [StandardService:173] - Starting service [Tomcat]
+INFO  2022-08-20 14:26:57[main] [DirectJDKLog.java - log] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+INFO  2022-08-20 14:26:57[main] [DirectJDKLog.java - log] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  2022-08-20 14:26:57[main] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  2022-08-20 14:26:57[main] [ServletWebServerApplicationContext.java - prepareWebApplicationContext] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 4330 ms
+INFO  2022-08-20 14:26:58[main] [LogHelper.java - logPersistenceUnitInformation] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  2022-08-20 14:26:58[main] [Version.java - logVersion] [Version:44] - HHH000412: Hibernate ORM core version 5.6.4.Final
+INFO  2022-08-20 14:26:58[main] [JavaReflectionManager.java - <clinit>] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  2022-08-20 14:26:59[main] [HikariDataSource.java - getConnection] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  2022-08-20 14:26:59[main] [HikariDataSource.java - getConnection] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  2022-08-20 14:26:59[main] [Dialect.java - <init>] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+INFO  2022-08-20 14:27:00[main] [JtaPlatformInitiator.java - initiateService] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  2022-08-20 14:27:00[main] [AbstractEntityManagerFactoryBean.java - buildNativeEntityManagerFactory] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  2022-08-20 14:27:01[main] [JpaBaseConfiguration.java - openEntityManagerInViewInterceptor] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  2022-08-20 14:27:02[main] [DefaultSecurityFilterChain.java - <init>] [DefaultSecurityFilterChain:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@740c4868, org.springframework.security.web.context.SecurityContextPersistenceFilter@22aee519, org.springframework.security.web.header.HeaderWriterFilter@2513155a, org.springframework.security.web.authentication.logout.LogoutFilter@135e49b2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44aed6a4, org.springframework.security.web.session.ConcurrentSessionFilter@6029f2a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ea07516, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7740b0ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f3f3d00, org.springframework.security.web.session.SessionManagementFilter@47fa3671, org.springframework.security.web.access.ExceptionTranslationFilter@2e204155, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@573a078]
+INFO  2022-08-20 14:27:02[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder())
+INFO  2022-08-20 14:27:02[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder()) 12ms
+INFO  2022-08-20 14:27:02[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry))
+INFO  2022-08-20 14:27:02[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry)) 12ms
+DEBUG 2022-08-20 14:27:02[main] [SimpleUrlHandlerMapping.java - logMappings] [WebSocketHandlerMapping:188] - Patterns [/stomp/chat/**] in 'stompWebSocketHandlerMapping'
+INFO  2022-08-20 14:27:02[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry))
+INFO  2022-08-20 14:27:02[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry)) 1ms
+DEBUG 2022-08-20 14:27:02[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	s.p.c.ViewerController:
+	
+DEBUG 2022-08-20 14:27:02[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+DEBUG 2022-08-20 14:27:02[main] [RequestMappingHandlerAdapter.java - initControllerAdviceCache] [RequestMappingHandlerAdapter:625] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+INFO  2022-08-20 14:27:03[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry))
+INFO  2022-08-20 14:27:03[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry)) 3ms
+DEBUG 2022-08-20 14:27:03[main] [AbstractHandlerMethodMapping.java - handlerMethodsInitialized] [RequestMappingHandlerMapping:367] - 7 mappings in 'requestMappingHandlerMapping'
+INFO  2022-08-20 14:27:03[main] [WelcomePageHandlerMapping.java - <init>] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+DEBUG 2022-08-20 14:27:03[main] [SimpleUrlHandlerMapping.java - logMappings] [SimpleUrlHandlerMapping:188] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+DEBUG 2022-08-20 14:27:03[main] [ExceptionHandlerExceptionResolver.java - initExceptionHandlerAdviceCache] [ExceptionHandlerExceptionResolver:307] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  2022-08-20 14:27:03[main] [TomcatWebServer.java - start] [TomcatWebServer:220] - Tomcat started on port(s): 8060 (http) with context path ''
+DEBUG 2022-08-20 14:27:03[main] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-08-20 14:27:03[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-08-20 14:27:03[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Starting...
+DEBUG 2022-08-20 14:27:03[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5cfa2ac5]
+DEBUG 2022-08-20 14:27:03[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5cfa2ac5]
+INFO  2022-08-20 14:27:03[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5cfa2ac5]]
+INFO  2022-08-20 14:27:03[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Started.
+DEBUG 2022-08-20 14:27:03[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-08-20 14:27:03[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-08-20 14:27:03[main] [StartupInfoLogger.java - logStarted] [ProjectApplication:61] - Started ProjectApplication in 11.394 seconds (JVM running for 12.509)
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [DispatcherServlet.java - initMultipartResolver] [DispatcherServlet:520] - Detected StandardServletMultipartResolver
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [DispatcherServlet.java - initLocaleResolver] [DispatcherServlet:544] - Detected AcceptHeaderLocaleResolver
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [DispatcherServlet.java - initThemeResolver] [DispatcherServlet:569] - Detected FixedThemeResolver
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [DispatcherServlet.java - initRequestToViewNameTranslator] [DispatcherServlet:719] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@56f2c9e8
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [DispatcherServlet.java - initFlashMapManager] [DispatcherServlet:783] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@533e2f4
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:542] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:547] - Completed initialization in 4 ms
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@5bb36e19]
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(ViewerLoginDto seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:51] - asdf
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 274ms
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:57] - throw Exception : No value present
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:59] - customViewer.VId : null
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(ViewerLoginDto seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 290ms
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 303ms
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@40b4742b]
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-20 14:27:05[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-20 14:27:05[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+INFO  2022-08-20 14:28:02[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+DEBUG 2022-08-20 14:30:52[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-20 14:30:52[http-nio-8060-exec-3] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-20 14:30:52[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@75a8be06]
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(ViewerLoginDto seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [ViewerService.java - loginViewer] [ViewerService:51] - asdf
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-20 14:30:52[http-nio-8060-exec-3] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 19ms
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [ViewerService.java - loginViewer] [ViewerService:53] - viewerEntity : asdf
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(ViewerLoginDto seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 22ms
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 23ms
+DEBUG 2022-08-20 14:30:52[http-nio-8060-exec-3] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-20 14:30:52[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@5d3dec52]
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-20 14:30:52[http-nio-8060-exec-3] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-20 14:30:52[http-nio-8060-exec-3] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 2022-08-20 14:31:05[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-20 14:31:05[http-nio-8060-exec-5] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-20 14:31:05[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@630699aa]
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(ViewerLoginDto seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [ViewerService.java - loginViewer] [ViewerService:51] - asdf5
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-20 14:31:05[http-nio-8060-exec-5] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 4ms
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [ViewerService.java - loginViewer] [ViewerService:53] - viewerEntity : asdf5
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(ViewerLoginDto seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 6ms
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 7ms
+DEBUG 2022-08-20 14:31:05[http-nio-8060-exec-5] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-20 14:31:05[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@7be0767d]
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-20 14:31:05[http-nio-8060-exec-5] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-20 14:31:05[http-nio-8060-exec-5] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+INFO  2022-08-20 19:48:02[main] [StartupInfoLogger.java - logStarting] [ProjectApplication:55] - Starting ProjectApplication using Java 1.8.0_281 on DESKTOP-C8UO0I7 with PID 2712 (C:\Users\bbing\Desktop\seeme\project\project\out\production\classes started by bbing in C:\Users\bbing\Desktop\seeme\project\project)
+INFO  2022-08-20 19:48:02[main] [SpringApplication.java - logStartupProfileInfo] [ProjectApplication:637] - No active profile set, falling back to default profiles: default
+INFO  2022-08-20 19:48:03[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  2022-08-20 19:48:03[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+INFO  2022-08-20 19:48:04[main] [TomcatWebServer.java - initialize] [TomcatWebServer:108] - Tomcat initialized with port(s): 8060 (http)
+INFO  2022-08-20 19:48:04[main] [DirectJDKLog.java - log] [StandardService:173] - Starting service [Tomcat]
+INFO  2022-08-20 19:48:04[main] [DirectJDKLog.java - log] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+INFO  2022-08-20 19:48:05[main] [DirectJDKLog.java - log] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  2022-08-20 19:48:05[main] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  2022-08-20 19:48:05[main] [ServletWebServerApplicationContext.java - prepareWebApplicationContext] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 2853 ms
+INFO  2022-08-20 19:48:05[main] [LogHelper.java - logPersistenceUnitInformation] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  2022-08-20 19:48:05[main] [Version.java - logVersion] [Version:44] - HHH000412: Hibernate ORM core version 5.6.4.Final
+INFO  2022-08-20 19:48:05[main] [JavaReflectionManager.java - <clinit>] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  2022-08-20 19:48:06[main] [HikariDataSource.java - getConnection] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  2022-08-20 19:48:06[main] [HikariDataSource.java - getConnection] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  2022-08-20 19:48:06[main] [Dialect.java - <init>] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+INFO  2022-08-20 19:48:07[main] [JtaPlatformInitiator.java - initiateService] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  2022-08-20 19:48:07[main] [AbstractEntityManagerFactoryBean.java - buildNativeEntityManagerFactory] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  2022-08-20 19:48:07[main] [JpaBaseConfiguration.java - openEntityManagerInViewInterceptor] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  2022-08-20 19:48:08[main] [DefaultSecurityFilterChain.java - <init>] [DefaultSecurityFilterChain:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31b741e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@27dc335a, org.springframework.security.web.header.HeaderWriterFilter@3a2bb026, org.springframework.security.web.authentication.logout.LogoutFilter@29fcfc54, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d6c4079, org.springframework.security.web.session.ConcurrentSessionFilter@352e5a82, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@915d7c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60f662bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@573a078, org.springframework.security.web.session.SessionManagementFilter@7de6549d, org.springframework.security.web.access.ExceptionTranslationFilter@48ae9e8b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8ac512e]
+INFO  2022-08-20 19:48:08[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder())
+INFO  2022-08-20 19:48:08[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder()) 8ms
+INFO  2022-08-20 19:48:08[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry))
+INFO  2022-08-20 19:48:08[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry)) 11ms
+DEBUG 2022-08-20 19:48:08[main] [SimpleUrlHandlerMapping.java - logMappings] [WebSocketHandlerMapping:188] - Patterns [/stomp/chat/**] in 'stompWebSocketHandlerMapping'
+INFO  2022-08-20 19:48:08[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry))
+INFO  2022-08-20 19:48:08[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry)) 1ms
+DEBUG 2022-08-20 19:48:08[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	s.p.c.ViewerController:
+	
+DEBUG 2022-08-20 19:48:08[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+DEBUG 2022-08-20 19:48:08[main] [RequestMappingHandlerAdapter.java - initControllerAdviceCache] [RequestMappingHandlerAdapter:625] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+INFO  2022-08-20 19:48:08[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry))
+INFO  2022-08-20 19:48:08[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry)) 1ms
+DEBUG 2022-08-20 19:48:09[main] [AbstractHandlerMethodMapping.java - handlerMethodsInitialized] [RequestMappingHandlerMapping:367] - 7 mappings in 'requestMappingHandlerMapping'
+INFO  2022-08-20 19:48:09[main] [WelcomePageHandlerMapping.java - <init>] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+DEBUG 2022-08-20 19:48:09[main] [SimpleUrlHandlerMapping.java - logMappings] [SimpleUrlHandlerMapping:188] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+DEBUG 2022-08-20 19:48:09[main] [ExceptionHandlerExceptionResolver.java - initExceptionHandlerAdviceCache] [ExceptionHandlerExceptionResolver:307] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  2022-08-20 19:48:09[main] [TomcatWebServer.java - start] [TomcatWebServer:220] - Tomcat started on port(s): 8060 (http) with context path ''
+DEBUG 2022-08-20 19:48:09[main] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-08-20 19:48:09[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-08-20 19:48:09[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Starting...
+DEBUG 2022-08-20 19:48:09[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@23708f14]
+DEBUG 2022-08-20 19:48:09[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@23708f14]
+INFO  2022-08-20 19:48:09[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@23708f14]]
+INFO  2022-08-20 19:48:09[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Started.
+DEBUG 2022-08-20 19:48:09[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-08-20 19:48:09[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-08-20 19:48:09[main] [StartupInfoLogger.java - logStarted] [ProjectApplication:61] - Started ProjectApplication in 7.842 seconds (JVM running for 8.772)
+INFO  2022-08-20 19:49:08[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [DispatcherServlet.java - initMultipartResolver] [DispatcherServlet:520] - Detected StandardServletMultipartResolver
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [DispatcherServlet.java - initLocaleResolver] [DispatcherServlet:544] - Detected AcceptHeaderLocaleResolver
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [DispatcherServlet.java - initThemeResolver] [DispatcherServlet:569] - Detected FixedThemeResolver
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [DispatcherServlet.java - initRequestToViewNameTranslator] [DispatcherServlet:719] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@35fb3209
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [DispatcherServlet.java - initFlashMapManager] [DispatcherServlet:783] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@bfd97fb
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:542] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:547] - Completed initialization in 6 ms
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity, HttpServletRequest)
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-20 19:53:12[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@55f22d94]
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(ViewerEntity,HttpServletRequest))
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(ViewerLoginDto seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:51] - asdf5
+INFO  2022-08-20 19:53:12[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-20 19:53:13[http-nio-8060-exec-1] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-20 19:53:13[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 375ms
+INFO  2022-08-20 19:53:13[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:53] - viewerEntity : asdf5
+INFO  2022-08-20 19:53:13[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(ViewerLoginDto seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 384ms
+INFO  2022-08-20 19:53:13[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(ViewerEntity,HttpServletRequest)) 395ms
+DEBUG 2022-08-20 19:53:13[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-20 19:53:13[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@19b486d0]
+INFO  2022-08-20 19:53:13[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-20 19:53:13[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-20 19:53:13[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+INFO  2022-08-20 20:19:08[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+INFO  2022-08-20 20:49:08[MessageBroker-2] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+INFO  2022-08-20 21:19:08[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]
+INFO  2022-08-20 21:49:08[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 4]

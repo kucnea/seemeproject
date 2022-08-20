@@ -1,0 +1,1248 @@
+DEBUG 2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopping...
+INFO  2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]]
+DEBUG 2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]
+DEBUG 2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]
+INFO  2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopped.
+DEBUG 2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-08-18 00:01:34[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-08-18 00:01:35[SpringApplicationShutdownHook] [AbstractEntityManagerFactoryBean.java - destroy] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  2022-08-18 00:01:35[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  2022-08-18 00:01:35[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  2022-08-18 00:01:42[main] [StartupInfoLogger.java - logStarting] [ProjectApplication:55] - Starting ProjectApplication using Java 1.8.0_281 on DESKTOP-C8UO0I7 with PID 18376 (C:\Users\bbing\Desktop\seeme\project\project\out\production\classes started by bbing in C:\Users\bbing\Desktop\seeme\project\project)
+INFO  2022-08-18 00:01:42[main] [SpringApplication.java - logStartupProfileInfo] [ProjectApplication:637] - No active profile set, falling back to default profiles: default
+INFO  2022-08-18 00:01:43[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  2022-08-18 00:01:43[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+INFO  2022-08-18 00:01:44[main] [TomcatWebServer.java - initialize] [TomcatWebServer:108] - Tomcat initialized with port(s): 8060 (http)
+INFO  2022-08-18 00:01:44[main] [DirectJDKLog.java - log] [StandardService:173] - Starting service [Tomcat]
+INFO  2022-08-18 00:01:44[main] [DirectJDKLog.java - log] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+INFO  2022-08-18 00:01:45[main] [DirectJDKLog.java - log] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  2022-08-18 00:01:45[main] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  2022-08-18 00:01:45[main] [ServletWebServerApplicationContext.java - prepareWebApplicationContext] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 2567 ms
+INFO  2022-08-18 00:01:45[main] [LogHelper.java - logPersistenceUnitInformation] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  2022-08-18 00:01:45[main] [Version.java - logVersion] [Version:44] - HHH000412: Hibernate ORM core version 5.6.4.Final
+INFO  2022-08-18 00:01:46[main] [JavaReflectionManager.java - <clinit>] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  2022-08-18 00:01:46[main] [HikariDataSource.java - getConnection] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  2022-08-18 00:01:46[main] [HikariDataSource.java - getConnection] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  2022-08-18 00:01:46[main] [Dialect.java - <init>] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+INFO  2022-08-18 00:01:47[main] [JtaPlatformInitiator.java - initiateService] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  2022-08-18 00:01:47[main] [AbstractEntityManagerFactoryBean.java - buildNativeEntityManagerFactory] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  2022-08-18 00:01:47[main] [JpaBaseConfiguration.java - openEntityManagerInViewInterceptor] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  2022-08-18 00:01:48[main] [DefaultSecurityFilterChain.java - <init>] [DefaultSecurityFilterChain:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bfa3893, org.springframework.security.web.context.SecurityContextPersistenceFilter@50bf795f, org.springframework.security.web.header.HeaderWriterFilter@7254838, org.springframework.security.web.authentication.logout.LogoutFilter@1c92a549, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5fdb7394, org.springframework.security.web.session.ConcurrentSessionFilter@60f662bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@353b0719, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22aee519, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70f85235, org.springframework.security.web.session.SessionManagementFilter@2e204155, org.springframework.security.web.access.ExceptionTranslationFilter@5423a17, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1201e064]
+INFO  2022-08-18 00:01:48[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder())
+INFO  2022-08-18 00:01:48[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder()) 5ms
+INFO  2022-08-18 00:01:48[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry))
+INFO  2022-08-18 00:01:48[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry)) 8ms
+DEBUG 2022-08-18 00:01:48[main] [SimpleUrlHandlerMapping.java - logMappings] [WebSocketHandlerMapping:188] - Patterns [/stomp/chat/**] in 'stompWebSocketHandlerMapping'
+INFO  2022-08-18 00:01:48[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry))
+INFO  2022-08-18 00:01:48[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry)) 1ms
+DEBUG 2022-08-18 00:01:48[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	s.p.c.ViewerController:
+	
+DEBUG 2022-08-18 00:01:48[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+DEBUG 2022-08-18 00:01:48[main] [RequestMappingHandlerAdapter.java - initControllerAdviceCache] [RequestMappingHandlerAdapter:625] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+INFO  2022-08-18 00:01:48[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry))
+INFO  2022-08-18 00:01:48[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry)) 1ms
+DEBUG 2022-08-18 00:01:48[main] [AbstractHandlerMethodMapping.java - handlerMethodsInitialized] [RequestMappingHandlerMapping:367] - 7 mappings in 'requestMappingHandlerMapping'
+INFO  2022-08-18 00:01:48[main] [WelcomePageHandlerMapping.java - <init>] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+DEBUG 2022-08-18 00:01:48[main] [SimpleUrlHandlerMapping.java - logMappings] [SimpleUrlHandlerMapping:188] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+DEBUG 2022-08-18 00:01:48[main] [ExceptionHandlerExceptionResolver.java - initExceptionHandlerAdviceCache] [ExceptionHandlerExceptionResolver:307] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  2022-08-18 00:01:48[main] [TomcatWebServer.java - start] [TomcatWebServer:220] - Tomcat started on port(s): 8060 (http) with context path ''
+DEBUG 2022-08-18 00:01:48[main] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-08-18 00:01:48[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-08-18 00:01:48[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Starting...
+DEBUG 2022-08-18 00:01:48[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fc0217]
+DEBUG 2022-08-18 00:01:48[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fc0217]
+INFO  2022-08-18 00:01:48[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fc0217]]
+INFO  2022-08-18 00:01:48[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Started.
+DEBUG 2022-08-18 00:01:48[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-08-18 00:01:48[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-08-18 00:01:48[main] [StartupInfoLogger.java - logStarted] [ProjectApplication:61] - Started ProjectApplication in 6.636 seconds (JVM running for 7.208)
+INFO  2022-08-18 00:01:57[http-nio-8060-exec-1] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  2022-08-18 00:01:57[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+DEBUG 2022-08-18 00:01:57[http-nio-8060-exec-1] [DispatcherServlet.java - initMultipartResolver] [DispatcherServlet:520] - Detected StandardServletMultipartResolver
+DEBUG 2022-08-18 00:01:57[http-nio-8060-exec-1] [DispatcherServlet.java - initLocaleResolver] [DispatcherServlet:544] - Detected AcceptHeaderLocaleResolver
+DEBUG 2022-08-18 00:01:57[http-nio-8060-exec-1] [DispatcherServlet.java - initThemeResolver] [DispatcherServlet:569] - Detected FixedThemeResolver
+DEBUG 2022-08-18 00:01:57[http-nio-8060-exec-1] [DispatcherServlet.java - initRequestToViewNameTranslator] [DispatcherServlet:719] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5daad59a
+DEBUG 2022-08-18 00:01:57[http-nio-8060-exec-1] [DispatcherServlet.java - initFlashMapManager] [DispatcherServlet:783] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@72f24a84
+DEBUG 2022-08-18 00:01:57[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:542] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  2022-08-18 00:01:57[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:547] - Completed initialization in 4 ms
+DEBUG 2022-08-18 00:01:57[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:01:57[http-nio-8060-exec-1] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:01:57[http-nio-8060-exec-1] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:01:58[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@65b102c3]
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:01:58[http-nio-8060-exec-1] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 317ms
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 325ms
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 333ms
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:01:58[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1101] - Failed to complete request: java.util.NoSuchElementException: No value present
+ERROR 2022-08-18 00:01:58[http-nio-8060-exec-1] [DirectJDKLog.java - log] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at seeme.project.service.ViewerService.loginViewer(ViewerService.java:48)
+	at seeme.project.service.ViewerService$$FastClassBySpringCGLIB$$6cf12a12.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.service.ViewerService$$EnhancerBySpringCGLIB$$f48017d6.loginViewer(<generated>)
+	at seeme.project.controller.ViewerController.loginViewer(ViewerController.java:28)
+	at seeme.project.controller.ViewerController$$FastClassBySpringCGLIB$$b1880ae8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.controller.ViewerController$$EnhancerBySpringCGLIB$$cb94f018.loginViewer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:147)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:125)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG 2022-08-18 00:01:58[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - "ERROR" dispatch for POST "/error", parameters={}
+DEBUG 2022-08-18 00:01:58[http-nio-8060-exec-1] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:01:58[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [HttpEntityMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:01:58[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [HttpEntityMethodProcessor:119] - Writing [{timestamp=Thu Aug 18 00:01:58 KST 2022, status=500, error=Internal Server Error, path=/loginviewer}]
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:01:58[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:01:58[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 500
+INFO  2022-08-18 00:02:48[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+DEBUG 2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopping...
+INFO  2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fc0217]]
+DEBUG 2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fc0217]
+DEBUG 2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@27fc0217]
+INFO  2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopped.
+DEBUG 2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-08-18 00:04:38[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-08-18 00:04:38[SpringApplicationShutdownHook] [AbstractEntityManagerFactoryBean.java - destroy] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  2022-08-18 00:04:38[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  2022-08-18 00:04:38[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  2022-08-18 00:04:44[main] [StartupInfoLogger.java - logStarting] [ProjectApplication:55] - Starting ProjectApplication using Java 1.8.0_281 on DESKTOP-C8UO0I7 with PID 21372 (C:\Users\bbing\Desktop\seeme\project\project\out\production\classes started by bbing in C:\Users\bbing\Desktop\seeme\project\project)
+INFO  2022-08-18 00:04:44[main] [SpringApplication.java - logStartupProfileInfo] [ProjectApplication:637] - No active profile set, falling back to default profiles: default
+INFO  2022-08-18 00:04:45[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  2022-08-18 00:04:45[main] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+INFO  2022-08-18 00:04:46[main] [TomcatWebServer.java - initialize] [TomcatWebServer:108] - Tomcat initialized with port(s): 8060 (http)
+INFO  2022-08-18 00:04:47[main] [DirectJDKLog.java - log] [StandardService:173] - Starting service [Tomcat]
+INFO  2022-08-18 00:04:47[main] [DirectJDKLog.java - log] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+INFO  2022-08-18 00:04:47[main] [DirectJDKLog.java - log] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  2022-08-18 00:04:47[main] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  2022-08-18 00:04:47[main] [ServletWebServerApplicationContext.java - prepareWebApplicationContext] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 2427 ms
+INFO  2022-08-18 00:04:47[main] [LogHelper.java - logPersistenceUnitInformation] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  2022-08-18 00:04:47[main] [Version.java - logVersion] [Version:44] - HHH000412: Hibernate ORM core version 5.6.4.Final
+INFO  2022-08-18 00:04:48[main] [JavaReflectionManager.java - <clinit>] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  2022-08-18 00:04:48[main] [HikariDataSource.java - getConnection] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  2022-08-18 00:04:48[main] [HikariDataSource.java - getConnection] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  2022-08-18 00:04:48[main] [Dialect.java - <init>] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+INFO  2022-08-18 00:04:49[main] [JtaPlatformInitiator.java - initiateService] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  2022-08-18 00:04:49[main] [AbstractEntityManagerFactoryBean.java - buildNativeEntityManagerFactory] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  2022-08-18 00:04:49[main] [JpaBaseConfiguration.java - openEntityManagerInViewInterceptor] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  2022-08-18 00:04:50[main] [DefaultSecurityFilterChain.java - <init>] [DefaultSecurityFilterChain:51] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d9de284, org.springframework.security.web.context.SecurityContextPersistenceFilter@5df2023c, org.springframework.security.web.header.HeaderWriterFilter@1fd37440, org.springframework.security.web.authentication.logout.LogoutFilter@7ea07516, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a8dcfbb, org.springframework.security.web.session.ConcurrentSessionFilter@7254838, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3562e7c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42576db9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b5798c2, org.springframework.security.web.session.SessionManagementFilter@352e5a82, org.springframework.security.web.access.ExceptionTranslationFilter@7de6549d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67a0ff25]
+INFO  2022-08-18 00:04:50[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder())
+INFO  2022-08-18 00:04:50[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(BCryptPasswordEncoder seeme.project.config.SecurityConfig.bCryptPasswordEncoder()) 6ms
+INFO  2022-08-18 00:04:50[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry))
+INFO  2022-08-18 00:04:50[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.registerStompEndpoints(StompEndpointRegistry)) 9ms
+DEBUG 2022-08-18 00:04:50[main] [SimpleUrlHandlerMapping.java - logMappings] [WebSocketHandlerMapping:188] - Patterns [/stomp/chat/**] in 'stompWebSocketHandlerMapping'
+INFO  2022-08-18 00:04:50[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry))
+INFO  2022-08-18 00:04:50[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.StompWebSocketConfig.configureMessageBroker(MessageBrokerRegistry)) 2ms
+DEBUG 2022-08-18 00:04:50[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	s.p.c.ViewerController:
+	
+DEBUG 2022-08-18 00:04:50[main] [AbstractMethodMessageHandler.java - detectHandlerMethods] [WebSocketAnnotationMethodMessageHandler:316] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+DEBUG 2022-08-18 00:04:50[main] [RequestMappingHandlerAdapter.java - initControllerAdviceCache] [RequestMappingHandlerAdapter:625] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+INFO  2022-08-18 00:04:50[main] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry))
+INFO  2022-08-18 00:04:50[main] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(void seeme.project.config.WebMvcConfig.addInterceptors(InterceptorRegistry)) 2ms
+DEBUG 2022-08-18 00:04:50[main] [AbstractHandlerMethodMapping.java - handlerMethodsInitialized] [RequestMappingHandlerMapping:367] - 7 mappings in 'requestMappingHandlerMapping'
+INFO  2022-08-18 00:04:50[main] [WelcomePageHandlerMapping.java - <init>] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+DEBUG 2022-08-18 00:04:50[main] [SimpleUrlHandlerMapping.java - logMappings] [SimpleUrlHandlerMapping:188] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+DEBUG 2022-08-18 00:04:50[main] [ExceptionHandlerExceptionResolver.java - initExceptionHandlerAdviceCache] [ExceptionHandlerExceptionResolver:307] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  2022-08-18 00:04:51[main] [TomcatWebServer.java - start] [TomcatWebServer:220] - Tomcat started on port(s): 8060 (http) with context path ''
+DEBUG 2022-08-18 00:04:51[main] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-08-18 00:04:51[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-08-18 00:04:51[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Starting...
+DEBUG 2022-08-18 00:04:51[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]
+DEBUG 2022-08-18 00:04:51[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]
+INFO  2022-08-18 00:04:51[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]]
+INFO  2022-08-18 00:04:51[main] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Started.
+DEBUG 2022-08-18 00:04:51[main] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-08-18 00:04:51[main] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-08-18 00:04:51[main] [StartupInfoLogger.java - logStarted] [ProjectApplication:61] - Started ProjectApplication in 6.763 seconds (JVM running for 7.338)
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [DirectJDKLog.java - log] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [DispatcherServlet.java - initMultipartResolver] [DispatcherServlet:520] - Detected StandardServletMultipartResolver
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [DispatcherServlet.java - initLocaleResolver] [DispatcherServlet:544] - Detected AcceptHeaderLocaleResolver
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [DispatcherServlet.java - initThemeResolver] [DispatcherServlet:569] - Detected FixedThemeResolver
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [DispatcherServlet.java - initRequestToViewNameTranslator] [DispatcherServlet:719] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@51cca357
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [DispatcherServlet.java - initFlashMapManager] [DispatcherServlet:783] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2c1a8529
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:542] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [FrameworkServlet.java - initServletBean] [DispatcherServlet:547] - Completed initialization in 4 ms
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:04:56[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@41c79b73]
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [ViewerService.java - loginViewer] [ViewerService:51] - asdf
+INFO  2022-08-18 00:04:56[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:04:57[http-nio-8060-exec-1] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:04:57[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 279ms
+INFO  2022-08-18 00:04:57[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 293ms
+INFO  2022-08-18 00:04:57[http-nio-8060-exec-1] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 306ms
+INFO  2022-08-18 00:04:57[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:04:57[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1101] - Failed to complete request: java.util.NoSuchElementException: No value present
+ERROR 2022-08-18 00:04:57[http-nio-8060-exec-1] [DirectJDKLog.java - log] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at seeme.project.service.ViewerService.loginViewer(ViewerService.java:52)
+	at seeme.project.service.ViewerService$$FastClassBySpringCGLIB$$6cf12a12.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.service.ViewerService$$EnhancerBySpringCGLIB$$96c76e4a.loginViewer(<generated>)
+	at seeme.project.controller.ViewerController.loginViewer(ViewerController.java:27)
+	at seeme.project.controller.ViewerController$$FastClassBySpringCGLIB$$b1880ae8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.controller.ViewerController$$EnhancerBySpringCGLIB$$6ddc468c.loginViewer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:147)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:125)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG 2022-08-18 00:04:57[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - "ERROR" dispatch for POST "/error", parameters={}
+DEBUG 2022-08-18 00:04:57[http-nio-8060-exec-1] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+INFO  2022-08-18 00:04:57[http-nio-8060-exec-1] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:04:57[http-nio-8060-exec-1] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [HttpEntityMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:04:57[http-nio-8060-exec-1] [LogFormatUtils.java - traceDebug] [HttpEntityMethodProcessor:119] - Writing [{timestamp=Thu Aug 18 00:04:57 KST 2022, status=500, error=Internal Server Error, path=/loginviewer}]
+INFO  2022-08-18 00:04:57[http-nio-8060-exec-1] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:04:57[http-nio-8060-exec-1] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:04:57[http-nio-8060-exec-1] [FrameworkServlet.java - logResult] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 500
+INFO  2022-08-18 00:05:50[MessageBroker-1] [WebSocketMessageBrokerStats.java - lambda$initLoggingTask$0] [WebSocketMessageBrokerStats:128] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+DEBUG 2022-08-18 00:09:23[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:09:23[http-nio-8060-exec-3] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:09:23[http-nio-8060-exec-3] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+WARN  2022-08-18 00:09:23[http-nio-8060-exec-3] [AbstractHandlerExceptionResolver.java - logException] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public seeme.project.dto.viewer.ViewerLoginDto seeme.project.controller.ViewerController.loginViewer(seeme.project.entity.viewer.ViewerEntity)]
+INFO  2022-08-18 00:09:23[http-nio-8060-exec-3] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:09:23[http-nio-8060-exec-3] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 400 BAD_REQUEST
+DEBUG 2022-08-18 00:09:23[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - "ERROR" dispatch for POST "/error", parameters={}
+DEBUG 2022-08-18 00:09:23[http-nio-8060-exec-3] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+INFO  2022-08-18 00:09:23[http-nio-8060-exec-3] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:09:23[http-nio-8060-exec-3] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [HttpEntityMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:09:23[http-nio-8060-exec-3] [LogFormatUtils.java - traceDebug] [HttpEntityMethodProcessor:119] - Writing [{timestamp=Thu Aug 18 00:09:23 KST 2022, status=400, error=Bad Request, path=/loginviewer}]
+INFO  2022-08-18 00:09:23[http-nio-8060-exec-3] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:09:23[http-nio-8060-exec-3] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:09:23[http-nio-8060-exec-3] [FrameworkServlet.java - logResult] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 400
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=UTF-8" to [seeme.project.entity.viewer.ViewerEntity@451470e3]
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [ViewerService.java - loginViewer] [ViewerService:51] - 
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 2ms
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [FrameworkServlet.java - logResult] [DispatcherServlet:1101] - Failed to complete request: java.util.NoSuchElementException: No value present
+ERROR 2022-08-18 00:10:25[http-nio-8060-exec-5] [DirectJDKLog.java - log] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at seeme.project.service.ViewerService.loginViewer(ViewerService.java:52)
+	at seeme.project.service.ViewerService$$FastClassBySpringCGLIB$$6cf12a12.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.service.ViewerService$$EnhancerBySpringCGLIB$$96c76e4a.loginViewer(<generated>)
+	at seeme.project.controller.ViewerController.loginViewer(ViewerController.java:27)
+	at seeme.project.controller.ViewerController$$FastClassBySpringCGLIB$$b1880ae8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.controller.ViewerController$$EnhancerBySpringCGLIB$$6ddc468c.loginViewer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:147)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:125)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - "ERROR" dispatch for POST "/error", parameters={}
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [HttpEntityMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [LogFormatUtils.java - traceDebug] [HttpEntityMethodProcessor:119] - Writing [{timestamp=Thu Aug 18 00:10:25 KST 2022, status=500, error=Internal Server Error, path=/loginviewer}]
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:10:25[http-nio-8060-exec-5] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:10:25[http-nio-8060-exec-5] [FrameworkServlet.java - logResult] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 500
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=UTF-8" to [seeme.project.entity.viewer.ViewerEntity@630699aa]
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [ViewerService.java - loginViewer] [ViewerService:51] - asdf
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 3ms
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 3ms
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [FrameworkServlet.java - logResult] [DispatcherServlet:1101] - Failed to complete request: java.util.NoSuchElementException: No value present
+ERROR 2022-08-18 00:10:34[http-nio-8060-exec-7] [DirectJDKLog.java - log] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at seeme.project.service.ViewerService.loginViewer(ViewerService.java:52)
+	at seeme.project.service.ViewerService$$FastClassBySpringCGLIB$$6cf12a12.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.service.ViewerService$$EnhancerBySpringCGLIB$$96c76e4a.loginViewer(<generated>)
+	at seeme.project.controller.ViewerController.loginViewer(ViewerController.java:27)
+	at seeme.project.controller.ViewerController$$FastClassBySpringCGLIB$$b1880ae8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.controller.ViewerController$$EnhancerBySpringCGLIB$$6ddc468c.loginViewer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:147)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:125)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - "ERROR" dispatch for POST "/error", parameters={}
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [HttpEntityMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [LogFormatUtils.java - traceDebug] [HttpEntityMethodProcessor:119] - Writing [{timestamp=Thu Aug 18 00:10:34 KST 2022, status=500, error=Internal Server Error, path=/loginviewer}]
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:10:34[http-nio-8060-exec-7] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:10:34[http-nio-8060-exec-7] [FrameworkServlet.java - logResult] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 500
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=UTF-8" to [seeme.project.entity.viewer.ViewerEntity@458d5a19]
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [ViewerService.java - loginViewer] [ViewerService:51] - asdf
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 2ms
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 4ms
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 4ms
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [FrameworkServlet.java - logResult] [DispatcherServlet:1101] - Failed to complete request: java.util.NoSuchElementException: No value present
+ERROR 2022-08-18 00:10:41[http-nio-8060-exec-9] [DirectJDKLog.java - log] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at seeme.project.service.ViewerService.loginViewer(ViewerService.java:52)
+	at seeme.project.service.ViewerService$$FastClassBySpringCGLIB$$6cf12a12.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.service.ViewerService$$EnhancerBySpringCGLIB$$96c76e4a.loginViewer(<generated>)
+	at seeme.project.controller.ViewerController.loginViewer(ViewerController.java:27)
+	at seeme.project.controller.ViewerController$$FastClassBySpringCGLIB$$b1880ae8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.controller.ViewerController$$EnhancerBySpringCGLIB$$6ddc468c.loginViewer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:147)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:125)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - "ERROR" dispatch for POST "/error", parameters={}
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [HttpEntityMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [LogFormatUtils.java - traceDebug] [HttpEntityMethodProcessor:119] - Writing [{timestamp=Thu Aug 18 00:10:41 KST 2022, status=500, error=Internal Server Error, path=/loginviewer}]
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:10:41[http-nio-8060-exec-9] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:10:41[http-nio-8060-exec-9] [FrameworkServlet.java - logResult] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 500
+DEBUG 2022-08-18 00:11:41[http-nio-8060-exec-10] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/addviewer", parameters={}
+DEBUG 2022-08-18 00:11:41[http-nio-8060-exec-10] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#addViewer(ViewerEntity)
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:11:41[http-nio-8060-exec-10] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@5e7b126d]
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(String seeme.project.controller.ViewerController.addViewer(ViewerEntity))
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(String seeme.project.service.ViewerService.addViewer(ViewerEntity))
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(boolean seeme.project.repository.ViewerRepository.existsByVId(String))
+DEBUG 2022-08-18 00:11:41[http-nio-8060-exec-10] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as col_0_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? limit ?
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(boolean seeme.project.repository.ViewerRepository.existsByVId(String)) 8ms
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object org.springframework.data.repository.CrudRepository.save(Object))
+DEBUG 2022-08-18 00:11:41[http-nio-8060-exec-10] [SqlStatementLogger.java - logStatement] [SQL:144] - insert into ViewerEntity (VCreateTime, VId, VLoginDate, VNick, VPw, VStatus) values (?, ?, ?, ?, ?, ?)
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object org.springframework.data.repository.CrudRepository.save(Object)) 70ms
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(String seeme.project.service.ViewerService.addViewer(ViewerEntity)) 84ms
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(String seeme.project.controller.ViewerController.addViewer(ViewerEntity)) 84ms
+DEBUG 2022-08-18 00:11:41[http-nio-8060-exec-10] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:11:41[http-nio-8060-exec-10] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing ["회원 가입에 성공했습니다."]
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:11:41[http-nio-8060-exec-10] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:11:41[http-nio-8060-exec-10] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 2022-08-18 00:12:17[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/addviewer", parameters={}
+DEBUG 2022-08-18 00:12:17[http-nio-8060-exec-2] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#addViewer(ViewerEntity)
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:12:17[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@2a6855b1]
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(String seeme.project.controller.ViewerController.addViewer(ViewerEntity))
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(String seeme.project.service.ViewerService.addViewer(ViewerEntity))
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(boolean seeme.project.repository.ViewerRepository.existsByVId(String))
+DEBUG 2022-08-18 00:12:17[http-nio-8060-exec-2] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as col_0_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? limit ?
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(boolean seeme.project.repository.ViewerRepository.existsByVId(String)) 2ms
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Object org.springframework.data.repository.CrudRepository.save(Object))
+DEBUG 2022-08-18 00:12:17[http-nio-8060-exec-2] [SqlStatementLogger.java - logStatement] [SQL:144] - insert into ViewerEntity (VCreateTime, VId, VLoginDate, VNick, VPw, VStatus) values (?, ?, ?, ?, ?, ?)
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Object org.springframework.data.repository.CrudRepository.save(Object)) 9ms
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(String seeme.project.service.ViewerService.addViewer(ViewerEntity)) 12ms
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(String seeme.project.controller.ViewerController.addViewer(ViewerEntity)) 13ms
+DEBUG 2022-08-18 00:12:17[http-nio-8060-exec-2] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:12:17[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing ["회원 가입에 성공했습니다."]
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:12:17[http-nio-8060-exec-2] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:12:17[http-nio-8060-exec-2] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 2022-08-18 00:13:18[http-nio-8060-exec-4] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:13:18[http-nio-8060-exec-4] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:13:18[http-nio-8060-exec-4] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@22edb8d0]
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [ViewerService.java - loginViewer] [ViewerService:51] - asdf2
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:13:18[http-nio-8060-exec-4] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 8ms
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [ViewerService.java - loginViewer] [ViewerService:53] - viewerEntity : asdf2
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 10ms
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 10ms
+DEBUG 2022-08-18 00:13:18[http-nio-8060-exec-4] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:13:18[http-nio-8060-exec-4] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@705df415]
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:13:18[http-nio-8060-exec-4] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:13:18[http-nio-8060-exec-4] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 2022-08-18 00:20:43[http-nio-8060-exec-6] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:20:43[http-nio-8060-exec-6] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:20:43[http-nio-8060-exec-6] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@3953372c]
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [ViewerService.java - loginViewer] [ViewerService:51] - asdf2
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:20:43[http-nio-8060-exec-6] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 5ms
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [ViewerService.java - loginViewer] [ViewerService:53] - viewerEntity : asdf2
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 6ms
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 6ms
+DEBUG 2022-08-18 00:20:43[http-nio-8060-exec-6] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:20:43[http-nio-8060-exec-6] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@47956437]
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:20:43[http-nio-8060-exec-6] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:20:43[http-nio-8060-exec-6] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 2022-08-18 00:22:07[http-nio-8060-exec-8] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:22:07[http-nio-8060-exec-8] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:22:07[http-nio-8060-exec-8] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@5c271b28]
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [ViewerService.java - loginViewer] [ViewerService:51] - asdf2
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:22:07[http-nio-8060-exec-8] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 2ms
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [ViewerService.java - loginViewer] [ViewerService:53] - viewerEntity : asdf2
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 5ms
+DEBUG 2022-08-18 00:22:07[http-nio-8060-exec-8] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:22:07[http-nio-8060-exec-8] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@774753ef]
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:22:07[http-nio-8060-exec-8] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:22:07[http-nio-8060-exec-8] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 2022-08-18 00:23:32[http-nio-8060-exec-10] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:23:32[http-nio-8060-exec-10] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:23:32[http-nio-8060-exec-10] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@35ceebb9]
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [ViewerService.java - loginViewer] [ViewerService:51] - asdf2
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:23:32[http-nio-8060-exec-10] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 4ms
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [ViewerService.java - loginViewer] [ViewerService:53] - viewerEntity : asdf2
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 6ms
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 7ms
+DEBUG 2022-08-18 00:23:32[http-nio-8060-exec-10] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:23:32[http-nio-8060-exec-10] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Writing [seeme.project.dto.viewer.ViewerLoginDto@37ab2435]
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:23:32[http-nio-8060-exec-10] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:23:32[http-nio-8060-exec-10] [FrameworkServlet.java - logResult] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - POST "/loginviewer", parameters={}
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to seeme.project.controller.ViewerController#loginViewer(ViewerEntity)
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [RequestResponseBodyMethodProcessor:119] - Read "application/json;charset=utf-8" to [seeme.project.entity.viewer.ViewerEntity@757afefc]
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity))
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [ViewerService.java - loginViewer] [ViewerService:50] - loginViewer Stage
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [ViewerService.java - loginViewer] [ViewerService:51] - asdf3
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:17] - START TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String))
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [SqlStatementLogger.java - logStatement] [SQL:144] - select viewerenti0_.VIdx as vidx1_0_, viewerenti0_.VCreateTime as vcreatet2_0_, viewerenti0_.VId as vid3_0_, viewerenti0_.VLoginDate as vloginda4_0_, viewerenti0_.VNick as vnick5_0_, viewerenti0_.VPw as vpw6_0_, viewerenti0_.VStatus as vstatus7_0_ from ViewerEntity viewerenti0_ where viewerenti0_.VId=? and viewerenti0_.VPw=?
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Optional seeme.project.repository.ViewerRepository.findByVIdAndVPw(String,String)) 2ms
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.service.ViewerService.loginViewer(ViewerEntity)) 3ms
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [TimeTraceAop.java - execute] [TimeTraceAop:23] - END TIME : execution(Viewer seeme.project.controller.ViewerController.loginViewer(ViewerEntity)) 3ms
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [FrameworkServlet.java - logResult] [DispatcherServlet:1101] - Failed to complete request: java.util.NoSuchElementException: No value present
+ERROR 2022-08-18 00:23:45[http-nio-8060-exec-2] [DirectJDKLog.java - log] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at seeme.project.service.ViewerService.loginViewer(ViewerService.java:52)
+	at seeme.project.service.ViewerService$$FastClassBySpringCGLIB$$6cf12a12.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.service.ViewerService$$EnhancerBySpringCGLIB$$96c76e4a.loginViewer(<generated>)
+	at seeme.project.controller.ViewerController.loginViewer(ViewerController.java:27)
+	at seeme.project.controller.ViewerController$$FastClassBySpringCGLIB$$b1880ae8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at seeme.project.aop.TimeTraceAop.execute(TimeTraceAop.java:19)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at seeme.project.controller.ViewerController$$EnhancerBySpringCGLIB$$6ddc468c.loginViewer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:147)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:125)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [DispatcherServlet:119] - "ERROR" dispatch for POST "/error", parameters={}
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [AbstractHandlerMapping.java - getHandler] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [LoggerInterceptor.java - preHandle] [LoggerInterceptor:18] - preHandle
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [AbstractMessageConverterMethodProcessor.java - writeWithMessageConverters] [HttpEntityMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [LogFormatUtils.java - traceDebug] [HttpEntityMethodProcessor:119] - Writing [{timestamp=Thu Aug 18 00:23:45 KST 2022, status=500, error=Internal Server Error, path=/loginviewer}]
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [LoggerInterceptor.java - postHandle] [LoggerInterceptor:24] - postHandle
+INFO  2022-08-18 00:23:45[http-nio-8060-exec-2] [LoggerInterceptor.java - afterCompletion] [LoggerInterceptor:29] - afterCompletion Handle
+DEBUG 2022-08-18 00:23:45[http-nio-8060-exec-2] [FrameworkServlet.java - logResult] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 500
+DEBUG 2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+DEBUG 2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/pub/]]
+INFO  2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopping...
+INFO  2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]]
+DEBUG 2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]
+DEBUG 2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7b9c2387]
+INFO  2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - info] [SimpleBrokerMessageHandler:137] - Stopped.
+DEBUG 2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+DEBUG 2022-08-18 00:24:31[SpringApplicationShutdownHook] [CompositeLog.java - debug] [SimpLogging:147] - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+INFO  2022-08-18 00:24:31[SpringApplicationShutdownHook] [AbstractEntityManagerFactoryBean.java - destroy] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  2022-08-18 00:24:31[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  2022-08-18 00:24:31[SpringApplicationShutdownHook] [HikariDataSource.java - close] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.

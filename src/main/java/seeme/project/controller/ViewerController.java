@@ -5,9 +5,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import seeme.project.entity.viewer.ViewerEntity;
-import seeme.project.model.viewer.Viewer;
+import seeme.project.dto.viewer.ViewerLoginDto;
 import seeme.project.service.ViewerService;
+import seeme.project.web.SessionConstants;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
@@ -19,12 +22,19 @@ public class ViewerController {
     ViewerService viewerService;
 
     @RequestMapping(value = "/getallviewers", method = RequestMethod.GET)
-    public List<Viewer> getAllViewers(){
+    public List<ViewerLoginDto> getAllViewers(){
         return viewerService.getExistsViewers();
     }
 
     @RequestMapping(value = "/loginviewer", method = RequestMethod.POST)
-    public Viewer loginViewer(@RequestBody ViewerEntity viewerEntity){ return  viewerService.loginViewer(viewerEntity); }
+    public ViewerLoginDto loginViewer(@RequestBody ViewerEntity viewerEntity, HttpServletRequest request){
+        ViewerLoginDto viewerLoginDto = viewerService.loginViewer(viewerEntity);
+
+        HttpSession session = request.getSession();
+        session.setAttribute(SessionConstants.LOGIN_VIEWER,viewerLoginDto);
+
+        return  viewerLoginDto;
+    }
 
     @RequestMapping(value = "/addviewer", method = RequestMethod.POST)
     public String addViewer(@RequestBody ViewerEntity viewer){ return viewerService.addViewer(viewer); }
