@@ -27,6 +27,7 @@ public class ViewerEntity {
     private Date VCreateTime;
 
     private String VStatus; // user : 일반회원, grantUser : 인증회원, manager : 관리자, admin : 최고관리자
+    private String vDeleteYN;
 
 //    @OneToMany(mappedBy = "viewer", fetch = FetchType.EAGER)
 //    private Set<HelpBoard> helpBoard;
