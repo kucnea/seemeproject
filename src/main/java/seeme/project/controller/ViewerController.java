@@ -3,7 +3,9 @@ package seeme.project.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
+import seeme.project.config.auth.PrincipalDetails;
 import seeme.project.entity.viewer.ViewerEntity;
 import seeme.project.dto.viewer.ViewerLoginDto;
 import seeme.project.service.ViewerService;
@@ -18,23 +20,30 @@ import java.util.List;
 @Slf4j
 public class ViewerController {
 
-    @Autowired
-    ViewerService viewerService;
+    @Autowired ViewerService viewerService;
 
     @RequestMapping(value = "/getallviewers", method = RequestMethod.GET)
     public List<ViewerLoginDto> getAllViewers(){
         return viewerService.getExistsViewers();
     }
 
+//    @RequestMapping(value = "/loginviewer", method = RequestMethod.POST)
+//    public ViewerLoginDto loginViewer(@RequestBody ViewerEntity viewerEntity, HttpServletRequest request){
+//        ViewerLoginDto viewerLoginDto = viewerService.loginViewer(viewerEntity);
+//
+//        HttpSession session = request.getSession();
+//        session.setAttribute(SessionConstants.LOGIN_VIEWER,viewerLoginDto);
+//
+//        return  viewerLoginDto;
+//    }
     @RequestMapping(value = "/loginviewer", method = RequestMethod.POST)
-    public ViewerLoginDto loginViewer(@RequestBody ViewerEntity viewerEntity, HttpServletRequest request){
-        ViewerLoginDto viewerLoginDto = viewerService.loginViewer(viewerEntity);
-
-        HttpSession session = request.getSession();
-        session.setAttribute(SessionConstants.LOGIN_VIEWER,viewerLoginDto);
-
-        return  viewerLoginDto;
+    public ViewerLoginDto loginViewer(Authentication authentication){
+        PrincipalDetails principalDetails = (PrincipalDetails) authentication.getPrincipal();
+        log.info("principal vId :"+principalDetails.getUsername());
+        ViewerLoginDto viewerLoginDto = new ViewerLoginDto(principalDetails.getUsername());
+        return
     }
+
 
     @RequestMapping(value = "/addviewer", method = RequestMethod.POST)
     public String addViewer(@RequestBody ViewerEntity viewer){ return viewerService.addViewer(viewer); }
