@@ -44,21 +44,31 @@ public class ViewerService {
     }
 
     // 로그인
-    public ViewerLoginDto loginViewer(ViewerEntity viewer){
+    public ViewerEntity loginViewer(ViewerEntity viewerEntity){
+
+//        try{
+//            log.info("loginViewer Stage");
+//            log.info("vId : "+viewerEntity.getVId());
+//            viewerEntity = viewerRepository.findByVIdAndVPw(viewerEntity.getVId(), viewerEntity.getVPw()).get();
+//            log.info("viewerEntity : "+viewerEntity.getVId());
+//            ViewerLoginDto customViewer = ViewerLoginDto.from(viewerEntity);
+//            return customViewer;
+//        }catch (Exception e){
+//            log.info("throw Exception : "+e.getMessage());
+//            ViewerLoginDto customViewer = new ViewerLoginDto();
+//            return customViewer;
+//        }
 
         try{
             log.info("loginViewer Stage");
-            log.info(viewer.getVId());
-            ViewerEntity viewerEntity = viewerRepository.findByVIdAndVPw(viewer.getVId(),viewer.getVPw()).get();
+            log.info("vId : "+viewerEntity.getVId());
+            viewerEntity = viewerRepository.findByVIdAndVPw(viewerEntity.getVId(), viewerEntity.getVPw()).get();
             log.info("viewerEntity : "+viewerEntity.getVId());
-            ViewerLoginDto customViewer = ViewerLoginDto.from(viewerEntity);
-            return customViewer;
         }catch (Exception e){
             log.info("throw Exception : "+e.getMessage());
-            ViewerLoginDto customViewer = new ViewerLoginDto();
-            return customViewer;
         }
 
+        return viewerEntity;
     }
 
     // 회원 주가

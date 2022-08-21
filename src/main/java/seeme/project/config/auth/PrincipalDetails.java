@@ -46,6 +46,8 @@ public class PrincipalDetails implements UserDetails {
         return viewerEntity.getVId();
     }
 
+    public String getUserNick() { return viewerEntity.getVNick(); }
+
     // 계정이 만료되지 않았는지 리턴. ( true 리턴시 만료되지 않음을 의미 )
     @Override
     public boolean isAccountNonExpired() {
