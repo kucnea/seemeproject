@@ -21,6 +21,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired private final ViewerService viewerService;
     @Autowired private final ViewerRepository viewerRepository;
     @Autowired private CorsConfig corsConfig;
+    @Autowired private  AuthEntryPointJwt unauthorizedHandler;
+
 
     @Autowired
     public SecurityConfig(ViewerService viewerService, ViewerRepository viewerRepository) { this.viewerService = viewerService;
@@ -36,35 +38,35 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http    .addFilter(corsConfig.corsFilter())
-                .csrf().disable()
-                .authorizeRequests()
-                //antMatchers 해당 경로들은 ,,, permitAll() 접근허용 ,,, authenticated() 인증이 되어야함
-                .antMatchers("/*").permitAll()
-                .antMatchers("/css/**").permitAll()
-                .antMatchers("/img/**").permitAll()
-                .antMatchers("/js/**").permitAll()
-                .antMatchers("/hello").permitAll()
-//                .antMatchers("/viewer/joinpage").permitAll()
-//                .antMatchers("/viewer/viewerjoin").permitAll()
-//                .antMatchers("/viewer/viewerlogin.do").permitAll()
-//                .antMatchers("/viewer/viewercheck.do").permitAll()
-//                .antMatchers("/viewer/**").authenticated()
-//                .antMatchers("/board/list").permitAll()
-//                .antMatchers("/manager/**").access("hasRole('RoleADMIN') or hasRole('RoleMANAGER')")
-//                .antMatchers("/admin/**").access("hasRole('RoleADMIN')")
-                .anyRequest().authenticated()
-                .and()
-                    .formLogin()
-                    .loginPage("/viewer/loginpage").permitAll()
-                    .usernameParameter("vid")
-                    .passwordParameter("vpw")
-                    .loginProcessingUrl("/viewer/viewerlogin.do")
-                    .defaultSuccessUrl("/viewer/detailpage")
-                    .permitAll()
-                .and()
-                    .logout()
-                    .logoutRequestMatcher(new AntPathRequestMatcher("/viewer/viewerlogout.do"));
+//        http    .addFilter(corsConfig.corsFilter())
+//                .csrf().disable()
+//                .authorizeRequests()
+//                //antMatchers 해당 경로들은 ,,, permitAll() 접근허용 ,,, authenticated() 인증이 되어야함
+//                .antMatchers("/*").permitAll()
+//                .antMatchers("/css/**").permitAll()
+//                .antMatchers("/img/**").permitAll()
+//                .antMatchers("/js/**").permitAll()
+//                .antMatchers("/hello").permitAll()
+////                .antMatchers("/viewer/joinpage").permitAll()
+////                .antMatchers("/viewer/viewerjoin").permitAll()
+////                .antMatchers("/viewer/viewerlogin.do").permitAll()
+////                .antMatchers("/viewer/viewercheck.do").permitAll()
+////                .antMatchers("/viewer/**").authenticated()
+////                .antMatchers("/board/list").permitAll()
+////                .antMatchers("/manager/**").access("hasRole('RoleADMIN') or hasRole('RoleMANAGER')")
+////                .antMatchers("/admin/**").access("hasRole('RoleADMIN')")
+//                .anyRequest().authenticated()
+//                .and()
+//                    .formLogin()
+//                    .loginPage("/viewer/loginpage").permitAll()
+//                    .usernameParameter("vid")
+//                    .passwordParameter("vpw")
+//                    .loginProcessingUrl("/viewer/viewerlogin.do")
+//                    .defaultSuccessUrl("/viewer/detailpage")
+//                    .permitAll()
+//                .and()
+//                    .logout()
+//                    .logoutRequestMatcher(new AntPathRequestMatcher("/viewer/viewerlogout.do"));
 
         //중복 로그인
 //        http.sessionManagement()
@@ -72,12 +74,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                중복로그인하면 이전 로그인이 풀림
 //                .maxSessionsPreventsLogin(false);
 
-//        http    .cors().and().csrf().disable()
-//                .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
-//                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-//                .authorizeRequests().antMatchers("/api/auth/**").permitAll()
+        http.cors().and().csrf().disable()
+                .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+                .authorizeRequests().antMatchers("/viewer/**").permitAll()
 //                .antMatchers("/api/test/**").permitAll()
-//                .anyRequest().authenticated();
+                .anyRequest().authenticated();
 
 
     }

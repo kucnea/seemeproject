@@ -33,7 +33,7 @@ public class ViewerController {
     @Autowired ViewerService viewerService;
     @Autowired AuthService authService;
 
-    @RequestMapping(value = "/getallviewers", method = RequestMethod.GET)
+    @RequestMapping(value = "/getall", method = RequestMethod.GET)
     public List<ViewerLoginDto> getAllViewers(){
         return viewerService.getExistsViewers();
     }
@@ -52,7 +52,6 @@ public class ViewerController {
     public ResponseEntity<?> login(@RequestBody ViewerEntity viewerEntity){
         viewerEntity = viewerService.loginViewer(viewerEntity);
         ResponseEntity response = authService.generateAuth(viewerEntity);
-
         return response;
     }
 
@@ -64,12 +63,12 @@ public class ViewerController {
         return "";
     }
 
-    @RequestMapping(value = "/updateviewer", method = RequestMethod.PUT)
+    @RequestMapping(value = "/update", method = RequestMethod.PUT)
     public String updateViewer(@RequestBody ViewerEntity viewer){
         return viewerService.updateViewer(viewer);
     }
 
-    @RequestMapping(value = "/deleteviewer", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
     public String removeViewer(@RequestBody ViewerEntity viewer){
         return viewerService.removeViewer(viewer);
     }
